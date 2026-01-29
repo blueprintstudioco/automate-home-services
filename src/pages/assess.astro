@@ -26,7 +26,7 @@ const baseCategories = baseChecklist.categories;
         <span id="trade-icon" class="text-5xl">⏳</span>
         <div>
           <h1 id="trade-title" class="text-3xl font-extrabold">Loading Assessment...</h1>
-          <p class="text-slate-400">Check off everything you're currently doing</p>
+          <p class="text-slate-400">Answer Yes or No for each item</p>
         </div>
       </div>
     </div>
@@ -34,8 +34,8 @@ const baseCategories = baseChecklist.categories;
     <!-- Progress Bar -->
     <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-8 sticky top-0 z-10">
       <div class="flex items-center justify-between mb-2">
-        <span class="text-sm text-slate-400">Your Progress</span>
-        <span class="text-sm font-semibold"><span id="checked-count">0</span> / <span id="total-items">0</span> items</span>
+        <span class="text-sm text-slate-400">Questions Answered</span>
+        <span class="text-sm font-semibold"><span id="answered-count">0</span> / <span id="total-items">0</span></span>
       </div>
       <div class="w-full bg-slate-800 rounded-full h-3">
         <div id="progress-bar" class="bg-orange-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
@@ -54,10 +54,13 @@ const baseCategories = baseChecklist.categories;
       <div class="sticky bottom-4 z-10">
         <button 
           type="submit"
-          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl text-lg transition-colors shadow-lg shadow-orange-500/20"
+          id="submit-btn"
+          disabled
+          class="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-slate-700 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-xl text-lg transition-colors shadow-lg shadow-orange-500/20 disabled:shadow-none"
         >
           See My Results →
         </button>
+        <p id="submit-hint" class="text-center text-slate-500 text-sm mt-2">Answer all questions to continue</p>
       </div>
     </form>
 
@@ -91,6 +94,10 @@ const baseCategories = baseChecklist.categories;
     const totalWeight = checklist.reduce((sum, cat) => 
       sum + cat.items.reduce((s, item) => s + item.weight, 0), 0);
 
+    // Track answers: { itemId: 'yes' | 'no' | null }
+    const answers = {};
+    checklist.forEach(cat => cat.items.forEach(item => answers[item.id] = null));
+
     // Update page title and header
     document.title = `${trade.name} Business Assessment | AI Automation`;
     document.getElementById('trade-icon').textContent = trade.icon;
@@ -112,29 +119,45 @@ const baseCategories = baseChecklist.categories;
           
           <div class="space-y-4">
             ${category.items.map(item => `
-              <label class="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-800/50 cursor-pointer transition-colors group">
-                <input 
-                  type="checkbox" 
-                  name="${item.id}"
-                  data-weight="${item.weight}"
-                  class="mt-1 w-5 h-5 rounded border-slate-600 bg-slate-800 text-orange-500 focus:ring-orange-500 cursor-pointer"
-                />
-                <div class="flex-1">
-                  <div class="flex items-start justify-between gap-4">
-                    <span class="font-medium text-white group-hover:text-orange-500 transition-colors">
-                      ${item.text}
-                    </span>
-                    <span class="flex-shrink-0 text-xs px-2 py-1 rounded ${
-                      item.weight === 3 ? 'bg-red-500/20 text-red-400' :
-                      item.weight === 2 ? 'bg-yellow-500/20 text-yellow-400' :
-                      'bg-green-500/20 text-green-400'
-                    }">
-                      ${item.weight === 3 ? 'Critical' : item.weight === 2 ? 'Important' : 'Nice to have'}
-                    </span>
+              <div class="p-4 rounded-lg border border-slate-800 transition-colors" data-item="${item.id}">
+                <div class="flex items-start justify-between gap-4 mb-3">
+                  <div class="flex-1">
+                    <div class="flex items-start gap-3">
+                      <span class="font-medium text-white">
+                        ${item.text}
+                      </span>
+                      <span class="flex-shrink-0 text-xs px-2 py-1 rounded ${
+                        item.weight === 3 ? 'bg-red-500/20 text-red-400' :
+                        item.weight === 2 ? 'bg-yellow-500/20 text-yellow-400' :
+                        'bg-green-500/20 text-green-400'
+                      }">
+                        ${item.weight === 3 ? 'Critical' : item.weight === 2 ? 'Important' : 'Nice to have'}
+                      </span>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-1">${item.why}</p>
                   </div>
-                  <p class="text-slate-400 text-sm mt-1">${item.why}</p>
                 </div>
-              </label>
+                <div class="flex gap-2">
+                  <button 
+                    type="button"
+                    data-item="${item.id}"
+                    data-answer="yes"
+                    data-weight="${item.weight}"
+                    class="yes-btn flex-1 py-2 px-4 rounded-lg border-2 border-slate-700 text-slate-400 font-medium transition-all hover:border-green-500 hover:text-green-400"
+                  >
+                    ✓ Yes
+                  </button>
+                  <button 
+                    type="button"
+                    data-item="${item.id}"
+                    data-answer="no"
+                    data-weight="${item.weight}"
+                    class="no-btn flex-1 py-2 px-4 rounded-lg border-2 border-slate-700 text-slate-400 font-medium transition-all hover:border-red-500 hover:text-red-400"
+                  >
+                    ✗ No
+                  </button>
+                </div>
+              </div>
             `).join('')}
           </div>
         </section>
@@ -142,53 +165,101 @@ const baseCategories = baseChecklist.categories;
       
       container.innerHTML = html;
       
-      // Attach event listeners to new checkboxes
-      const checkboxes = container.querySelectorAll('input[type="checkbox"]');
-      checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+      // Attach event listeners to buttons
+      container.querySelectorAll('button[data-answer]').forEach(btn => {
+        btn.addEventListener('click', handleAnswer);
+      });
     }
 
-    // Track checked items and update progress
-    const form = document.getElementById('assessment-form');
+    function handleAnswer(e) {
+      const btn = e.currentTarget;
+      const itemId = btn.dataset.item;
+      const answer = btn.dataset.answer;
+      
+      // Update answer state
+      answers[itemId] = answer;
+      
+      // Update button styles
+      const itemContainer = document.querySelector(`[data-item="${itemId}"]`);
+      const yesBtn = itemContainer.querySelector('.yes-btn');
+      const noBtn = itemContainer.querySelector('.no-btn');
+      
+      // Reset both buttons
+      yesBtn.className = 'yes-btn flex-1 py-2 px-4 rounded-lg border-2 font-medium transition-all';
+      noBtn.className = 'no-btn flex-1 py-2 px-4 rounded-lg border-2 font-medium transition-all';
+      
+      if (answer === 'yes') {
+        yesBtn.className += ' border-green-500 bg-green-500/20 text-green-400';
+        noBtn.className += ' border-slate-700 text-slate-500 hover:border-red-500 hover:text-red-400';
+        itemContainer.className = 'p-4 rounded-lg border border-green-500/30 bg-green-500/5 transition-colors';
+      } else {
+        noBtn.className += ' border-red-500 bg-red-500/20 text-red-400';
+        yesBtn.className += ' border-slate-700 text-slate-500 hover:border-green-500 hover:text-green-400';
+        itemContainer.className = 'p-4 rounded-lg border border-slate-700 bg-slate-800/30 transition-colors';
+      }
+      
+      updateProgress();
+    }
+
+    // Track progress
     const progressBar = document.getElementById('progress-bar');
-    const checkedCountEl = document.getElementById('checked-count');
+    const answeredCountEl = document.getElementById('answered-count');
+    const submitBtn = document.getElementById('submit-btn');
+    const submitHint = document.getElementById('submit-hint');
 
     function updateProgress() {
-      const checked = form.querySelectorAll('input[type="checkbox"]:checked').length;
-      checkedCountEl.textContent = checked;
-      progressBar.style.width = `${(checked / totalItems) * 100}%`;
+      const answered = Object.values(answers).filter(a => a !== null).length;
+      answeredCountEl.textContent = answered;
+      progressBar.style.width = `${(answered / totalItems) * 100}%`;
+      
+      // Enable submit when all answered
+      if (answered === totalItems) {
+        submitBtn.disabled = false;
+        submitHint.textContent = 'Ready to see your results!';
+        submitHint.className = 'text-center text-green-400 text-sm mt-2';
+      } else {
+        submitBtn.disabled = true;
+        const remaining = totalItems - answered;
+        submitHint.textContent = `${remaining} question${remaining === 1 ? '' : 's'} remaining`;
+        submitHint.className = 'text-center text-slate-500 text-sm mt-2';
+      }
     }
 
     // Handle form submission
+    const form = document.getElementById('assessment-form');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      const checkboxes = form.querySelectorAll('input[type="checkbox"]');
-      const checked = [];
-      const unchecked = [];
+      const yesItems = [];
+      const noItems = [];
       let earnedWeight = 0;
       
-      checkboxes.forEach(cb => {
-        const weight = parseInt(cb.dataset.weight);
-        if (cb.checked) {
-          checked.push(cb.name);
+      // Get all item weights
+      const itemWeights = {};
+      checklist.forEach(cat => cat.items.forEach(item => itemWeights[item.id] = item.weight));
+      
+      Object.entries(answers).forEach(([itemId, answer]) => {
+        const weight = itemWeights[itemId];
+        if (answer === 'yes') {
+          yesItems.push(itemId);
           earnedWeight += weight;
         } else {
-          unchecked.push({ id: cb.name, weight });
+          noItems.push({ id: itemId, weight });
         }
       });
       
-      // Sort unchecked by weight (highest first)
-      unchecked.sort((a, b) => b.weight - a.weight);
+      // Sort no items by weight (highest first) - these are the gaps
+      noItems.sort((a, b) => b.weight - a.weight);
       
       // Store in sessionStorage and redirect
       sessionStorage.setItem('assessment-results', JSON.stringify({
         trade: tradeId,
-        checked,
-        unchecked: unchecked.map(u => u.id),
+        checked: yesItems,
+        unchecked: noItems.map(u => u.id),
         earnedWeight,
         totalWeight,
         totalItems,
-        checkedCount: checked.length
+        checkedCount: yesItems.length
       }));
       
       window.location.href = '/results';
