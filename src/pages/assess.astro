@@ -4,34 +4,13 @@ import trades from '../data/trades.json';
 import baseChecklist from '../data/checklists/_base.json';
 import tradeSpecific from '../data/checklists/trade-specific.json';
 
-// Get trade from URL
-const tradeId = Astro.url.searchParams.get('trade') || 'plumbing';
-const trade = trades.trades.find(t => t.id === tradeId) || trades.trades[0];
-
-// Merge base checklist with trade-specific items
-function getFullChecklist(tradeId: string) {
-  const checklist = JSON.parse(JSON.stringify(baseChecklist.categories));
-  
-  const specific = tradeSpecific[tradeId];
-  if (specific) {
-    specific.forEach(addition => {
-      const category = checklist.find(c => c.id === addition.category);
-      if (category) {
-        category.items.push(...addition.items);
-      }
-    });
-  }
-  
-  return checklist;
-}
-
-const checklist = getFullChecklist(tradeId);
-const totalItems = checklist.reduce((sum, cat) => sum + cat.items.length, 0);
-const totalWeight = checklist.reduce((sum, cat) => 
-  sum + cat.items.reduce((s, item) => s + item.weight, 0), 0);
+// Pass all data to client for dynamic rendering
+const allTrades = trades.trades;
+const allTradeSpecific = tradeSpecific;
+const baseCategories = baseChecklist.categories;
 ---
 
-<Layout title={`${trade.name} Business Assessment | AI Automation`}>
+<Layout title="Business Assessment | AI Automation">
   <main class="max-w-4xl mx-auto px-6 py-12">
     
     <!-- Header -->
@@ -44,9 +23,9 @@ const totalWeight = checklist.reduce((sum, cat) =>
       </a>
       
       <div class="flex items-center gap-4 mb-4">
-        <span class="text-5xl">{trade.icon}</span>
+        <span id="trade-icon" class="text-5xl">⏳</span>
         <div>
-          <h1 class="text-3xl font-extrabold">{trade.name} Business Assessment</h1>
+          <h1 id="trade-title" class="text-3xl font-extrabold">Loading Assessment...</h1>
           <p class="text-slate-400">Check off everything you're currently doing</p>
         </div>
       </div>
@@ -56,54 +35,20 @@ const totalWeight = checklist.reduce((sum, cat) =>
     <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-8 sticky top-0 z-10">
       <div class="flex items-center justify-between mb-2">
         <span class="text-sm text-slate-400">Your Progress</span>
-        <span class="text-sm font-semibold"><span id="checked-count">0</span> / {totalItems} items</span>
+        <span class="text-sm font-semibold"><span id="checked-count">0</span> / <span id="total-items">0</span> items</span>
       </div>
       <div class="w-full bg-slate-800 rounded-full h-3">
         <div id="progress-bar" class="bg-orange-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
       </div>
     </div>
 
-    <!-- Checklist Form -->
+    <!-- Checklist Form (rendered by JS) -->
     <form id="assessment-form" class="space-y-8">
-      <input type="hidden" name="trade" value={tradeId} />
-      
-      {checklist.map((category) => (
-        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
-            <span class="text-2xl">{category.icon}</span>
-            {category.name}
-            <span class="text-sm font-normal text-slate-500">({category.items.length} items)</span>
-          </h2>
-          
-          <div class="space-y-4">
-            {category.items.map((item) => (
-              <label class="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-800/50 cursor-pointer transition-colors group">
-                <input 
-                  type="checkbox" 
-                  name={item.id}
-                  data-weight={item.weight}
-                  class="mt-1 w-5 h-5 rounded border-slate-600 bg-slate-800 text-orange-500 focus:ring-orange-500 cursor-pointer"
-                />
-                <div class="flex-1">
-                  <div class="flex items-start justify-between gap-4">
-                    <span class="font-medium text-white group-hover:text-orange-500 transition-colors">
-                      {item.text}
-                    </span>
-                    <span class={`flex-shrink-0 text-xs px-2 py-1 rounded ${
-                      item.weight === 3 ? 'bg-red-500/20 text-red-400' :
-                      item.weight === 2 ? 'bg-yellow-500/20 text-yellow-400' :
-                      'bg-green-500/20 text-green-400'
-                    }`}>
-                      {item.weight === 3 ? 'Critical' : item.weight === 2 ? 'Important' : 'Nice to have'}
-                    </span>
-                  </div>
-                  <p class="text-slate-400 text-sm mt-1">{item.why}</p>
-                </div>
-              </label>
-            ))}
-          </div>
-        </section>
-      ))}
+      <input type="hidden" id="trade-input" name="trade" value="" />
+      <div id="checklist-container">
+        <!-- Categories will be rendered here by JavaScript -->
+        <div class="text-center py-12 text-slate-400">Loading checklist...</div>
+      </div>
 
       <!-- Submit Button -->
       <div class="sticky bottom-4 z-10">
@@ -118,26 +63,106 @@ const totalWeight = checklist.reduce((sum, cat) =>
 
   </main>
 
-  <script define:vars={{ tradeId, totalItems, totalWeight }}>
+  <script define:vars={{ allTrades, baseCategories, allTradeSpecific }}>
+    // Get trade from URL query string (client-side)
+    const urlParams = new URLSearchParams(window.location.search);
+    const tradeId = urlParams.get('trade') || 'plumbing';
+    const trade = allTrades.find(t => t.id === tradeId) || allTrades[0];
+
+    // Merge base checklist with trade-specific items
+    function getFullChecklist(tradeId) {
+      const checklist = JSON.parse(JSON.stringify(baseCategories));
+      
+      const specific = allTradeSpecific[tradeId];
+      if (specific) {
+        specific.forEach(addition => {
+          const category = checklist.find(c => c.id === addition.category);
+          if (category) {
+            category.items.push(...addition.items);
+          }
+        });
+      }
+      
+      return checklist;
+    }
+
+    const checklist = getFullChecklist(tradeId);
+    const totalItems = checklist.reduce((sum, cat) => sum + cat.items.length, 0);
+    const totalWeight = checklist.reduce((sum, cat) => 
+      sum + cat.items.reduce((s, item) => s + item.weight, 0), 0);
+
+    // Update page title and header
+    document.title = `${trade.name} Business Assessment | AI Automation`;
+    document.getElementById('trade-icon').textContent = trade.icon;
+    document.getElementById('trade-title').textContent = `${trade.name} Business Assessment`;
+    document.getElementById('trade-input').value = tradeId;
+    document.getElementById('total-items').textContent = totalItems;
+
+    // Render checklist
+    function renderChecklist() {
+      const container = document.getElementById('checklist-container');
+      
+      const html = checklist.map(category => `
+        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
+            <span class="text-2xl">${category.icon}</span>
+            ${category.name}
+            <span class="text-sm font-normal text-slate-500">(${category.items.length} items)</span>
+          </h2>
+          
+          <div class="space-y-4">
+            ${category.items.map(item => `
+              <label class="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-800/50 cursor-pointer transition-colors group">
+                <input 
+                  type="checkbox" 
+                  name="${item.id}"
+                  data-weight="${item.weight}"
+                  class="mt-1 w-5 h-5 rounded border-slate-600 bg-slate-800 text-orange-500 focus:ring-orange-500 cursor-pointer"
+                />
+                <div class="flex-1">
+                  <div class="flex items-start justify-between gap-4">
+                    <span class="font-medium text-white group-hover:text-orange-500 transition-colors">
+                      ${item.text}
+                    </span>
+                    <span class="flex-shrink-0 text-xs px-2 py-1 rounded ${
+                      item.weight === 3 ? 'bg-red-500/20 text-red-400' :
+                      item.weight === 2 ? 'bg-yellow-500/20 text-yellow-400' :
+                      'bg-green-500/20 text-green-400'
+                    }">
+                      ${item.weight === 3 ? 'Critical' : item.weight === 2 ? 'Important' : 'Nice to have'}
+                    </span>
+                  </div>
+                  <p class="text-slate-400 text-sm mt-1">${item.why}</p>
+                </div>
+              </label>
+            `).join('')}
+          </div>
+        </section>
+      `).join('');
+      
+      container.innerHTML = html;
+      
+      // Attach event listeners to new checkboxes
+      const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+    }
+
     // Track checked items and update progress
     const form = document.getElementById('assessment-form');
-    const checkboxes = form.querySelectorAll('input[type="checkbox"]');
     const progressBar = document.getElementById('progress-bar');
-    const checkedCount = document.getElementById('checked-count');
+    const checkedCountEl = document.getElementById('checked-count');
 
     function updateProgress() {
       const checked = form.querySelectorAll('input[type="checkbox"]:checked').length;
-      checkedCount.textContent = checked;
+      checkedCountEl.textContent = checked;
       progressBar.style.width = `${(checked / totalItems) * 100}%`;
     }
-
-    checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
 
     // Handle form submission
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      // Collect checked and unchecked items
+      const checkboxes = form.querySelectorAll('input[type="checkbox"]');
       const checked = [];
       const unchecked = [];
       let earnedWeight = 0;
@@ -168,5 +193,8 @@ const totalWeight = checklist.reduce((sum, cat) =>
       
       window.location.href = '/results';
     });
+
+    // Initialize
+    renderChecklist();
   </script>
 </Layout>
