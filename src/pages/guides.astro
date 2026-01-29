@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Get all guides
+const guidesDir = path.join(process.cwd(), 'src/data/guides');
+const guideFiles = fs.readdirSync(guidesDir).filter(f => f.endsWith('.json') && !f.startsWith('_'));
+
+const guides = guideFiles.map(file => {
+  const slug = file.replace('.json', '');
+  const guide = JSON.parse(fs.readFileSync(path.join(guidesDir, file), 'utf-8'));
+  return { slug, ...guide };
+});
+
+const difficultyColors = {
+  'Easy': 'bg-green-500/20 text-green-400 border-green-500/30',
+  'Medium': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+  'Advanced': 'bg-red-500/20 text-red-400 border-red-500/30'
+};
+
+const costColors = {
+  'Free': 'bg-green-500/20 text-green-400',
+  'Freemium': 'bg-blue-500/20 text-blue-400',
+  'Paid': 'bg-orange-500/20 text-orange-400'
+};
+---
+
+<Layout title="Setup Guides | AI Automation for Home Services">
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    
+    <!-- Back Link -->
+    <a href="/" class="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+      <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      Back to Home
+    </a>
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+        Setup <span class="text-orange-500">Guides</span>
+      </h1>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+        Step-by-step instructions so simple a 10-year-old could follow them.
+        No jargon, no fluff — just exactly what to click.
+      </p>
+    </div>
+
+    <!-- Guides Grid -->
+    <div class="grid md:grid-cols-2 gap-6">
+      {guides.map((guide) => (
+        <a 
+          href={`/guide/${guide.slug}`}
+          class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-orange-500/50 transition-all hover:scale-[1.02]"
+        >
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class={`text-xs px-2 py-1 rounded-full border ${difficultyColors[guide.difficulty]}`}>
+              {guide.difficulty}
+            </span>
+            <span class={`text-xs px-2 py-1 rounded-full ${costColors[guide.costType]}`}>
+              {guide.cost}
+            </span>
+            <span class="text-xs px-2 py-1 rounded-full bg-slate-800 text-slate-400">
+              ⏱️ {guide.time}
+            </span>
+          </div>
+          
+          <h2 class="text-xl font-bold text-white mb-2">{guide.title}</h2>
+          <p class="text-slate-400 mb-4">{guide.description}</p>
+          
+          <span class="text-orange-500 font-medium">
+            Read guide →
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <!-- More Coming -->
+    <div class="mt-12 text-center">
+      <p class="text-slate-500">
+        More guides added regularly. 
+        <a href="mailto:alex@blueprintstudioco.com" class="text-orange-500 hover:underline">
+          Request a guide
+        </a>
+      </p>
+    </div>
+
+  </main>
+</Layout>

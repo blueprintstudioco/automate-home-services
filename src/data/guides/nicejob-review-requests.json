@@ -1,0 +1,72 @@
+{
+  "title": "How to Automatically Request Reviews with NiceJob",
+  "description": "Automatically text customers after every job asking for a Google review. More reviews = more customers.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "$75/month",
+  "costType": "Paid",
+  "requirements": [
+    "A computer",
+    "Your business email",
+    "A credit card for the subscription",
+    "Your Google Business Profile login"
+  ],
+  "steps": [
+    {
+      "title": "Sign up for NiceJob",
+      "description": "Go to nicejob.com and start a free trial.",
+      "substeps": [
+        "Click 'Start Free Trial'",
+        "Enter your business name and email",
+        "Choose your industry (Home Services)"
+      ]
+    },
+    {
+      "title": "Connect your Google Business Profile",
+      "description": "This lets NiceJob send customers directly to your Google review page.",
+      "substeps": [
+        "Click 'Integrations' in the menu",
+        "Find 'Google' and click 'Connect'",
+        "Sign in with your Google account",
+        "Select your business location"
+      ],
+      "tip": "Make sure you're signing in with the Google account that owns your Business Profile."
+    },
+    {
+      "title": "Set up your review request message",
+      "description": "This is the text message customers will receive after a job.",
+      "substeps": [
+        "Go to 'Campaigns' in the menu",
+        "Click on the default review request campaign",
+        "Customize the message to sound like you",
+        "Keep it short and friendly"
+      ],
+      "tip": "Example: 'Hey [NAME]! Thanks for choosing [BUSINESS]. If you have a minute, a Google review would mean the world to us: [LINK]'"
+    },
+    {
+      "title": "Choose when to send requests",
+      "description": "Decide how soon after a job the request goes out.",
+      "substeps": [
+        "In campaign settings, find 'Send delay'",
+        "Set it to 1-2 hours after job completion",
+        "This catches customers while the experience is fresh"
+      ]
+    },
+    {
+      "title": "Add your first customer",
+      "description": "Test it with a recent customer or yourself.",
+      "substeps": [
+        "Click 'Contacts' then 'Add Contact'",
+        "Enter a name and phone number",
+        "Mark the job as complete",
+        "Watch the magic happen!"
+      ]
+    }
+  ],
+  "successMessage": "Every completed job will now trigger an automatic review request. Most businesses see their review count double within 3 months!",
+  "proTips": [
+    "The best time to ask for a review is right after you've made the customer happy",
+    "Follow up texts (NiceJob sends them automatically) can double your response rate",
+    "Respond to every review — it encourages more people to leave them"
+  ]
+}

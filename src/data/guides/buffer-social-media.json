@@ -1,0 +1,71 @@
+{
+  "title": "How to Schedule Social Media Posts with Buffer",
+  "description": "Write a week's worth of posts in one sitting, then let them publish automatically.",
+  "difficulty": "Easy",
+  "time": "15 minutes to set up, then 30 min/week",
+  "cost": "Free (up to 3 channels)",
+  "costType": "Freemium",
+  "requirements": [
+    "A computer or smartphone",
+    "Your social media logins (Facebook, Instagram, etc.)",
+    "Some photos from recent jobs"
+  ],
+  "steps": [
+    {
+      "title": "Create a Buffer account",
+      "description": "Go to buffer.com and sign up for free.",
+      "substeps": [
+        "Click 'Get started now'",
+        "Sign up with email or Google",
+        "Choose the free plan"
+      ]
+    },
+    {
+      "title": "Connect your social media accounts",
+      "description": "Link the platforms where you want to post.",
+      "substeps": [
+        "Click 'Channels' in the menu",
+        "Click 'Connect a Channel'",
+        "Choose Facebook, Instagram, or others",
+        "Log in and authorize Buffer"
+      ],
+      "tip": "Start with just 1-2 platforms. You can add more later."
+    },
+    {
+      "title": "Set your posting schedule",
+      "description": "Tell Buffer what times you want posts to go out.",
+      "substeps": [
+        "Click 'Settings' then 'Posting Schedule'",
+        "Add time slots (example: Mon, Wed, Fri at 9am)",
+        "Buffer will automatically post at these times"
+      ],
+      "tip": "Morning (8-9am) and evening (6-7pm) usually get the most engagement."
+    },
+    {
+      "title": "Create your first post",
+      "description": "Write a post and add it to your queue.",
+      "substeps": [
+        "Click 'Create Post'",
+        "Write your caption (keep it short and friendly)",
+        "Add a photo — job site pics work great",
+        "Click 'Add to Queue'"
+      ],
+      "tip": "Before/after photos get tons of engagement. Show the transformation!"
+    },
+    {
+      "title": "Batch create more posts",
+      "description": "The magic is doing a bunch at once.",
+      "substeps": [
+        "Spend 30 minutes writing 5-10 posts",
+        "Add them all to your queue",
+        "They'll post automatically over the next 1-2 weeks"
+      ]
+    }
+  ],
+  "successMessage": "Your social media now runs on autopilot! Check in once a week to add more posts to your queue.",
+  "proTips": [
+    "Batch your content creation — one focused session beats posting randomly every day",
+    "Mix up your content: job photos, tips, behind-the-scenes, customer reviews",
+    "Use ChatGPT to help write captions if you get stuck"
+  ]
+}

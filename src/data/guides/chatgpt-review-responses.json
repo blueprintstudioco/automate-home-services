@@ -1,0 +1,67 @@
+{
+  "title": "How to Respond to Reviews with ChatGPT",
+  "description": "Write professional, personalized responses to Google reviews in seconds — without sounding like a robot.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer or smartphone",
+    "An email address",
+    "Your Google reviews (you'll copy and paste them)"
+  ],
+  "steps": [
+    {
+      "title": "Go to ChatGPT",
+      "description": "Open your web browser and go to chat.openai.com",
+      "substeps": [
+        "Click 'Sign up' if you don't have an account",
+        "Use your email or Google account to sign up",
+        "Verify your email if asked"
+      ]
+    },
+    {
+      "title": "Copy a review from Google",
+      "description": "Go to your Google Business Profile and find a review you want to respond to.",
+      "substeps": [
+        "Go to business.google.com",
+        "Click on 'Reviews' in the menu",
+        "Find a review and copy the text"
+      ],
+      "tip": "Start with your most recent reviews — responding quickly looks good to future customers."
+    },
+    {
+      "title": "Ask ChatGPT to write a response",
+      "description": "Paste this into ChatGPT (replace the review text with the actual review):",
+      "substeps": [
+        "Write a friendly, professional response to this review for my [YOUR TRADE] business. Keep it short (2-3 sentences). Sound human, not corporate.",
+        "Review: [PASTE THE REVIEW HERE]"
+      ],
+      "tip": "Tell ChatGPT your business name and it'll include it in the response."
+    },
+    {
+      "title": "Review and tweak",
+      "description": "Read what ChatGPT wrote. Make any small changes to sound more like you.",
+      "substeps": [
+        "Check that the facts are right",
+        "Add a personal touch if you remember the job",
+        "Make sure it sounds like something you'd actually say"
+      ]
+    },
+    {
+      "title": "Post the response",
+      "description": "Copy the response and paste it into Google.",
+      "substeps": [
+        "Go back to your Google Business reviews",
+        "Click 'Reply' under the review",
+        "Paste your response and click 'Post'"
+      ]
+    }
+  ],
+  "successMessage": "You just responded to a review in under 2 minutes! Do this for all your reviews to show customers you care about feedback.",
+  "proTips": [
+    "Respond to negative reviews too — a professional response shows future customers how you handle problems",
+    "Save your favorite ChatGPT prompts in a notes app so you can reuse them",
+    "Try to respond within 24-48 hours of getting a review"
+  ]
+}

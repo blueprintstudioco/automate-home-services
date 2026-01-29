@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "Social Media Content Creation": "chatgpt-social-content",
+    "Review Response Automation": "chatgpt-review-responses",
+    "Appointment Booking": "calendly-booking",
+    "Invoice Generation": "wave-invoicing",
+    "Review Request Automation": "nicejob-review-requests",
+    "Email Marketing Campaigns": "buffer-social-media"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "title": "How to Set Up Online Booking with Calendly",
+  "description": "Let customers book appointments directly on your calendar. No more phone tag.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer or smartphone",
+    "An email address",
+    "Your general availability (what hours you take appointments)"
+  ],
+  "steps": [
+    {
+      "title": "Create a Calendly account",
+      "description": "Go to calendly.com and sign up for free.",
+      "substeps": [
+        "Click 'Sign up' in the top right",
+        "Enter your email or use Google sign-in",
+        "Choose the free plan when asked"
+      ]
+    },
+    {
+      "title": "Set your availability",
+      "description": "Tell Calendly when you're available for appointments.",
+      "substeps": [
+        "Click 'Availability' in the menu",
+        "Set your working hours (example: Mon-Fri 8am-5pm)",
+        "Block off lunch or other busy times",
+        "Click 'Save'"
+      ],
+      "tip": "Leave buffer time between appointments — you don't want back-to-back bookings."
+    },
+    {
+      "title": "Create an event type",
+      "description": "This is what customers will book. Example: 'Free Estimate' or 'Phone Consultation'",
+      "substeps": [
+        "Click 'Event Types' then 'New Event Type'",
+        "Choose 'One-on-One'",
+        "Name it something clear like 'Free Estimate Call'",
+        "Set the duration (15 or 30 minutes is common)",
+        "Click 'Save & Close'"
+      ]
+    },
+    {
+      "title": "Get your booking link",
+      "description": "Calendly gives you a link that anyone can use to book with you.",
+      "substeps": [
+        "Click 'Share' next to your event type",
+        "Copy the link",
+        "This is YOUR booking link — save it somewhere!"
+      ],
+      "tip": "Your link looks like: calendly.com/your-name/free-estimate"
+    },
+    {
+      "title": "Add it to your website and socials",
+      "description": "Put your booking link everywhere customers might find you.",
+      "substeps": [
+        "Add a 'Book Now' button on your website",
+        "Put the link in your Instagram/Facebook bio",
+        "Include it in your email signature",
+        "Add it to your Google Business Profile"
+      ]
+    }
+  ],
+  "successMessage": "Customers can now book directly on your calendar 24/7! You'll get an email notification for each booking.",
+  "proTips": [
+    "Connect Calendly to your Google or Outlook calendar so it knows when you're busy",
+    "Add questions to the booking form — ask for their address or what they need help with",
+    "Set up text reminders so customers don't forget their appointment"
+  ]
+}

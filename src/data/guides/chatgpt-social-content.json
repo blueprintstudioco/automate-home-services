@@ -1,0 +1,68 @@
+{
+  "title": "How to Write Social Media Posts with ChatGPT",
+  "description": "Generate a week's worth of social media ideas in 10 minutes. Never stare at a blank screen again.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer or smartphone",
+    "A ChatGPT account (free at chat.openai.com)",
+    "Some recent job photos to post with"
+  ],
+  "steps": [
+    {
+      "title": "Open ChatGPT",
+      "description": "Go to chat.openai.com and log in (or sign up free).",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Click 'Log in' or 'Sign up'",
+        "Use your email or Google account"
+      ]
+    },
+    {
+      "title": "Tell ChatGPT about your business",
+      "description": "Give it context so the posts sound right for you.",
+      "substeps": [
+        "Type something like:",
+        "'I run a [TRADE] business called [NAME] in [CITY]. My customers are homeowners who need [SERVICES]. I want to sound friendly and professional, not salesy.'"
+      ],
+      "tip": "The more context you give, the better the posts will be."
+    },
+    {
+      "title": "Ask for post ideas",
+      "description": "Now ask for social media content.",
+      "substeps": [
+        "Type: 'Give me 10 social media post ideas for my business. Mix of tips, behind-the-scenes, and customer-focused content. Keep them short.'",
+        "ChatGPT will give you 10 ideas with captions"
+      ]
+    },
+    {
+      "title": "Pick your favorites and tweak",
+      "description": "Not every idea will be perfect. Pick the best ones.",
+      "substeps": [
+        "Read through all 10 ideas",
+        "Pick 5-7 that feel right",
+        "Edit them to sound more like you",
+        "Ask ChatGPT to rewrite any that aren't quite right"
+      ],
+      "tip": "Say 'Make #3 shorter' or 'Make #7 funnier' to get variations."
+    },
+    {
+      "title": "Match posts to your photos",
+      "description": "Pair each post with a photo from your camera roll.",
+      "substeps": [
+        "Look at your recent job photos",
+        "Match captions to relevant images",
+        "Before/after photos work great with transformation posts",
+        "Team photos work with 'meet the crew' posts"
+      ]
+    }
+  ],
+  "successMessage": "You just created a week or two of social content in 10 minutes! Schedule them with Buffer or post directly.",
+  "proTips": [
+    "Save prompts that work well so you can reuse them",
+    "Ask ChatGPT for seasonal content ideas (spring cleaning, winter prep, etc.)",
+    "If a post does well, ask ChatGPT for 5 similar variations"
+  ]
+}

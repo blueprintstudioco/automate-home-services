@@ -1,0 +1,75 @@
+{
+  "title": "How to Create and Send Invoices with Wave",
+  "description": "Free invoicing software that looks professional and lets customers pay online.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer",
+    "Your business email",
+    "Your business name and address",
+    "A customer to send your first invoice to"
+  ],
+  "steps": [
+    {
+      "title": "Create a Wave account",
+      "description": "Go to waveapps.com and sign up for free.",
+      "substeps": [
+        "Click 'Sign Up'",
+        "Enter your email and create a password",
+        "Enter your business name",
+        "Choose your business type and industry"
+      ]
+    },
+    {
+      "title": "Add your business info",
+      "description": "This shows up on every invoice you send.",
+      "substeps": [
+        "Go to 'Settings' then 'Business Profile'",
+        "Add your business address",
+        "Upload your logo (optional but looks professional)",
+        "Add your phone number"
+      ],
+      "tip": "A logo makes your invoices look way more legitimate. Even a simple one works."
+    },
+    {
+      "title": "Set up your services",
+      "description": "Create templates for the things you charge for.",
+      "substeps": [
+        "Go to 'Sales' then 'Products & Services'",
+        "Click 'Add a Product or Service'",
+        "Enter a name like 'Mulching Service' or 'HVAC Repair'",
+        "Set a default price (you can change it per invoice)"
+      ]
+    },
+    {
+      "title": "Enable online payments",
+      "description": "Let customers pay by credit card right from the invoice.",
+      "substeps": [
+        "Go to 'Settings' then 'Payments'",
+        "Click 'Set up payments'",
+        "Connect your bank account",
+        "Choose to accept credit cards (2.9% fee)"
+      ],
+      "tip": "Customers pay 2x faster when they can pay online. Worth the small fee."
+    },
+    {
+      "title": "Create your first invoice",
+      "description": "Time to get paid!",
+      "substeps": [
+        "Click 'Sales' then 'Invoices'",
+        "Click 'Create Invoice'",
+        "Add your customer's name and email",
+        "Add the services and amounts",
+        "Click 'Send' — done!"
+      ]
+    }
+  ],
+  "successMessage": "Your customer just got a professional invoice with a 'Pay Now' button! You'll get notified when they pay.",
+  "proTips": [
+    "Set up recurring invoices for regular maintenance customers",
+    "Add payment terms like 'Due in 14 days' to set expectations",
+    "Wave also tracks expenses and does basic bookkeeping — all free"
+  ]
+}
