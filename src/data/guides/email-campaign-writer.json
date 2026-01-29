@@ -1,0 +1,82 @@
+{
+  "title": "How to Write Email Campaigns with ChatGPT",
+  "description": "Create professional email campaigns that bring back past customers and generate new business.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "A list of customer emails",
+    "A free email marketing tool (Mailchimp, MailerLite)"
+  ],
+  "steps": [
+    {
+      "title": "Choose a free email marketing tool",
+      "description": "You need something better than regular email for campaigns.",
+      "substeps": [
+        "Mailchimp: Free up to 500 contacts — mailchimp.com",
+        "MailerLite: Free up to 1,000 contacts — mailerlite.com",
+        "Both let you send professional emails and track opens/clicks",
+        "Create an account before continuing"
+      ],
+      "tip": "MailerLite has a more generous free tier. Mailchimp is more popular."
+    },
+    {
+      "title": "Import your customer emails",
+      "description": "Get your contacts into the system.",
+      "substeps": [
+        "Export customer emails from your CRM, invoicing tool, or phone",
+        "Create a simple spreadsheet with name and email columns",
+        "Import into Mailchimp/MailerLite",
+        "Clean up any bounced or invalid emails"
+      ],
+      "tip": "Only email people who've done business with you. Don't buy email lists."
+    },
+    {
+      "title": "Use ChatGPT to write the email",
+      "description": "Get professional copy in seconds.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Try this prompt: 'Write a short email to past customers of my [trade] business. Topic: [seasonal tune-up offer / checking in / new service announcement]. Keep it friendly and include a clear call-to-action.'",
+        "Review and personalize the output"
+      ]
+    },
+    {
+      "title": "Craft a compelling subject line",
+      "description": "The subject line determines if anyone opens your email.",
+      "substeps": [
+        "Ask ChatGPT: 'Give me 5 subject line options for this email'",
+        "Good subject lines are: Short, specific, create curiosity",
+        "Examples: 'Spring is coming — is your AC ready?' or 'A quick note from [Your Name]'",
+        "Avoid spam triggers like ALL CAPS, 'FREE!!!', excessive punctuation"
+      ]
+    },
+    {
+      "title": "Send a test and then launch",
+      "description": "Check everything before hitting send.",
+      "substeps": [
+        "Send a test email to yourself",
+        "Check: Does it look good on mobile? Any typos? Links work?",
+        "Schedule for Tuesday-Thursday, 10am-2pm (best open rates)",
+        "Hit send!"
+      ]
+    },
+    {
+      "title": "Track results",
+      "description": "See what worked so you can improve.",
+      "substeps": [
+        "Check open rate (20-30% is good for local businesses)",
+        "Check click rate (2-5% is typical)",
+        "Track replies and bookings from the campaign",
+        "Use learnings for your next email"
+      ]
+    }
+  ],
+  "successMessage": "You just sent your first email campaign! Past customers are your easiest sales.",
+  "proTips": [
+    "Send at least one email per month to stay top-of-mind",
+    "Seasonal emails perform great: spring cleanup, fall prep, holiday scheduling",
+    "Include before/after photos when possible — visual proof beats text"
+  ]
+}

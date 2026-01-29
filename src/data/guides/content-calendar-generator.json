@@ -1,0 +1,72 @@
+{
+  "title": "How to Create a Content Calendar with AI",
+  "description": "Plan a month of social media posts in 30 minutes instead of scrambling daily.",
+  "difficulty": "Easy",
+  "time": "30 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "Google Sheets or a note-taking app",
+    "10-20 photos from recent jobs"
+  ],
+  "steps": [
+    {
+      "title": "Ask ChatGPT to create your calendar",
+      "description": "Get a full month planned in one prompt.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Try: 'Create a 4-week social media content calendar for a [your trade] business. Include 3 posts per week. Mix educational tips, before/after showcases, behind-the-scenes, and promotional content. Give me the post topic and a brief description for each.'",
+        "Review the calendar it creates"
+      ],
+      "tip": "Ask for variations: 'Make it more casual' or 'Add seasonal relevance for [month].'"
+    },
+    {
+      "title": "Organize in a simple spreadsheet",
+      "description": "Make it easy to track and execute.",
+      "substeps": [
+        "Create a Google Sheet with columns: Date | Post Type | Topic | Caption | Photo Needed | Posted?",
+        "Fill in the dates for the next 4 weeks",
+        "Copy ChatGPT's suggestions into the Topic column",
+        "This is your content calendar"
+      ]
+    },
+    {
+      "title": "Generate the actual captions",
+      "description": "Get ChatGPT to write each post.",
+      "substeps": [
+        "For each topic, ask: 'Write a Facebook/Instagram post about [topic] for my [trade] business. Keep it under 200 words and include a call-to-action.'",
+        "Copy each caption into your spreadsheet",
+        "Tweak to match your voice",
+        "Do this in batches — write a week's worth at once"
+      ]
+    },
+    {
+      "title": "Match photos to posts",
+      "description": "Good photos make good posts.",
+      "substeps": [
+        "Look at each topic — what photo would work?",
+        "Use your library of job photos",
+        "Before/after pairs are gold",
+        "If you don't have the right photo, add it to your shot list"
+      ],
+      "tip": "Take 3-5 photos at every job. You'll always have content."
+    },
+    {
+      "title": "Schedule or post weekly",
+      "description": "Execute your calendar consistently.",
+      "substeps": [
+        "Option 1: Schedule posts with Buffer (free) or Meta Business Suite (free)",
+        "Option 2: Set a reminder to post each day based on your calendar",
+        "Post at consistent times (evenings and weekends often perform well)",
+        "Check off each post as you publish it"
+      ]
+    }
+  ],
+  "successMessage": "You have a month of content planned! No more 'what should I post today?' stress.",
+  "proTips": [
+    "Batch content creation: Write all posts on Sunday, schedule for the week",
+    "Repurpose content: Same post can go on Facebook, Instagram, and Nextdoor",
+    "Refresh your calendar monthly — keep seasonal content relevant"
+  ]
+}

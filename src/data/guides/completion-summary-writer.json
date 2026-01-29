@@ -1,0 +1,71 @@
+{
+  "title": "How to Write Job Completion Summaries",
+  "description": "Send a professional recap after every job to justify your price and set up the review request.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone with camera",
+    "ChatGPT account (free)",
+    "Photos of the completed work"
+  ],
+  "steps": [
+    {
+      "title": "Take completion photos",
+      "description": "Document the finished job before you leave.",
+      "substeps": [
+        "Take 3-5 photos of the completed work",
+        "Get wide shots and detail shots",
+        "Include before/after if you took 'before' photos",
+        "Good lighting makes everything look better"
+      ],
+      "tip": "These photos serve multiple purposes: customer summary, portfolio, review request, dispute protection."
+    },
+    {
+      "title": "Use ChatGPT to write the summary",
+      "description": "Get a professional recap in seconds.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Write a job completion summary for a [your trade] job. Include: what was done, any recommendations for future maintenance, and a thank you. Keep it to 3-4 short paragraphs.'",
+        "Fill in the specifics of what you actually did"
+      ]
+    },
+    {
+      "title": "Personalize with job details",
+      "description": "Add the specific details of this job.",
+      "substeps": [
+        "Replace generic text with actual work performed",
+        "Mention any issues you found and fixed",
+        "Include any recommendations (creates future business)",
+        "Add the customer's name"
+      ],
+      "tip": "Specificity builds trust. 'Replaced the PRV valve' beats 'Fixed the plumbing.'"
+    },
+    {
+      "title": "Send via text or email",
+      "description": "Deliver the summary with photos attached.",
+      "substeps": [
+        "Text is fine for small jobs — attach 2-3 photos",
+        "Email works better for larger jobs with more details",
+        "Include your invoice or payment link if not paid yet",
+        "Send within an hour of finishing"
+      ]
+    },
+    {
+      "title": "Follow up with a review request",
+      "description": "The completion summary sets up a natural review ask.",
+      "substeps": [
+        "Wait 1-2 hours after sending the summary",
+        "Send: 'Glad we could help! If you're happy with the work, a Google review would really help us out: [your review link]'",
+        "Or include the review ask in the summary itself"
+      ]
+    }
+  ],
+  "successMessage": "You sent a professional job summary! Customers appreciate the communication and are primed to leave a review.",
+  "proTips": [
+    "Completion summaries reduce disputes — you have documented proof of what was done",
+    "Recommendations in the summary plant seeds for future work",
+    "Save your best summaries as templates for similar jobs"
+  ]
+}

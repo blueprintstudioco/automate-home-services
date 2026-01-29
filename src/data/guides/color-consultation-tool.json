@@ -1,0 +1,83 @@
+{
+  "title": "How to Offer Color Consultation with AI Tools",
+  "description": "Help customers choose colors using AI visualization tools — a great differentiator for painters.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone with camera",
+    "Photos of the customer's space",
+    "Familiarity with paint brand apps or AI tools"
+  ],
+  "steps": [
+    {
+      "title": "Use paint brand visualizer apps",
+      "description": "Major paint brands offer free color visualization.",
+      "substeps": [
+        "Sherwin-Williams ColorSnap: Take a photo, try colors on walls",
+        "Benjamin Moore Color Portfolio: Similar functionality",
+        "Behr ColorSmart: Works with Home Depot colors",
+        "All are free on iPhone and Android"
+      ],
+      "tip": "Use the brand you actually stock — makes ordering easier."
+    },
+    {
+      "title": "Take good photos of the space",
+      "description": "Better photos = better visualizations.",
+      "substeps": [
+        "Take photos in natural daylight",
+        "Get the whole wall in frame",
+        "Minimize shadows and glare",
+        "Take multiple angles — some work better than others"
+      ]
+    },
+    {
+      "title": "Use the visualizer with your customer",
+      "description": "Make it an interactive experience.",
+      "substeps": [
+        "Open the app and upload their photo",
+        "Tap on the wall to select the area to change",
+        "Try colors they're considering",
+        "Show them 3-5 options side by side"
+      ],
+      "tip": "Let them hold the phone and swipe through colors — it's engaging."
+    },
+    {
+      "title": "Suggest complementary colors",
+      "description": "Add value beyond just the color they asked about.",
+      "substeps": [
+        "Use the app's 'coordinating colors' feature",
+        "Suggest trim colors that work with their choice",
+        "Recommend accent wall options",
+        "This often leads to bigger jobs"
+      ]
+    },
+    {
+      "title": "Try AI color tools for more options",
+      "description": "Newer AI tools can do even more.",
+      "substeps": [
+        "ChatGPT can suggest color palettes for their style",
+        "Prompt: 'Suggest paint color palettes for a modern farmhouse living room'",
+        "Then visualize those suggestions in the paint brand app",
+        "Some AI image tools can recolor photos directly"
+      ]
+    },
+    {
+      "title": "Make it part of your quote process",
+      "description": "Color consultation is a selling point.",
+      "substeps": [
+        "Mention 'free color consultation' in your marketing",
+        "During estimates, offer to visualize colors",
+        "Send visualizations in your quote email",
+        "This differentiates you from painters who just slap on paint"
+      ]
+    }
+  ],
+  "successMessage": "You can now offer color consultation! Customers love seeing their choices before committing.",
+  "proTips": [
+    "Save visualizations and send them to the customer — they'll share with family",
+    "Learn about color theory basics — warm vs cool, complementary colors",
+    "Upsell: 'A lot of people end up doing an accent wall here too'"
+  ]
+}

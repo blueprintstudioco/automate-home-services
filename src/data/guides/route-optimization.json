@@ -1,0 +1,75 @@
+{
+  "title": "How to Optimize Your Routes and Save Drive Time",
+  "description": "Cut fuel costs and fit more jobs per day with smarter route planning.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone with Google Maps",
+    "Your list of jobs for the day or week",
+    "Home or office address as starting point"
+  ],
+  "steps": [
+    {
+      "title": "Use Google Maps for simple route planning",
+      "description": "For 2-3 stops, Google Maps handles it well.",
+      "substeps": [
+        "Open Google Maps",
+        "Enter your first destination",
+        "Tap the three dots → 'Add stop'",
+        "Add up to 9 additional stops",
+        "Google automatically optimizes the order"
+      ],
+      "tip": "Drag stops to manually reorder if you have time constraints."
+    },
+    {
+      "title": "Try a free route optimizer for more stops",
+      "description": "When you have 5+ stops, specialized tools work better.",
+      "substeps": [
+        "Free options: Circuit (free tier), RouteXL (free for 20 stops)",
+        "Go to routexl.com",
+        "Import your addresses (copy-paste or upload)",
+        "Click 'Find Route' and it optimizes the order",
+        "Export to Google Maps for turn-by-turn navigation"
+      ]
+    },
+    {
+      "title": "Group jobs by area",
+      "description": "The easiest optimization is geographic clustering.",
+      "substeps": [
+        "When scheduling, ask: 'What else is near this job?'",
+        "Try to book same-area jobs on the same day",
+        "Label jobs by zone in your calendar/CRM",
+        "Mondays: North side, Tuesdays: South side, etc."
+      ],
+      "tip": "Even rough geographic grouping can cut drive time by 20-30%."
+    },
+    {
+      "title": "Consider traffic patterns",
+      "description": "When you drive matters as much as where.",
+      "substeps": [
+        "Schedule far jobs for early morning (before rush hour)",
+        "Midday: Focus on the area you're already in",
+        "Avoid crossing town during rush hour (7-9am, 4-6pm)",
+        "Google Maps' 'Depart at' feature shows predicted traffic"
+      ]
+    },
+    {
+      "title": "Review and improve weekly",
+      "description": "Learn from what worked and what didn't.",
+      "substeps": [
+        "Friday: Look at how much you drove this week",
+        "Could any jobs have been grouped better?",
+        "Track: Jobs per day, total miles driven",
+        "Goal: More jobs per day with fewer miles"
+      ]
+    }
+  ],
+  "successMessage": "You're now planning smarter routes! Less driving means more jobs and lower costs.",
+  "proTips": [
+    "Your vehicle cost is roughly $0.50-0.70/mile. 20 fewer miles/day = $3,000+/year saved",
+    "Tell customers you can offer a discount if they're flexible on timing and near other jobs",
+    "If you hire helpers, route optimization becomes even more valuable"
+  ]
+}

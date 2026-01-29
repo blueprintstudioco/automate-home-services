@@ -1,0 +1,74 @@
+{
+  "title": "How to Capture Job Notes Using Voice-to-Text",
+  "description": "Document jobs hands-free using your phone's voice features. No typing required.",
+  "difficulty": "Easy",
+  "time": "5 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone (iPhone or Android)",
+    "The built-in notes or voice memo app",
+    "5 minutes to practice"
+  ],
+  "steps": [
+    {
+      "title": "Use voice-to-text in your notes app",
+      "description": "The easiest way to capture notes hands-free.",
+      "substeps": [
+        "Open Notes (iPhone) or Google Keep (Android)",
+        "Tap to create a new note",
+        "Tap the microphone icon on your keyboard",
+        "Speak your notes — it transcribes automatically"
+      ],
+      "tip": "Say punctuation out loud: 'Replaced water heater PERIOD Customer happy PERIOD'"
+    },
+    {
+      "title": "Try voice memos for longer notes",
+      "description": "Record audio now, transcribe later.",
+      "substeps": [
+        "Open Voice Memos (iPhone) or Recorder (Android)",
+        "Hit record and describe what you did",
+        "Include: What was done, any issues found, recommendations",
+        "Stop and save — transcribe later or keep the audio"
+      ]
+    },
+    {
+      "title": "Use Siri or Google Assistant",
+      "description": "Create notes without even unlocking your phone.",
+      "substeps": [
+        "Say: 'Hey Siri, take a note' or 'OK Google, take a note'",
+        "Dictate your job notes",
+        "The note is saved automatically",
+        "Review and organize later"
+      ],
+      "tip": "Works great when your hands are dirty or full."
+    },
+    {
+      "title": "Try Otter.ai for automatic transcription",
+      "description": "Free app that transcribes audio with high accuracy.",
+      "substeps": [
+        "Download Otter.ai (free on iPhone/Android)",
+        "Create an account",
+        "Hit record and speak your notes",
+        "Otter transcribes automatically with timestamps",
+        "Export or copy the text to your records"
+      ]
+    },
+    {
+      "title": "Create a job notes habit",
+      "description": "Make voice notes part of your job completion routine.",
+      "substeps": [
+        "Before leaving each job: Take 60 seconds to record notes",
+        "Include: What you did, what you found, what you recommend",
+        "Take photos while you're talking",
+        "This creates a complete job record"
+      ]
+    }
+  ],
+  "successMessage": "You can now document jobs hands-free! No more forgetting details or typing on a dirty phone.",
+  "proTips": [
+    "Voice notes + photos = bulletproof documentation for warranty claims or disputes",
+    "Review your voice notes weekly and add important info to your CRM",
+    "Some CRM apps (Jobber, HouseCall Pro) have built-in voice note features"
+  ]
+}

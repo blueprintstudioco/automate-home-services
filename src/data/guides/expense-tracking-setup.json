@@ -1,0 +1,77 @@
+{
+  "title": "How to Track Business Expenses for Tax Deductions",
+  "description": "Stop missing deductions. Set up simple expense tracking that could save you thousands.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "Your recent receipts (if you have any)",
+    "A free app account"
+  ],
+  "steps": [
+    {
+      "title": "Choose an expense tracking method",
+      "description": "Pick something you'll actually use.",
+      "substeps": [
+        "Simplest: Wave (waveapps.com) — free, tracks expenses and income together",
+        "Photo-based: Expensify (free tier) — snap receipts, auto-extracts info",
+        "Spreadsheet: Google Sheets — free, total control, requires discipline",
+        "Already use QuickBooks: Use its built-in expense tracking"
+      ],
+      "tip": "Wave is great if you already use it for invoicing — everything in one place."
+    },
+    {
+      "title": "Connect your business bank account",
+      "description": "Let the app pull in expenses automatically.",
+      "substeps": [
+        "In Wave: Go to Banking → Connect an account",
+        "Select your bank and log in",
+        "Transactions import automatically",
+        "Review and categorize new expenses weekly"
+      ],
+      "tip": "Use a separate bank account and credit card for business. Makes tracking 10x easier."
+    },
+    {
+      "title": "Learn the main expense categories",
+      "description": "Know what you can deduct.",
+      "substeps": [
+        "Equipment and tools",
+        "Vehicle expenses (mileage or actual costs)",
+        "Materials and supplies",
+        "Insurance, licenses, permits",
+        "Phone and internet (business portion)",
+        "Marketing and advertising",
+        "Professional services (accountant, lawyer)"
+      ]
+    },
+    {
+      "title": "Set up receipt capture",
+      "description": "Receipts are proof. No receipt = no deduction if audited.",
+      "substeps": [
+        "Download the Wave or Expensify app",
+        "When you buy something, snap a photo immediately",
+        "The app extracts the info and attaches it to the expense",
+        "Get in the habit: buy something, take a photo, move on"
+      ],
+      "tip": "Email receipts count too. Forward them to your app's email import address."
+    },
+    {
+      "title": "Review weekly",
+      "description": "10 minutes a week prevents tax season panic.",
+      "substeps": [
+        "Pick a day (Friday afternoon works well)",
+        "Log in and categorize any uncategorized expenses",
+        "Check for missing big purchases",
+        "Make sure everything looks right"
+      ]
+    }
+  ],
+  "successMessage": "You're now tracking expenses! Your tax preparer (and your wallet) will thank you.",
+  "proTips": [
+    "Most contractors miss $5,000-10,000 in deductions because of poor tracking",
+    "Track vehicle mileage — standard deduction is $0.67/mile for 2024. It adds up fast.",
+    "At year end, export your expenses and give them to your accountant. They'll love you."
+  ]
+}

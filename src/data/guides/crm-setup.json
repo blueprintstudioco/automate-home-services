@@ -1,0 +1,72 @@
+{
+  "title": "How to Set Up a Free CRM to Track Leads and Customers",
+  "description": "Stop losing leads in text threads and sticky notes. Get organized with a free CRM.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer or smartphone",
+    "An email address",
+    "A list of your current leads and customers (even if it's just in your head)"
+  ],
+  "steps": [
+    {
+      "title": "Choose a free CRM",
+      "description": "Pick one based on your comfort level with technology.",
+      "substeps": [
+        "For simplicity: HubSpot CRM (hubspot.com/crm) — free forever, easy to use",
+        "For trades: Jobber (jobber.com) — 14-day free trial, built for contractors",
+        "For spreadsheet lovers: Notion or Airtable — free, very flexible"
+      ],
+      "tip": "HubSpot is genuinely free forever with no catch. Start there if you're not sure."
+    },
+    {
+      "title": "Create your account",
+      "description": "Sign up and do the basic setup.",
+      "substeps": [
+        "Go to your chosen CRM website",
+        "Click 'Sign Up' or 'Start Free'",
+        "Enter your email and business name",
+        "Skip any sales calls — you don't need them to start"
+      ]
+    },
+    {
+      "title": "Add your first 5 contacts",
+      "description": "Don't try to import everyone at once. Start small.",
+      "substeps": [
+        "Think of 5 recent leads or customers",
+        "Click 'Add Contact' or '+'",
+        "Enter name, phone, email",
+        "Add a note about what they needed"
+      ],
+      "tip": "Include your most recent quote that hasn't closed yet. You'll follow up on it later."
+    },
+    {
+      "title": "Set up simple deal stages",
+      "description": "Track where each lead is in your process.",
+      "substeps": [
+        "Look for 'Deals' or 'Pipeline' in the menu",
+        "Create stages like: New Lead → Quote Sent → Won → Lost",
+        "Drag your contacts into the right stage",
+        "This is your visual sales tracker"
+      ]
+    },
+    {
+      "title": "Make it part of your routine",
+      "description": "A CRM only works if you use it daily.",
+      "substeps": [
+        "When a new lead calls: add them immediately",
+        "After sending a quote: update the stage",
+        "Set a reminder to check your CRM each morning",
+        "Review 'Quote Sent' deals weekly — follow up on stale ones"
+      ]
+    }
+  ],
+  "successMessage": "You now have a system to track every lead! No more wondering 'did I follow up with that guy?'",
+  "proTips": [
+    "The mobile app is key — add leads right after phone calls while the info is fresh",
+    "Don't over-complicate it. Name + phone + what they need is enough to start",
+    "Set up email templates for common messages like quote follow-ups"
+  ]
+}

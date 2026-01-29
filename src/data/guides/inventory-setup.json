@@ -1,0 +1,74 @@
+{
+  "title": "How to Track Inventory and Supplies",
+  "description": "Never run out mid-job again. Set up simple inventory tracking that saves trips and time.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "Knowledge of what supplies you use regularly",
+    "15 minutes to take stock of what you have"
+  ],
+  "steps": [
+    {
+      "title": "List your critical supplies",
+      "description": "Identify items you can't do jobs without.",
+      "substeps": [
+        "Think about what you use on every job",
+        "List items that would stop a job if you ran out",
+        "Include consumables (filters, fittings, paint, etc.)",
+        "Note where you typically buy each item"
+      ],
+      "tip": "Start with 10-15 items. Don't try to track everything at first."
+    },
+    {
+      "title": "Choose a tracking method",
+      "description": "Pick something simple you'll actually use.",
+      "substeps": [
+        "Simplest: A note on your phone with item and quantity",
+        "Better: Google Sheets with items, quantities, and reorder points",
+        "Best: An app like Sortly (free tier) or Inventory Now",
+        "Jobber/HouseCall Pro users: Use the built-in inventory feature"
+      ]
+    },
+    {
+      "title": "Do a quick inventory count",
+      "description": "Figure out what you currently have.",
+      "substeps": [
+        "Walk through your truck and shop",
+        "Count each item on your list",
+        "Enter the counts into your tracking system",
+        "Note any items that are low"
+      ]
+    },
+    {
+      "title": "Set reorder points",
+      "description": "Decide when to restock each item.",
+      "substeps": [
+        "For each item: How many do you use per week?",
+        "Set reorder point at 2 weeks worth of inventory",
+        "Example: Use 5 filters/week → Reorder when you hit 10",
+        "Consider lead time for items that take a while to get"
+      ],
+      "tip": "When in doubt, err on the side of having more. Running out costs more than storage."
+    },
+    {
+      "title": "Create a weekly check routine",
+      "description": "Inventory only works if you keep it updated.",
+      "substeps": [
+        "Pick a day (Sunday evening or Monday morning)",
+        "Walk through and update counts",
+        "Check items against reorder points",
+        "Place orders for anything that's low",
+        "5-10 minutes saves hours of emergency runs"
+      ]
+    }
+  ],
+  "successMessage": "You now have an inventory system! No more running to the supply house mid-job.",
+  "proTips": [
+    "Keep a small 'emergency kit' with common items in your truck even beyond your main inventory",
+    "Track what you use per job to improve your estimates",
+    "Some suppliers offer auto-replenishment programs — worth asking about"
+  ]
+}

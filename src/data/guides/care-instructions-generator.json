@@ -1,0 +1,71 @@
+{
+  "title": "How to Create Care Instruction Templates",
+  "description": "Give customers professional after-care instructions that reduce callbacks and show expertise.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "Knowledge of your services and maintenance needs",
+    "A way to deliver instructions (text, email, or print)"
+  ],
+  "steps": [
+    {
+      "title": "List your main services",
+      "description": "Identify which services need care instructions.",
+      "substeps": [
+        "Think about services where customers need to maintain the work",
+        "Example: Paint jobs (curing time, cleaning), new installations (break-in period), landscaping (watering schedule)",
+        "Prioritize services that generate the most callbacks"
+      ],
+      "tip": "Start with the service that gets the most 'is this normal?' calls."
+    },
+    {
+      "title": "Use ChatGPT to create the instructions",
+      "description": "Generate professional care guides quickly.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Write care and maintenance instructions for a customer who just got [your service]. Include: what to do in the first 24-48 hours, ongoing maintenance, what's normal vs concerning, and when to call a professional.'",
+        "Review and add your specific recommendations"
+      ]
+    },
+    {
+      "title": "Make them easy to scan",
+      "description": "Customers won't read walls of text.",
+      "substeps": [
+        "Use bullet points",
+        "Bold the most important items",
+        "Include timeframes: 'First 24 hours:', 'First week:', 'Ongoing:'",
+        "Keep total length under 1 page"
+      ],
+      "tip": "Think of it like a receipt — scannable, key points obvious."
+    },
+    {
+      "title": "Create templates for each service",
+      "description": "Build your library over time.",
+      "substeps": [
+        "Save each set of instructions as a template",
+        "Name them clearly: 'Care Instructions - Interior Paint'",
+        "Store in Google Docs or your notes app",
+        "Update as you learn what customers need to know"
+      ]
+    },
+    {
+      "title": "Deliver instructions automatically",
+      "description": "Make sending them effortless.",
+      "substeps": [
+        "Send via text with the job completion summary",
+        "Or email as a PDF attachment",
+        "Or print and leave with the customer",
+        "Add to your job completion checklist so you never forget"
+      ]
+    }
+  ],
+  "successMessage": "You now have professional care instructions! Customers feel taken care of and callbacks decrease.",
+  "proTips": [
+    "Care instructions reduce 'is this normal?' calls significantly",
+    "They also set you up for future business: 'Schedule your annual maintenance...'",
+    "Include your contact info at the bottom in case they have questions"
+  ]
+}

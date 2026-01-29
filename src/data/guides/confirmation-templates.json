@@ -1,0 +1,71 @@
+{
+  "title": "How to Create Booking Confirmation Templates",
+  "description": "Send professional confirmations that reduce cancellations and set expectations.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "ChatGPT account (free)",
+    "Your typical appointment details"
+  ],
+  "steps": [
+    {
+      "title": "Create your confirmation template",
+      "description": "Use ChatGPT to write a professional confirmation message.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Write a friendly booking confirmation text for a [your trade] appointment. Include: date, time, address, what to expect, and contact number. Keep it professional but warm.'",
+        "Review and adjust to match your style"
+      ],
+      "tip": "Keep it short — long confirmations don't get read."
+    },
+    {
+      "title": "Include the essential details",
+      "description": "Every confirmation should have these elements.",
+      "substeps": [
+        "Date and time of the appointment",
+        "Service address (even if you think they know it)",
+        "What you'll be doing",
+        "Your phone number",
+        "Any prep they need to do (clear the area, be home, etc.)"
+      ]
+    },
+    {
+      "title": "Save it for easy access",
+      "description": "Store your template where you can grab it fast.",
+      "substeps": [
+        "iPhone: Create a text replacement in Settings → General → Keyboard → Text Replacement",
+        "Type shortcut like 'conf1' that expands to your full message",
+        "Or save it in Notes and copy-paste each time"
+      ],
+      "tip": "The goal is sending a confirmation in under 30 seconds."
+    },
+    {
+      "title": "Set up automatic confirmations (optional)",
+      "description": "Let your booking tool send them for you.",
+      "substeps": [
+        "Calendly/Jobber/HouseCall Pro: Go to notification settings",
+        "Enable 'Booking confirmation email/text'",
+        "Customize the message template",
+        "Test it by booking yourself"
+      ]
+    },
+    {
+      "title": "Use the template every time",
+      "description": "Make confirmation part of your booking process.",
+      "substeps": [
+        "Every time you schedule a job, send the confirmation immediately",
+        "Don't wait — send it while you're still on the phone with them",
+        "Ask them to confirm receipt: 'Did you get my text?'"
+      ]
+    }
+  ],
+  "successMessage": "You now have a professional confirmation template! Customers feel taken care of and cancellations drop.",
+  "proTips": [
+    "Confirmation = commitment. Customers who confirm are much less likely to cancel.",
+    "Include 'Reply YES to confirm' — it increases show rates",
+    "Send confirmation via text AND email for important jobs"
+  ]
+}

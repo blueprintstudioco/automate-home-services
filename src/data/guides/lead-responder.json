@@ -1,0 +1,71 @@
+{
+  "title": "How to Respond to Leads Instantly with Templates",
+  "description": "Set up instant auto-replies so leads hear from you in seconds, not hours.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "Access to your business phone or messaging app",
+    "5 minutes to write a quick response template"
+  ],
+  "steps": [
+    {
+      "title": "Write your instant response template",
+      "description": "Create a friendly message that goes out immediately when someone contacts you.",
+      "substeps": [
+        "Open ChatGPT (chat.openai.com)",
+        "Ask: 'Write a friendly auto-reply for a [your trade] business. Keep it short, confirm we got their message, and say we'll call back within 1 hour.'",
+        "Copy the response and tweak it to sound like you"
+      ],
+      "tip": "Example: 'Thanks for reaching out to [Business Name]! Got your message and I'll call you back within the hour. - Mike'"
+    },
+    {
+      "title": "Set up text auto-reply (iPhone)",
+      "description": "Use the built-in auto-reply feature.",
+      "substeps": [
+        "Go to Settings → Focus → Do Not Disturb",
+        "Scroll down and tap 'Auto-Reply'",
+        "Turn on 'Auto-Reply' and paste your message",
+        "Note: This only works when Do Not Disturb is on"
+      ],
+      "tip": "For always-on auto-reply, you'll need an app like OpenPhone or a CRM."
+    },
+    {
+      "title": "Set up text auto-reply (Android)",
+      "description": "Download an auto-reply app.",
+      "substeps": [
+        "Search 'SMS Auto Reply' in the Play Store",
+        "Download 'SMS Auto Reply' by RootUninstaller",
+        "Create a new rule for 'All incoming messages'",
+        "Paste your template and turn it on"
+      ]
+    },
+    {
+      "title": "Set up email auto-reply",
+      "description": "Auto-respond to emails from your website or contact form.",
+      "substeps": [
+        "In Gmail: Settings → See all settings → Vacation responder",
+        "Turn it on and paste your message",
+        "For better results, use your website form's built-in auto-reply"
+      ]
+    },
+    {
+      "title": "Test it yourself",
+      "description": "Make sure it actually works.",
+      "substeps": [
+        "Text your business number from a different phone",
+        "Check that the auto-reply comes through",
+        "Send yourself an email too",
+        "Adjust the message if needed"
+      ]
+    }
+  ],
+  "successMessage": "Now every lead gets an instant response! They know you're alive and will call back soon.",
+  "proTips": [
+    "The goal is speed, not perfection. A fast 'got it!' beats a slow detailed response",
+    "Consider OpenPhone ($15/mo) for a dedicated business line with better auto-reply features",
+    "Still call them back ASAP — auto-reply buys you time, not infinite patience"
+  ]
+}

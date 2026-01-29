@@ -1,0 +1,73 @@
+{
+  "title": "How to Track Your Fleet and Equipment with FieldFix",
+  "description": "Know where your trucks are, when equipment needs service, and never miss maintenance again.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free tier available",
+  "costType": "Freemium",
+  "requirements": [
+    "A smartphone (iPhone or Android)",
+    "Vehicles or equipment you want to track",
+    "Basic info about your equipment (make, model, hours/miles)"
+  ],
+  "steps": [
+    {
+      "title": "Sign up for FieldFix",
+      "description": "Create your free account at fieldfix.ai",
+      "substeps": [
+        "Go to fieldfix.ai on your phone or computer",
+        "Click 'Get Started' or 'Sign Up'",
+        "Enter your email and create a password",
+        "Verify your email to activate your account"
+      ],
+      "tip": "FieldFix is built specifically for contractors and field service businesses — it's not just a generic tracker."
+    },
+    {
+      "title": "Add your first vehicle or equipment",
+      "description": "Start with your most important vehicle.",
+      "substeps": [
+        "Click 'Add Equipment' or the + button",
+        "Enter: Name (e.g., 'Work Truck 1'), type, make, model, year",
+        "Add current mileage or engine hours",
+        "Upload a photo if you want (makes it easy to identify)"
+      ]
+    },
+    {
+      "title": "Set up maintenance schedules",
+      "description": "Tell FieldFix when things need service so it can remind you.",
+      "substeps": [
+        "Click on your equipment, then 'Maintenance Schedule'",
+        "Add common items: oil change (every 5k miles), filter replacement, tire rotation",
+        "For equipment: teeth replacement, hydraulic service, belt inspection",
+        "Set the interval (miles, hours, or time)"
+      ],
+      "tip": "Start with the expensive stuff — the maintenance that prevents $5,000 repairs."
+    },
+    {
+      "title": "Enable location tracking (optional)",
+      "description": "Know where your vehicles are in real-time.",
+      "substeps": [
+        "Install the FieldFix app on phones that stay in vehicles",
+        "Enable location permissions when asked",
+        "Or purchase a GPS tracker device for always-on tracking",
+        "View all vehicles on the map in your dashboard"
+      ]
+    },
+    {
+      "title": "Log your first maintenance",
+      "description": "Start building your service history.",
+      "substeps": [
+        "When you do maintenance, open FieldFix",
+        "Tap the equipment, then 'Log Service'",
+        "Enter what was done, cost, and current miles/hours",
+        "Take a photo of the receipt — it's stored with the record"
+      ]
+    }
+  ],
+  "successMessage": "You're now tracking your fleet! You'll get reminders before maintenance is due and have records when it's time to sell.",
+  "proTips": [
+    "Track equipment hours, not just miles — a mulcher with 500 hours needs different care than one with 50",
+    "Use FieldFix records when selling equipment — documented maintenance adds resale value",
+    "Set reminders a week BEFORE service is due so you can schedule it"
+  ]
+}

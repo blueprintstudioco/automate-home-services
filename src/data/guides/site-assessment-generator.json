@@ -1,0 +1,74 @@
+{
+  "title": "How to Create Site Assessment Checklists",
+  "description": "Use consistent checklists for site visits so you never miss details and give accurate quotes.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "Knowledge of what you check during site visits",
+    "A smartphone or clipboard for using the checklist"
+  ],
+  "steps": [
+    {
+      "title": "List what you check on site visits",
+      "description": "Think through a typical assessment.",
+      "substeps": [
+        "What do you look at first?",
+        "What measurements do you take?",
+        "What questions do you ask the customer?",
+        "What factors affect your pricing?",
+        "What photos do you take?"
+      ],
+      "tip": "Think about a time you missed something. Add that to the list."
+    },
+    {
+      "title": "Use ChatGPT to organize it",
+      "description": "Turn your notes into a proper checklist.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Create a site assessment checklist for a [your trade] business. Include sections for: property info, measurements, condition assessment, photo documentation, customer questions, and pricing factors.'",
+        "Review and add your specific items"
+      ]
+    },
+    {
+      "title": "Add your pricing factors",
+      "description": "Include everything that affects your quote.",
+      "substeps": [
+        "Access: Is it easy to get equipment in?",
+        "Complexity: Standard job or complications?",
+        "Materials: What type/grade will you use?",
+        "Condition: Any prep work needed?",
+        "Timeline: Rush job or flexible?"
+      ]
+    },
+    {
+      "title": "Make it mobile-friendly",
+      "description": "You'll use this in the field.",
+      "substeps": [
+        "Option 1: Google Docs on your phone",
+        "Option 2: Notion or a notes app",
+        "Option 3: Print copies on a clipboard",
+        "Option 4: Use your CRM's built-in forms (Jobber, HouseCall Pro)"
+      ],
+      "tip": "Digital beats paper — you can attach photos directly."
+    },
+    {
+      "title": "Use it consistently",
+      "description": "A checklist only works if you use it every time.",
+      "substeps": [
+        "Pull up the checklist before every site visit",
+        "Go through every item — even if it seems obvious",
+        "Take photos as you go",
+        "Note anything unusual for follow-up"
+      ]
+    }
+  ],
+  "successMessage": "You have a professional site assessment checklist! Consistent assessments = accurate quotes = fewer surprises.",
+  "proTips": [
+    "Keep refining your checklist. When you miss something, add it.",
+    "Create different checklists for different job types",
+    "Share checklists with helpers so they assess jobs the same way"
+  ]
+}

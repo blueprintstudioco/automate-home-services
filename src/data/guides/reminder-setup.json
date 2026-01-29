@@ -1,0 +1,73 @@
+{
+  "title": "How to Set Up Automated Appointment Reminders",
+  "description": "Reduce no-shows by 50% with automatic text and email reminders.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "An online booking system (Calendly, Jobber, or similar)",
+    "Your customers' phone numbers or emails",
+    "5 minutes to write a reminder message"
+  ],
+  "steps": [
+    {
+      "title": "Check your current booking tool",
+      "description": "Most booking tools have built-in reminders — you just need to turn them on.",
+      "substeps": [
+        "Calendly: Has free email reminders built-in",
+        "Jobber/HouseCall Pro: Has text and email reminders",
+        "Google Calendar: Can send email reminders (basic)",
+        "If you don't have a booking tool, start with Calendly (free)"
+      ],
+      "tip": "Text reminders get 98% open rates. Email is good, text is better."
+    },
+    {
+      "title": "Set up reminders in Calendly",
+      "description": "Turn on the free reminder feature.",
+      "substeps": [
+        "Log into calendly.com",
+        "Click on your event type",
+        "Go to 'Communications' or 'Notifications'",
+        "Turn on email reminders (24 hours and 1 hour before work great)",
+        "Customize the message if you want"
+      ]
+    },
+    {
+      "title": "Set up text reminders (if your tool supports it)",
+      "description": "Text reminders are the most effective.",
+      "substeps": [
+        "In Jobber/HouseCall Pro: Go to Settings → Notifications",
+        "Enable 'Appointment Reminders'",
+        "Choose when to send (24 hours + 2 hours before is ideal)",
+        "Add your business name to the message so they know who it's from"
+      ],
+      "tip": "Include: Date, time, address, and your phone number in case they need to reschedule."
+    },
+    {
+      "title": "Write a good reminder message",
+      "description": "Keep it short and include all the essential info.",
+      "substeps": [
+        "Example: 'Reminder: [Your Business] appointment tomorrow at 9am. Address: [their address]. Questions? Call [your number]. See you then!'",
+        "Include a way to confirm or reschedule",
+        "Keep it under 160 characters if texting (to avoid splitting)"
+      ]
+    },
+    {
+      "title": "Alternative: Use Google Calendar reminders",
+      "description": "A free backup option if you don't have a booking tool yet.",
+      "substeps": [
+        "When adding an event, click 'Add notification'",
+        "Set email or SMS reminder (SMS requires setup)",
+        "Add the customer as a guest so they get reminders too",
+        "This is manual but works in a pinch"
+      ]
+    }
+  ],
+  "successMessage": "Your customers now get automatic reminders! No-shows will drop dramatically.",
+  "proTips": [
+    "Send two reminders: one 24 hours before and one 1-2 hours before",
+    "Ask customers to confirm — 'Reply YES to confirm' catches issues early",
+    "If someone no-shows, follow up with a reschedule offer instead of writing them off"
+  ]
+}

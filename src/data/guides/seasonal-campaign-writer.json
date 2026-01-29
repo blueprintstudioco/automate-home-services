@@ -1,0 +1,83 @@
+{
+  "title": "How to Create Seasonal Marketing Campaigns",
+  "description": "Run targeted campaigns that fill your calendar during peak seasons.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "A list of past customers",
+    "Knowledge of your seasonal peaks and valleys"
+  ],
+  "steps": [
+    {
+      "title": "Map your seasonal opportunities",
+      "description": "Identify when customers need you most.",
+      "substeps": [
+        "Spring: AC tune-ups, landscaping, exterior painting",
+        "Summer: HVAC repairs, deck work, outdoor projects",
+        "Fall: Heating prep, gutter cleaning, winterization",
+        "Winter: Emergency repairs, holiday lighting, indoor projects",
+        "List your services by season"
+      ],
+      "tip": "Start campaigns 4-6 weeks before peak season to fill your calendar early."
+    },
+    {
+      "title": "Use ChatGPT to create campaign messaging",
+      "description": "Get compelling seasonal content quickly.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Try: 'Create a seasonal marketing campaign for a [trade] business for [season]. Include: email subject line, email body, social media post, and text message. Focus on [specific service].'",
+        "Review and personalize the content"
+      ]
+    },
+    {
+      "title": "Create an early-bird offer",
+      "description": "Reward customers who book early.",
+      "substeps": [
+        "Example: 'Book your spring AC tune-up by March 15, save 15%'",
+        "Early booking fills slow periods and improves cash flow",
+        "Create urgency: Limited slots, deadline, or quantity",
+        "ChatGPT can write compelling offer copy for you"
+      ]
+    },
+    {
+      "title": "Schedule your multi-channel campaign",
+      "description": "Hit customers in multiple ways.",
+      "substeps": [
+        "Week 1: Email announcement to past customers",
+        "Week 1: Social media posts (Facebook, Instagram, Nextdoor)",
+        "Week 2: Follow-up email to non-openers",
+        "Week 2: Text message to your best customers"
+      ],
+      "tip": "The same message in different channels dramatically increases response."
+    },
+    {
+      "title": "Add a personal touch",
+      "description": "Mass campaigns feel better when personalized.",
+      "substeps": [
+        "Use first names in emails",
+        "Reference their last service if you can",
+        "Send from your name, not just the business name",
+        "For VIP customers, add a handwritten note or personal call"
+      ]
+    },
+    {
+      "title": "Track and improve",
+      "description": "Learn what works for next year.",
+      "substeps": [
+        "Track: How many opened, clicked, booked",
+        "Note which channel performed best",
+        "Save your successful campaigns for next year",
+        "Test different offers to see what resonates"
+      ]
+    }
+  ],
+  "successMessage": "Your seasonal campaign is ready! Early booking fills your calendar and smooths out cash flow.",
+  "proTips": [
+    "Create a seasonal campaign calendar at the start of each year",
+    "Time campaigns around billing cycles — people are more likely to spend after payday",
+    "Combine seasonal with referral: 'Refer a friend and you both get spring cleaning 15% off'"
+  ]
+}

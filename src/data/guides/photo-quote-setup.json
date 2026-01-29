@@ -1,0 +1,73 @@
+{
+  "title": "How to Set Up Photo-Based Quoting",
+  "description": "Let customers send photos for quick estimates without an on-site visit.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "A way to receive photos (text, email, or form)",
+    "Your typical pricing structure"
+  ],
+  "steps": [
+    {
+      "title": "Decide which services qualify for photo quotes",
+      "description": "Not every job can be quoted from a photo.",
+      "substeps": [
+        "Good for photos: Surface-level work (painting, fencing, landscaping, deck staining)",
+        "Sometimes works: Visible repairs, mulching, pressure washing",
+        "Usually needs a visit: Electrical, plumbing inside walls, complex HVAC",
+        "Make a list of services you can quote from photos"
+      ],
+      "tip": "Photo quotes work best for visual, straightforward work."
+    },
+    {
+      "title": "Create a simple submission method",
+      "description": "Make it easy for customers to send photos.",
+      "substeps": [
+        "Simplest: Give them your phone number for text photos",
+        "Better: Create a Google Form that accepts photo uploads",
+        "Or: Add a 'Send Photos for Quote' form to your website",
+        "Typeform (free tier) makes nice photo upload forms"
+      ]
+    },
+    {
+      "title": "Tell them what to photograph",
+      "description": "Good photos = accurate quotes.",
+      "substeps": [
+        "Create a short guide: 'For the best quote, please send...'",
+        "Include: Wide shot of the whole area, close-up of any problem spots, measurements if possible",
+        "Ask for context: age of home, last time work was done, timeline",
+        "Add this guidance wherever you request photos"
+      ],
+      "tip": "Ask for photos in good lighting. Dark photos = bad estimates."
+    },
+    {
+      "title": "Set expectations about accuracy",
+      "description": "Protect yourself from misquotes.",
+      "substeps": [
+        "Always say: 'This is an estimate based on photos. Final price may vary after on-site inspection.'",
+        "Include: 'Price assumes standard conditions. Complex situations may cost more.'",
+        "For big jobs, say the photo quote is a 'range' not a fixed price"
+      ]
+    },
+    {
+      "title": "Respond quickly with a range",
+      "description": "Speed beats perfection.",
+      "substeps": [
+        "Aim to respond within 2-4 hours",
+        "Give a range: 'Based on the photos, this typically runs $X-$Y'",
+        "Offer to confirm with a quick site visit",
+        "Include your next availability"
+      ],
+      "tip": "A fast approximate quote beats a slow precise one. You can refine later."
+    }
+  ],
+  "successMessage": "You can now give quick estimates from photos! This speeds up your sales process significantly.",
+  "proTips": [
+    "Use ChatGPT's vision feature to help analyze photos and suggest talking points",
+    "Save common photo quote templates for similar jobs",
+    "Track your photo quote accuracy — adjust your ranges based on actual job costs"
+  ]
+}

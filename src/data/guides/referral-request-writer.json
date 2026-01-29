@@ -1,0 +1,70 @@
+{
+  "title": "How to Ask for Referrals (Without Being Awkward)",
+  "description": "Use ChatGPT to write natural referral requests that bring you free leads from happy customers.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "ChatGPT account (free at chat.openai.com)",
+    "A recent customer who was happy with your work"
+  ],
+  "steps": [
+    {
+      "title": "Pick the right moment",
+      "description": "Timing is everything for referral requests.",
+      "substeps": [
+        "Right after the job when they're happiest — same day or next day",
+        "Or after they leave a positive review",
+        "Or when they reach out to thank you or compliment your work"
+      ],
+      "tip": "Strike while the iron is hot. A week later, they've moved on."
+    },
+    {
+      "title": "Ask ChatGPT to write the request",
+      "description": "Get a natural-sounding message you can personalize.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Write a short text message asking a happy customer for referrals. I'm a [your trade]. Keep it casual and not salesy.'",
+        "Review the options it gives you"
+      ]
+    },
+    {
+      "title": "Personalize it",
+      "description": "Make it sound like you, not a robot.",
+      "substeps": [
+        "Add their name",
+        "Reference the specific job you did",
+        "Keep it short — 2-3 sentences max",
+        "Example: 'Hey Sarah! Glad you're loving the new fence. If you know anyone else who needs work done, I'd really appreciate a referral. Thanks!'"
+      ]
+    },
+    {
+      "title": "Make it easy to refer",
+      "description": "Remove friction from the referral process.",
+      "substeps": [
+        "Give them something to share: your phone number, website, or business card",
+        "Ask: 'Feel free to pass along my number to anyone who needs help'",
+        "Even better: 'Can I leave a few business cards with you?'"
+      ],
+      "tip": "Some people love referring but don't know how. Give them the words."
+    },
+    {
+      "title": "Consider a referral incentive",
+      "description": "Optional: Offer something in return.",
+      "substeps": [
+        "Simple: 'Send me a referral and I'll buy you a coffee!'",
+        "Better: '$25 off your next service for every referral'",
+        "Best: '$50 cash or gift card when they book'",
+        "Track referrals so you can thank the right people"
+      ]
+    }
+  ],
+  "successMessage": "You asked for a referral! Referred customers close 4x faster and spend more than cold leads.",
+  "proTips": [
+    "Ask every single happy customer. The worst they can say is no.",
+    "Thank people immediately when they send a referral — even if the lead doesn't close",
+    "Add 'How did you hear about us?' to your intake so you can track referral sources"
+  ]
+}

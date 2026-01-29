@@ -1,0 +1,74 @@
+{
+  "title": "How to Track Equipment Age for Proactive Sales",
+  "description": "Know when customer equipment is due for replacement and reach out before it fails.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "Customer records with equipment info",
+    "A spreadsheet or CRM",
+    "Knowledge of typical equipment lifespans"
+  ],
+  "steps": [
+    {
+      "title": "Know your equipment lifespans",
+      "description": "Different equipment has different expected lifetimes.",
+      "substeps": [
+        "Water heaters: 8-12 years",
+        "HVAC systems: 15-20 years",
+        "Furnaces: 15-20 years",
+        "Roofs: 20-25 years (asphalt shingles)",
+        "Research lifespans for equipment you work on"
+      ],
+      "tip": "Equipment in hard water areas or heavy use may need replacement sooner."
+    },
+    {
+      "title": "Create an equipment tracking spreadsheet",
+      "description": "Simple tracking works great.",
+      "substeps": [
+        "Create columns: Customer | Equipment Type | Brand | Install Date | Age | Expected Lifespan | Replacement Year",
+        "Add existing customers and their equipment",
+        "Calculate Replacement Year = Install Date + Lifespan",
+        "Sort by Replacement Year to see who needs attention soon"
+      ]
+    },
+    {
+      "title": "Collect data during service calls",
+      "description": "Build your database over time.",
+      "substeps": [
+        "When on a job, note equipment make and model",
+        "Look for install date stickers or manufacture date codes",
+        "Ask: 'How long have you had this?'",
+        "Add to your spreadsheet after each job"
+      ],
+      "tip": "Manufacture date is usually in the serial number. Google '[brand] serial number decoder.'"
+    },
+    {
+      "title": "Set up replacement reminders",
+      "description": "Reach out before equipment fails.",
+      "substeps": [
+        "Filter for equipment reaching replacement age this year",
+        "Add calendar reminders to reach out",
+        "Or create a monthly task: 'Review aging equipment list'",
+        "Contact customers 6-12 months before expected replacement"
+      ]
+    },
+    {
+      "title": "Create an outreach message",
+      "description": "Reach out proactively.",
+      "substeps": [
+        "Use ChatGPT: 'Write a friendly email to a customer whose [equipment] is [X] years old, suggesting they consider replacement before it fails. I'm a [trade] business.'",
+        "Personalize with their name and equipment details",
+        "Emphasize benefits of planned vs emergency replacement",
+        "Offer a free inspection or quote"
+      ]
+    }
+  ],
+  "successMessage": "You now track equipment age! Proactive outreach wins jobs before emergencies happen.",
+  "proTips": [
+    "Customers appreciate the heads-up — it's service, not sales",
+    "Emergency replacements cost more and have limited options — help them plan",
+    "Track warranty dates too — reach out when warranties expire"
+  ]
+}

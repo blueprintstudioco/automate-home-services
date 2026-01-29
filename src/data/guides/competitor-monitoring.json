@@ -1,0 +1,83 @@
+{
+  "title": "How to Monitor Your Competitors",
+  "description": "Stay ahead by tracking what customers say about competitors and finding opportunities they miss.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "Names of 3-5 local competitors",
+    "A Google account",
+    "15 minutes per month for ongoing monitoring"
+  ],
+  "steps": [
+    {
+      "title": "Identify your main competitors",
+      "description": "Know who you're competing with.",
+      "substeps": [
+        "Search Google for '[your service] near me'",
+        "Note the top 5 businesses that show up",
+        "Include any competitors customers mention to you",
+        "Look at who's advertising on Google and Facebook"
+      ],
+      "tip": "Focus on competitors in your service area, not big national companies."
+    },
+    {
+      "title": "Set up Google Alerts",
+      "description": "Get notified when competitors are mentioned online.",
+      "substeps": [
+        "Go to google.com/alerts",
+        "Create an alert for each competitor's business name",
+        "Choose 'As-it-happens' or 'Once a day' delivery",
+        "Add alerts for your own business name too"
+      ]
+    },
+    {
+      "title": "Analyze their Google reviews",
+      "description": "Learn from what customers say about them.",
+      "substeps": [
+        "Search '[Competitor Name] reviews' on Google",
+        "Read their recent Google reviews",
+        "Note what customers praise (do you do this too?)",
+        "Note complaints (can you solve these better?)"
+      ],
+      "tip": "Competitor complaints are your opportunities. If people complain about wait times, emphasize your fast response."
+    },
+    {
+      "title": "Check their Google Business Profile",
+      "description": "See what services and offers they're promoting.",
+      "substeps": [
+        "Look at their GBP listing",
+        "Note: Services listed, prices shown, recent posts",
+        "What photos do they use?",
+        "Are they running any promotions?"
+      ]
+    },
+    {
+      "title": "Follow their social media",
+      "description": "See how they market themselves.",
+      "substeps": [
+        "Find them on Facebook, Instagram, Nextdoor",
+        "Follow or bookmark their pages",
+        "Note: How often do they post? What content works?",
+        "What are people saying in the comments?"
+      ]
+    },
+    {
+      "title": "Do a monthly competitive review",
+      "description": "Stay updated without obsessing.",
+      "substeps": [
+        "Once a month, spend 15 minutes reviewing",
+        "Check their latest reviews (any patterns?)",
+        "Note any new services or promotions",
+        "Ask yourself: What can I learn from this?"
+      ]
+    }
+  ],
+  "successMessage": "You now have a system to track competitors! Use these insights to differentiate yourself.",
+  "proTips": [
+    "Don't copy competitors — look for gaps they're leaving",
+    "Negative reviews of competitors tell you what customers value most",
+    "If a competitor closes or struggles, reach out to their customers"
+  ]
+}

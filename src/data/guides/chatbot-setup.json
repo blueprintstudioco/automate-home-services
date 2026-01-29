@@ -1,0 +1,84 @@
+{
+  "title": "How to Add a Chatbot to Your Website",
+  "description": "Capture leads 24/7 with a chatbot that answers questions and books appointments.",
+  "difficulty": "Medium",
+  "time": "25 minutes",
+  "cost": "Free tier available",
+  "costType": "Freemium",
+  "requirements": [
+    "A website (even a basic one)",
+    "Access to edit your website (or your web person's help)",
+    "A list of common questions customers ask"
+  ],
+  "steps": [
+    {
+      "title": "Choose a chatbot platform",
+      "description": "Several free options work great for small businesses.",
+      "substeps": [
+        "Tidio: Free for 50 conversations/month — tidio.com (recommended for beginners)",
+        "HubSpot Chat: Free with HubSpot CRM — hubspot.com",
+        "Drift: Free tier available — drift.com",
+        "Tawk.to: Completely free — tawk.to"
+      ],
+      "tip": "Tidio is the easiest to set up. Tawk.to is free but more complex."
+    },
+    {
+      "title": "Sign up and create your bot",
+      "description": "Get started with the free tier.",
+      "substeps": [
+        "Go to tidio.com and click 'Get Started Free'",
+        "Enter your email and website URL",
+        "Choose 'Lead Generation' as your goal",
+        "Select your industry (Construction/Home Services)"
+      ]
+    },
+    {
+      "title": "Customize your greeting",
+      "description": "Write a welcoming first message.",
+      "substeps": [
+        "Change the default greeting to something friendly",
+        "Example: 'Hi! 👋 Looking for [your service]? I can answer questions or help you schedule a free estimate.'",
+        "Keep it short and action-oriented",
+        "Add a few quick reply buttons: 'Get a Quote', 'Our Services', 'Contact Info'"
+      ]
+    },
+    {
+      "title": "Set up automated responses",
+      "description": "Program answers to common questions.",
+      "substeps": [
+        "Go to 'Automation' or 'Chatbots' section",
+        "Add common Q&As: pricing, service area, hours, how to book",
+        "For pricing: 'Our pricing varies by project. Can I get your info for a free quote?'",
+        "Always end with a way to capture their contact info"
+      ],
+      "tip": "Use ChatGPT to help write these responses: 'Write a friendly chatbot response about [topic] for a [trade] business.'"
+    },
+    {
+      "title": "Add the chatbot to your website",
+      "description": "Copy-paste a small code snippet.",
+      "substeps": [
+        "In Tidio: Go to Settings → Installation",
+        "Copy the code snippet",
+        "Paste it in your website's HTML (usually before </body>)",
+        "If using Wix/Squarespace/WordPress: They have dedicated integrations",
+        "Save and refresh your website — the chat bubble should appear"
+      ]
+    },
+    {
+      "title": "Test and refine",
+      "description": "Make sure it actually works well.",
+      "substeps": [
+        "Open your website in an incognito window",
+        "Click the chat and try common questions",
+        "Check that leads are being captured",
+        "Review chat logs weekly and add new Q&As as needed"
+      ]
+    }
+  ],
+  "successMessage": "Your chatbot is live! 50% of website visitors leave without contacting you — now you're capturing them.",
+  "proTips": [
+    "Connect to your email to get notified when someone chats",
+    "Add operating hours — bot can say 'We'll respond during business hours'",
+    "Review chat transcripts monthly to find common questions you haven't answered"
+  ]
+}

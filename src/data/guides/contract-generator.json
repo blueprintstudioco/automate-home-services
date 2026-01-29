@@ -1,0 +1,83 @@
+{
+  "title": "How to Create Job Contracts with ChatGPT",
+  "description": "Protect yourself with professional contracts that take minutes to create.",
+  "difficulty": "Medium",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "Details about a typical job",
+    "Basic understanding of what you want to cover"
+  ],
+  "steps": [
+    {
+      "title": "Decide when you need contracts",
+      "description": "Not every job needs a formal contract.",
+      "substeps": [
+        "Good rule: Any job over $500 should have one",
+        "Always for: Large projects, new customers, complex scopes",
+        "Also good for: Anything where scope creep could happen"
+      ],
+      "tip": "A signed contract prevents 'I thought that was included' arguments."
+    },
+    {
+      "title": "Ask ChatGPT to draft your contract",
+      "description": "Get a professional starting point.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Create a simple job contract for a [your trade] business. Include: scope of work, price, payment terms, timeline, what's included, what's excluded, and cancellation policy. Make it professional but easy to understand.'",
+        "Review what it creates"
+      ]
+    },
+    {
+      "title": "Customize the key sections",
+      "description": "Every contract needs these parts.",
+      "substeps": [
+        "Scope of work: Exactly what you will (and won't) do",
+        "Price and payment: Total, deposit, when final payment is due",
+        "Timeline: Start date, expected completion",
+        "Exclusions: What's NOT included (important!)",
+        "Change orders: How you handle additional work requests"
+      ],
+      "tip": "Be specific in scope. 'Paint living room' vs 'Paint living room walls, not ceiling or trim.'"
+    },
+    {
+      "title": "Add your business info",
+      "description": "Make it official.",
+      "substeps": [
+        "Your business name and contact info",
+        "License number (if required in your state)",
+        "Customer name and address",
+        "Signature lines for both parties",
+        "Date field"
+      ]
+    },
+    {
+      "title": "Create a fillable template",
+      "description": "Set it up for easy reuse.",
+      "substeps": [
+        "Use Google Docs: File → Make a copy for each job",
+        "Or use a free e-signature tool like Signaturely or DocuSign (free tier)",
+        "Replace job-specific details with [brackets] as placeholders",
+        "Save as 'Contract Template - [Your Business]'"
+      ]
+    },
+    {
+      "title": "Get it signed",
+      "description": "A contract isn't valid until both parties sign.",
+      "substeps": [
+        "Send the contract before starting work",
+        "Use e-signature (Signaturely, DocuSign free) or get a physical signature",
+        "Collect deposit after they sign",
+        "Save a copy of every signed contract"
+      ]
+    }
+  ],
+  "successMessage": "You now have a professional contract template! Use it for every significant job.",
+  "proTips": [
+    "Ask a local lawyer to review your template once — it's worth the $100-200",
+    "Always include what's NOT included — this prevents most disputes",
+    "Change orders should require written approval before you do additional work"
+  ]
+}

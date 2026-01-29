@@ -1,0 +1,81 @@
+{
+  "title": "How to Create Promotional Offers with ChatGPT",
+  "description": "Generate seasonal promos and special offers that drive bookings during slow periods.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "Knowledge of your typical services and prices",
+    "A slow period or season you want to fill"
+  ],
+  "steps": [
+    {
+      "title": "Identify when you need promos",
+      "description": "Target your slow periods.",
+      "substeps": [
+        "Look at your calendar: When are you least busy?",
+        "Typical slow periods vary by trade",
+        "January-February (post-holiday slump)",
+        "Mid-summer or mid-winter depending on your service"
+      ],
+      "tip": "Promos work best when you have capacity. Don't discount when you're already booked."
+    },
+    {
+      "title": "Use ChatGPT to brainstorm offers",
+      "description": "Get creative promo ideas quickly.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Try: 'Give me 5 promotional offer ideas for a [your trade] business in [season/month]. Include a catchy name and what the offer includes.'",
+        "Example output: 'Spring Tune-Up Special: 20% off AC maintenance if booked by March 31'"
+      ]
+    },
+    {
+      "title": "Choose the right type of offer",
+      "description": "Different promos work for different goals.",
+      "substeps": [
+        "Percentage off: '20% off' — easy to understand",
+        "Dollar amount off: '$50 off' — feels bigger for expensive services",
+        "Bundle: 'Book 2 services, get the third 50% off'",
+        "Deadline: 'Book by Friday and get X' — creates urgency"
+      ],
+      "tip": "Don't discount so much that you lose money. 10-20% off is usually enough."
+    },
+    {
+      "title": "Create the promo copy",
+      "description": "Write the text for posts, emails, and texts.",
+      "substeps": [
+        "Ask ChatGPT: 'Write a short social media post announcing [your promo]. Keep it casual and include a call-to-action.'",
+        "Get versions for: Facebook post, text message, email",
+        "Include: What the offer is, when it expires, how to redeem"
+      ]
+    },
+    {
+      "title": "Promote it everywhere",
+      "description": "An offer nobody sees is useless.",
+      "substeps": [
+        "Post on Facebook, Instagram, Nextdoor",
+        "Text your past customer list",
+        "Send an email campaign",
+        "Update your Google Business Profile with a post"
+      ]
+    },
+    {
+      "title": "Track results",
+      "description": "Know if your promo worked.",
+      "substeps": [
+        "Ask 'How did you hear about us?' when people call",
+        "Track: Number of bookings that mention the promo",
+        "Calculate: Revenue from promo vs revenue lost to discount",
+        "Save winning promos to repeat next year"
+      ]
+    }
+  ],
+  "successMessage": "You created a promotional offer! Share it everywhere and fill your slow period.",
+  "proTips": [
+    "Limited-time offers work better than ongoing discounts",
+    "Early-bird promos (book early for busy season) are great for cash flow",
+    "Try a referral promo: 'Refer a friend, you both get $25 off'"
+  ]
+}

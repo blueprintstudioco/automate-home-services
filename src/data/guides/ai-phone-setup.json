@@ -1,0 +1,87 @@
+{
+  "title": "How to Set Up AI Phone Answering",
+  "description": "Never miss a call again. Let AI answer, qualify leads, and book appointments 24/7.",
+  "difficulty": "Medium",
+  "time": "30 minutes",
+  "cost": "$30-100/month",
+  "costType": "Paid",
+  "requirements": [
+    "A business phone number",
+    "A computer to set up the service",
+    "Your typical service offerings and pricing ranges",
+    "30 minutes for initial setup"
+  ],
+  "steps": [
+    {
+      "title": "Choose an AI phone answering service",
+      "description": "Several options exist at different price points.",
+      "substeps": [
+        "Smith.ai: $140/month for 20 calls — human-AI hybrid, high quality",
+        "Goodcall.ai: ~$50/month — fully AI, built for local businesses",
+        "Ruby: $199/month — mostly human, professional",
+        "Slang.ai: Pay per call — newer, AI-first"
+      ],
+      "tip": "Start with Goodcall.ai for best value. Smith.ai if quality matters most."
+    },
+    {
+      "title": "Sign up and verify your number",
+      "description": "Connect your existing phone number to the service.",
+      "substeps": [
+        "Create an account on your chosen platform",
+        "Enter your business phone number",
+        "Follow their verification process",
+        "Choose: Forward all calls, forward only missed calls, or new number"
+      ],
+      "tip": "Start with 'forward missed calls only' to test without changing your workflow."
+    },
+    {
+      "title": "Set up your greeting and business info",
+      "description": "Tell the AI how to represent your business.",
+      "substeps": [
+        "Enter your business name",
+        "Write a short description of what you do",
+        "List your main services",
+        "Set your service area",
+        "Add your hours of operation"
+      ]
+    },
+    {
+      "title": "Configure qualifying questions",
+      "description": "Help the AI gather the info you need from callers.",
+      "substeps": [
+        "Name and phone number (always)",
+        "What service do they need?",
+        "What's the address/location?",
+        "What's their timeline/urgency?",
+        "How did they hear about you?"
+      ],
+      "tip": "Don't ask too many questions — 4-5 is the sweet spot before people hang up."
+    },
+    {
+      "title": "Set up appointment booking (optional)",
+      "description": "Let the AI schedule directly to your calendar.",
+      "substeps": [
+        "Connect your Google Calendar or Calendly",
+        "Set available time slots",
+        "Define appointment types: 'Free Estimate', 'Phone Consultation'",
+        "Test booking yourself"
+      ]
+    },
+    {
+      "title": "Set up notifications",
+      "description": "Get alerted immediately when leads come in.",
+      "substeps": [
+        "Enable text/SMS notifications",
+        "Enable email notifications",
+        "Set up a daily summary if available",
+        "Test by calling your own number"
+      ]
+    }
+  ],
+  "successMessage": "Your AI receptionist is live! Missed calls now become captured leads.",
+  "proTips": [
+    "Review call transcripts weekly and refine your AI's responses",
+    "Update the AI with common objections and how to handle them",
+    "Consider a dedicated business line so personal calls don't go through"
+  ]
+}

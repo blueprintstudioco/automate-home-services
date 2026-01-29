@@ -1,0 +1,71 @@
+{
+  "title": "How to Create 'On My Way' Message Templates",
+  "description": "Look professional and help customers prepare with a quick heads-up text.",
+  "difficulty": "Easy",
+  "time": "5 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A smartphone",
+    "Customer phone numbers",
+    "2 minutes to set up"
+  ],
+  "steps": [
+    {
+      "title": "Create your OTW template",
+      "description": "Write a short message to send when you're heading to a job.",
+      "substeps": [
+        "Keep it simple: 'Hi [Name], this is [Your Name] from [Business]. I'm on my way and should arrive in about [X] minutes. See you soon!'",
+        "Or even simpler: 'On my way! ETA 15 minutes. - Mike'",
+        "Include your name so they know it's not spam"
+      ],
+      "tip": "Customers love knowing you're coming. It's a small thing that makes a big impression."
+    },
+    {
+      "title": "Save it as a text shortcut",
+      "description": "Type 3 letters, get the full message.",
+      "substeps": [
+        "iPhone: Settings → General → Keyboard → Text Replacement",
+        "Tap '+' to add new shortcut",
+        "Phrase: 'On my way! Should arrive in about XX minutes. - [Your Name]'",
+        "Shortcut: 'otw'",
+        "Now typing 'otw' auto-expands to your full message"
+      ]
+    },
+    {
+      "title": "Android alternative",
+      "description": "Set up a similar shortcut on Android.",
+      "substeps": [
+        "Open Gboard (Google Keyboard) settings",
+        "Go to Dictionary → Personal dictionary",
+        "Add your OTW message with shortcut 'otw'",
+        "Or use an app like Texpand for more control"
+      ]
+    },
+    {
+      "title": "Send it every single time",
+      "description": "Make this a habit.",
+      "substeps": [
+        "When you leave for a job, send the text immediately",
+        "Update the ETA based on actual drive time",
+        "If you're running late, send an update",
+        "This takes 10 seconds and makes customers happy"
+      ]
+    },
+    {
+      "title": "Automate with your CRM (optional)",
+      "description": "Some tools can send this automatically.",
+      "substeps": [
+        "Jobber/HouseCall Pro: Enable 'On my way' notifications",
+        "Tap one button when leaving and it sends automatically",
+        "Even better: GPS triggers the message when you start driving"
+      ]
+    }
+  ],
+  "successMessage": "You now have a professional 'on my way' system! Customers will notice the difference.",
+  "proTips": [
+    "Always overestimate your ETA slightly — better to arrive early than late",
+    "If you're running behind, text them before they text you",
+    "This tiny habit separates pros from amateurs in customers' minds"
+  ]
+}

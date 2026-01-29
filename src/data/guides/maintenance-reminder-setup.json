@@ -1,0 +1,74 @@
+{
+  "title": "How to Set Up Automated Maintenance Reminders",
+  "description": "Generate recurring revenue by reminding customers when it's time for service.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A list of customers and their service dates",
+    "A reminder system (email, calendar, or CRM)",
+    "Knowledge of typical maintenance intervals"
+  ],
+  "steps": [
+    {
+      "title": "Identify recurring maintenance needs",
+      "description": "What services do customers need regularly?",
+      "substeps": [
+        "HVAC: Seasonal tune-ups (spring AC, fall heating)",
+        "Plumbing: Annual water heater flush",
+        "Landscaping: Seasonal services (aeration, fertilization)",
+        "Painting: Exterior touch-up every 5-7 years",
+        "List your recurring services and their intervals"
+      ],
+      "tip": "Focus on services customers forget about but genuinely need."
+    },
+    {
+      "title": "Build your customer maintenance calendar",
+      "description": "Track when each customer needs reminders.",
+      "substeps": [
+        "Create a spreadsheet: Customer | Service | Last Done | Next Due",
+        "Add your recent customers and their last service dates",
+        "Calculate Next Due based on your recommended interval",
+        "Or use your CRM's recurring job feature"
+      ]
+    },
+    {
+      "title": "Set up reminder emails",
+      "description": "Automate the outreach.",
+      "substeps": [
+        "Option 1: Google Calendar reminders for yourself to reach out",
+        "Option 2: Mailchimp automation (free tier) for email campaigns",
+        "Option 3: Jobber/HouseCall Pro automated reminders",
+        "Set reminders 2-4 weeks before service is due"
+      ]
+    },
+    {
+      "title": "Write reminder templates",
+      "description": "Create messages for each service type.",
+      "substeps": [
+        "Use ChatGPT: 'Write a friendly reminder email that it's time for [service type]. Include why it matters and a call-to-action to book.'",
+        "Keep it short — 3-4 sentences",
+        "Include a direct booking link or phone number",
+        "Make scheduling easy: 'Reply to this email' or 'Call/text [number]'"
+      ],
+      "tip": "Example: 'Hi [Name]! It's been 6 months since your last HVAC tune-up. Fall is coming — let's make sure your furnace is ready. Reply to schedule your service!'"
+    },
+    {
+      "title": "Track and follow up",
+      "description": "Some customers need a nudge.",
+      "substeps": [
+        "Note who schedules and who doesn't",
+        "Send a follow-up to non-responders after 1 week",
+        "Try text if email doesn't work",
+        "Track your conversion rate: How many reminders turn into jobs?"
+      ]
+    }
+  ],
+  "successMessage": "You now have a maintenance reminder system! This creates predictable recurring revenue.",
+  "proTips": [
+    "Maintenance customers are easier to keep than new customers are to find",
+    "Offer a small discount for booking annual maintenance in advance",
+    "Send reminders from a person, not a business — 'Hi, it's Mike from [Business]'"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "How to Create Video Scripts with ChatGPT",
+  "description": "Get video ideas and scripts for job walkthroughs, tips, and social media content.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "A smartphone for recording",
+    "Something to share: a recent job, tip, or behind-the-scenes moment"
+  ],
+  "steps": [
+    {
+      "title": "Brainstorm video ideas",
+      "description": "Use ChatGPT to generate content ideas.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Try: 'Give me 10 short video ideas for a [your trade] business. Make them helpful, interesting, or entertaining. Under 60 seconds each.'",
+        "Save the ideas you like",
+        "Good categories: Tips, before/after, day-in-the-life, common mistakes"
+      ],
+      "tip": "Job walkthrough videos perform great — people love seeing the work."
+    },
+    {
+      "title": "Get a script for your first video",
+      "description": "Don't wing it — have a plan.",
+      "substeps": [
+        "Pick one idea from your list",
+        "Ask ChatGPT: 'Write a 30-second video script for [topic]. I'm a [your trade]. Keep it casual and natural, like I'm talking to a friend.'",
+        "Review the script — adjust anything that doesn't sound like you"
+      ]
+    },
+    {
+      "title": "Keep it simple and short",
+      "description": "Short videos perform best.",
+      "substeps": [
+        "Aim for 30-60 seconds",
+        "One main point per video",
+        "Start with a hook: 'Here's why your [problem] keeps happening...'",
+        "End with a call-to-action: 'Follow for more tips' or 'Call us if you need help'"
+      ]
+    },
+    {
+      "title": "Record with your phone",
+      "description": "You don't need fancy equipment.",
+      "substeps": [
+        "Good lighting: Face a window or go outside",
+        "Clean background: No mess visible",
+        "Hold phone horizontal or vertical (vertical for social media)",
+        "Speak clearly and a bit slower than normal"
+      ],
+      "tip": "Multiple short takes are fine. You can combine them in editing."
+    },
+    {
+      "title": "Post and share",
+      "description": "Get your video out there.",
+      "substeps": [
+        "Post to Facebook, Instagram Reels, TikTok, YouTube Shorts",
+        "Add captions — many people watch without sound",
+        "Include relevant hashtags: #PlumbingTips #HVAClife etc.",
+        "Post at least 1-2 videos per week for best results"
+      ]
+    }
+  ],
+  "successMessage": "You have video ideas and scripts ready! Video gets 3x more engagement than photos.",
+  "proTips": [
+    "Before/after transformations are the easiest viral content",
+    "Authenticity beats production quality — don't overthink it",
+    "Repurpose: One job video becomes a Reel, YouTube Short, and TikTok"
+  ]
+}

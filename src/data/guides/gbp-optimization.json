@@ -1,0 +1,85 @@
+{
+  "title": "How to Optimize Your Google Business Profile",
+  "description": "Get 7x more clicks by completing your Google Business Profile properly.",
+  "difficulty": "Easy",
+  "time": "25 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A Google account",
+    "Your business name, address, and phone number",
+    "10-20 photos of your work",
+    "Access to business.google.com"
+  ],
+  "steps": [
+    {
+      "title": "Claim or create your profile",
+      "description": "Make sure you own your Google Business Profile.",
+      "substeps": [
+        "Go to business.google.com",
+        "Search for your business name",
+        "If it exists, click 'Claim this business' and verify",
+        "If not, click 'Add your business' and follow the steps"
+      ],
+      "tip": "Verification usually happens by postcard (takes a week) or phone call."
+    },
+    {
+      "title": "Complete every section",
+      "description": "Google rewards complete profiles with better rankings.",
+      "substeps": [
+        "Business name: Use your real name, no keyword stuffing",
+        "Category: Pick the most specific one (e.g., 'Landscaping Company' not just 'Landscaper')",
+        "Description: Write 2-3 sentences about what you do and where you serve",
+        "Hours: Be accurate — nothing frustrates customers more than wrong hours"
+      ]
+    },
+    {
+      "title": "Add your services",
+      "description": "List every service you offer with prices if possible.",
+      "substeps": [
+        "Click 'Edit profile' then 'Services'",
+        "Add each service: name, description, price (optional)",
+        "Be specific: 'Water Heater Installation' not just 'Plumbing'",
+        "Add 10-15 services minimum"
+      ],
+      "tip": "Services with prices get more clicks — customers like knowing what to expect."
+    },
+    {
+      "title": "Upload lots of photos",
+      "description": "Businesses with photos get 42% more direction requests.",
+      "substeps": [
+        "Add your logo as the profile photo",
+        "Add a cover photo (your best work)",
+        "Upload 10-20 photos of completed jobs",
+        "Add photos of yourself and your team — people hire people"
+      ],
+      "tip": "Update photos monthly. Fresh photos signal you're active."
+    },
+    {
+      "title": "Start posting regularly",
+      "description": "Google Posts show up in your profile and boost visibility.",
+      "substeps": [
+        "Click 'Add update' or 'Posts'",
+        "Post about: recent jobs, special offers, tips for customers",
+        "Include a photo and a call-to-action",
+        "Post at least once a week"
+      ]
+    },
+    {
+      "title": "Get and respond to reviews",
+      "description": "Reviews are the #1 ranking factor for local search.",
+      "substeps": [
+        "Click 'Get more reviews' to get your review link",
+        "Send this link to every happy customer",
+        "Respond to EVERY review (good and bad)",
+        "Thank positive reviewers, address concerns professionally"
+      ]
+    }
+  ],
+  "successMessage": "Your Google Business Profile is now optimized! You'll start appearing in more local searches.",
+  "proTips": [
+    "Add Q&A to your profile — ask and answer common questions customers have",
+    "Check your profile weekly for customer messages — Google shows response time",
+    "Use ChatGPT to help write your business description and service descriptions"
+  ]
+}

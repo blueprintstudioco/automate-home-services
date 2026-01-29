@@ -1,0 +1,83 @@
+{
+  "title": "How to Set Up Storm Response Outreach",
+  "description": "Be first to contact customers after severe weather with automated storm alerts and outreach.",
+  "difficulty": "Medium",
+  "time": "25 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A list of past customers in your service area",
+    "Weather alert setup on your phone",
+    "Pre-written outreach templates ready to go"
+  ],
+  "steps": [
+    {
+      "title": "Set up weather alerts",
+      "description": "Know about severe weather immediately.",
+      "substeps": [
+        "Enable government severe weather alerts on your phone",
+        "Download a weather app with push notifications (Weather.com, WeatherBug)",
+        "Set alerts for: Hail, high winds, flooding (depending on your trade)",
+        "Consider paid apps like Storm Radar for more detailed alerts"
+      ],
+      "tip": "Focus on weather events that damage what you fix: hail for roofers, floods for plumbers, wind for tree services."
+    },
+    {
+      "title": "Create your storm outreach templates",
+      "description": "Have messages ready to send immediately.",
+      "substeps": [
+        "Go to ChatGPT and create templates for different storm types",
+        "Prompt: 'Write a text message to past customers after a hailstorm offering free roof inspections. Keep it helpful, not salesy.'",
+        "Create versions for: Hail, wind damage, flooding, ice storms",
+        "Save these where you can copy-paste quickly"
+      ]
+    },
+    {
+      "title": "Prepare your customer contact list",
+      "description": "Know who to contact instantly.",
+      "substeps": [
+        "Export customer phone numbers and emails",
+        "Segment by service area if you cover multiple towns",
+        "Have this list ready to use at a moment's notice",
+        "Consider using a mass texting service like SimpleTexting"
+      ]
+    },
+    {
+      "title": "Create a rapid response checklist",
+      "description": "Act fast when storms hit.",
+      "substeps": [
+        "Storm happens → Check damage reports in your area",
+        "Within 1 hour → Send text blast to affected area customers",
+        "Same day → Post on social media (local groups, Nextdoor)",
+        "Next morning → Follow up with email and calls"
+      ],
+      "tip": "Speed matters. First responders get the jobs. Wait 24 hours and you're competing with everyone."
+    },
+    {
+      "title": "Offer free inspections",
+      "description": "Remove friction from the first contact.",
+      "substeps": [
+        "Free inspection builds trust and gets you in the door",
+        "Document damage thoroughly for insurance claims",
+        "Help customers navigate insurance if applicable",
+        "Not everyone has damage — that's fine, it's goodwill"
+      ]
+    },
+    {
+      "title": "Track the results",
+      "description": "Learn from each storm event.",
+      "substeps": [
+        "Count: Messages sent, responses, inspections booked, jobs closed",
+        "Note what messaging worked best",
+        "Update your templates based on feedback",
+        "Storm season can be your most profitable time if you're ready"
+      ]
+    }
+  ],
+  "successMessage": "You're now ready for storm response! Being first to reach customers means first to get the work.",
+  "proTips": [
+    "Join local Facebook groups — people post about damage there first",
+    "Partner with insurance agents who can refer customers your way",
+    "Have extra capacity available (subcontractors, crew) for storm season"
+  ]
+}

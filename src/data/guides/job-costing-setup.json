@@ -1,0 +1,83 @@
+{
+  "title": "How to Track Job Costs and Improve Profitability",
+  "description": "Know exactly what each job costs you so you can price accurately and boost profits.",
+  "difficulty": "Medium",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer or smartphone",
+    "Recent job records (estimates vs actuals)",
+    "Google account or spreadsheet app"
+  ],
+  "steps": [
+    {
+      "title": "Understand what job costing means",
+      "description": "Job costing compares what you quoted versus what it actually cost you.",
+      "substeps": [
+        "What you charged: Your invoice total",
+        "What it cost: Materials + labor + equipment + overhead",
+        "Profit: The difference (hopefully positive!)",
+        "Goal: Know your real costs so you can price better"
+      ],
+      "tip": "Most contractors price based on gut feeling. Data beats intuition."
+    },
+    {
+      "title": "Create a simple tracking spreadsheet",
+      "description": "Start with Google Sheets — free and accessible anywhere.",
+      "substeps": [
+        "Go to sheets.google.com and create a new sheet",
+        "Create columns: Job Name | Date | Quoted Price | Material Cost | Labor Hours | Labor Cost | Equipment | Total Cost | Profit",
+        "This is your job costing tracker"
+      ]
+    },
+    {
+      "title": "Track materials for each job",
+      "description": "Record what you actually spent on materials.",
+      "substeps": [
+        "Save receipts for every job",
+        "Note which materials go to which job",
+        "Include supplies like tape, caulk, small parts",
+        "Add delivery fees if applicable"
+      ],
+      "tip": "Take a photo of receipts and write the job name on them."
+    },
+    {
+      "title": "Track your time accurately",
+      "description": "Labor is usually your biggest cost.",
+      "substeps": [
+        "Track hours on each job (use your phone timer)",
+        "Include drive time to/from the job",
+        "Include setup and cleanup time",
+        "Multiply hours by your true hourly cost (wages + taxes + benefits)"
+      ],
+      "tip": "Your time has a cost even if you don't pay yourself hourly. Calculate your target hourly rate."
+    },
+    {
+      "title": "Calculate and review",
+      "description": "After each job, fill in the actual costs.",
+      "substeps": [
+        "Total cost = Materials + Labor + Equipment",
+        "Profit = What you charged - Total cost",
+        "Profit margin = Profit ÷ What you charged × 100",
+        "Look for patterns: Which jobs are most profitable?"
+      ]
+    },
+    {
+      "title": "Adjust your pricing",
+      "description": "Use the data to price future jobs better.",
+      "substeps": [
+        "If profit margin is under 30%, you may be undercharging",
+        "Look at unprofitable jobs — what went wrong?",
+        "Raise prices on services where costs surprised you",
+        "Get better at estimating the time needed"
+      ]
+    }
+  ],
+  "successMessage": "You now know what your jobs actually cost! Use this data to price more accurately.",
+  "proTips": [
+    "Track 10 jobs before making big pricing changes — need enough data",
+    "Your true labor cost is roughly 1.3x hourly wage (taxes, insurance, etc.)",
+    "Jobber and HouseCall Pro have built-in job costing if you want to upgrade from spreadsheets"
+  ]
+}

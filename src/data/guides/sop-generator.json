@@ -1,0 +1,82 @@
+{
+  "title": "How to Create Standard Operating Procedures (SOPs)",
+  "description": "Document your processes so you can delegate, train helpers, and scale your business.",
+  "difficulty": "Medium",
+  "time": "25 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "ChatGPT account (free)",
+    "A task you do repeatedly that you want to document",
+    "Google Docs or similar for storing SOPs"
+  ],
+  "steps": [
+    {
+      "title": "Pick a process to document first",
+      "description": "Start with something you do often.",
+      "substeps": [
+        "Think about tasks you'd want to hand off to a helper",
+        "Good first SOPs: Truck loading, job site cleanup, customer walkthrough",
+        "Pick something you do at least weekly",
+        "Start simple — don't try to document everything at once"
+      ],
+      "tip": "If you can't explain it step-by-step, you can't delegate it."
+    },
+    {
+      "title": "Brain dump the steps to ChatGPT",
+      "description": "Let ChatGPT organize your rough notes into a proper SOP.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Help me create an SOP for [task]. Here's what I typically do: [describe the process in your own words, even messily]'",
+        "ChatGPT will organize it into clear, numbered steps"
+      ]
+    },
+    {
+      "title": "Review and add details",
+      "description": "Make sure nothing is missing.",
+      "substeps": [
+        "Read through each step — does it make sense to someone who's never done it?",
+        "Add warnings for common mistakes",
+        "Include what 'done right' looks like",
+        "Add time estimates for each section"
+      ]
+    },
+    {
+      "title": "Add visuals if helpful",
+      "description": "A picture is worth a thousand words.",
+      "substeps": [
+        "Take photos of key steps",
+        "Record a quick video walkthrough",
+        "Screenshots for any software steps",
+        "Store in a shared folder (Google Drive works great)"
+      ],
+      "tip": "Video SOPs are great for complex physical tasks."
+    },
+    {
+      "title": "Store and organize your SOPs",
+      "description": "Make them easy to find and update.",
+      "substeps": [
+        "Create a Google Drive folder called 'SOPs'",
+        "Name files clearly: 'SOP - Truck Loading' not 'document 1'",
+        "Share the folder with employees/helpers",
+        "Review and update SOPs every 6 months"
+      ]
+    },
+    {
+      "title": "Test the SOP",
+      "description": "The real test is whether someone can follow it.",
+      "substeps": [
+        "Have someone else try to follow the SOP",
+        "Watch where they get confused or stuck",
+        "Ask them what's unclear",
+        "Update based on their feedback"
+      ]
+    }
+  ],
+  "successMessage": "You created your first SOP! This is how you build a business that can run without you.",
+  "proTips": [
+    "SOPs make training new helpers 10x faster",
+    "When you catch yourself saying 'I always do it this way', that's an SOP waiting to be written",
+    "Start with 5-10 core SOPs, then add more over time"
+  ]
+}

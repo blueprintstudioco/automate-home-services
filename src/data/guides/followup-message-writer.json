@@ -1,0 +1,71 @@
+{
+  "title": "How to Write Follow-Up Messages That Close More Jobs",
+  "description": "Use ChatGPT to write professional follow-ups that turn quotes into paying customers.",
+  "difficulty": "Easy",
+  "time": "10 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer or smartphone",
+    "ChatGPT account (free at chat.openai.com)",
+    "A quote you sent that hasn't gotten a response yet"
+  ],
+  "steps": [
+    {
+      "title": "Find a quote that needs follow-up",
+      "description": "Think of someone you quoted but never heard back from.",
+      "substeps": [
+        "Check your texts, emails, or CRM",
+        "Find quotes that are 2-7 days old with no response",
+        "Pick one to start with"
+      ],
+      "tip": "The sweet spot is 48-72 hours after sending the quote. Not too pushy, not too late."
+    },
+    {
+      "title": "Ask ChatGPT to write the follow-up",
+      "description": "Give ChatGPT the context and let it write a natural message.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Paste this prompt: 'Write a friendly follow-up text for a [your trade] quote I sent 3 days ago. The quote was for [describe the job]. Keep it short and not pushy.'",
+        "Review what it gives you"
+      ],
+      "tip": "Ask for 2-3 versions so you can pick the one that sounds most like you."
+    },
+    {
+      "title": "Personalize and send",
+      "description": "Add a personal touch and send it.",
+      "substeps": [
+        "Add their name if ChatGPT didn't include it",
+        "Reference something specific about the job",
+        "Keep it to 2-3 sentences max",
+        "Send via text (not email — texts get read faster)"
+      ]
+    },
+    {
+      "title": "Create a follow-up sequence",
+      "description": "Plan multiple follow-ups for non-responders.",
+      "substeps": [
+        "Day 2-3: Friendly check-in",
+        "Day 7: Add value (tip related to their problem)",
+        "Day 14: Last chance / honest ask",
+        "After that: Move on, but add to your 'cold leads' list"
+      ]
+    },
+    {
+      "title": "Save your best templates",
+      "description": "Build a library of follow-ups that work.",
+      "substeps": [
+        "When a follow-up message leads to a booking, save it",
+        "Create a note on your phone called 'Follow-up Templates'",
+        "Paste in messages that got responses",
+        "Reuse and adapt them for future quotes"
+      ]
+    }
+  ],
+  "successMessage": "You just sent a professional follow-up that could win you a job! Do this for every quote that goes quiet.",
+  "proTips": [
+    "80% of sales happen after 5+ follow-ups — most contractors give up after 1",
+    "A simple 'Hey, just checking if you had any questions about the quote?' works great",
+    "Don't apologize for following up. You're providing a service, not being annoying."
+  ]
+}

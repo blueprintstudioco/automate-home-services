@@ -1,0 +1,72 @@
+{
+  "title": "How to Create Professional Quote Templates",
+  "description": "Stop sending prices via text. Professional quotes justify premium pricing and win more jobs.",
+  "difficulty": "Easy",
+  "time": "20 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A computer",
+    "Google account (for Google Docs) or Canva account",
+    "Your business name and logo (optional)"
+  ],
+  "steps": [
+    {
+      "title": "Choose your tool",
+      "description": "Pick a free tool to create your quote template.",
+      "substeps": [
+        "Google Docs: Simple, free, works on any device — best for most people",
+        "Canva: Prettier templates if you want more design — canva.com",
+        "Wave: If you already use Wave for invoicing, it has quotes too"
+      ],
+      "tip": "Google Docs is the fastest. Don't overthink it — a clean, clear quote beats a fancy one."
+    },
+    {
+      "title": "Create your quote header",
+      "description": "Set up the top section that stays the same on every quote.",
+      "substeps": [
+        "Add your business name in large, bold text",
+        "Add your logo (if you have one)",
+        "Include: phone, email, website, license number",
+        "Add 'ESTIMATE' or 'QUOTE' as a clear label"
+      ]
+    },
+    {
+      "title": "Build the quote body",
+      "description": "Create the main section where job details go.",
+      "substeps": [
+        "Customer info: Name, address, phone",
+        "Date and quote number (Quote #001, #002, etc.)",
+        "Line items: Description, quantity, price",
+        "Subtotal, tax (if applicable), TOTAL in bold"
+      ],
+      "tip": "Use a simple table for line items. Keep descriptions clear — 'Install new water heater' not 'WH inst.'"
+    },
+    {
+      "title": "Add terms and next steps",
+      "description": "Include important details at the bottom.",
+      "substeps": [
+        "Quote valid for: 30 days",
+        "Payment terms: 50% deposit, balance on completion",
+        "What's included (and what's NOT included)",
+        "How to accept: 'Reply YES to this email' or 'Sign below'"
+      ]
+    },
+    {
+      "title": "Save as a template",
+      "description": "Make it easy to reuse for every quote.",
+      "substeps": [
+        "In Google Docs: File → Make a copy (each time you need a new quote)",
+        "Name it 'Quote Template - [Your Business]'",
+        "Create a folder called 'Quotes' to stay organized",
+        "For each new quote, copy the template and fill in the details"
+      ]
+    }
+  ],
+  "successMessage": "You now have a professional quote template! Customers take you seriously when you look professional.",
+  "proTips": [
+    "Send quotes as PDFs — they look more professional and can't be accidentally edited",
+    "Include photos of similar work you've done if possible",
+    "Always follow up 2-3 days after sending if you don't hear back"
+  ]
+}

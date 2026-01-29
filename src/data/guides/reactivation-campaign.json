@@ -1,0 +1,70 @@
+{
+  "title": "How to Win Back Cold Leads and Past Customers",
+  "description": "Simple outreach campaigns to reactivate leads who never booked and customers who haven't called in a while.",
+  "difficulty": "Easy",
+  "time": "15 minutes",
+  "cost": "Free",
+  "costType": "Free",
+  "requirements": [
+    "A list of old leads or past customers",
+    "ChatGPT account (free)",
+    "Phone numbers or email addresses"
+  ],
+  "steps": [
+    {
+      "title": "Make a list of people to contact",
+      "description": "Gather your cold leads and dormant customers.",
+      "substeps": [
+        "Cold leads: People who got quotes but never booked",
+        "Past customers: Haven't hired you in 6+ months",
+        "Check your texts, CRM, and invoices",
+        "Start with 10-20 people"
+      ],
+      "tip": "Past customers are gold — they already trust you. Reaching out is easy revenue."
+    },
+    {
+      "title": "Create a reactivation message for cold leads",
+      "description": "Use ChatGPT to write a 'checking in' message.",
+      "substeps": [
+        "Go to chat.openai.com",
+        "Type: 'Write a short, friendly text to follow up with someone who got a quote from my [trade] business 2 months ago but never booked. Keep it casual, not salesy.'",
+        "Example output: 'Hey [Name], this is Mike from [Business]. Wanted to check in — still need help with that [project]? Happy to answer any questions or re-quote if things have changed. No pressure either way!'"
+      ]
+    },
+    {
+      "title": "Create a message for past customers",
+      "description": "Remind them you exist and offer value.",
+      "substeps": [
+        "Prompt: 'Write a friendly text to a past customer I haven't heard from in 6 months. I'm a [trade] business. Remind them I'm available and mention seasonal relevance if applicable.'",
+        "Example: 'Hey [Name]! Hope you're doing well. Just wanted to check in — if you need any [service] help this season, I'd love to work with you again. Let me know!'"
+      ],
+      "tip": "Timing matters — reach out before their busy season (spring for landscaping, winter for HVAC, etc.)"
+    },
+    {
+      "title": "Send the messages",
+      "description": "Personal texts work better than mass blasts.",
+      "substeps": [
+        "Personalize each message with their name",
+        "Reference the specific job or quote if you remember it",
+        "Send via text — higher response rate than email",
+        "Space them out (don't send 20 texts in 5 minutes)"
+      ]
+    },
+    {
+      "title": "Track responses and follow up",
+      "description": "Some won't respond — that's normal.",
+      "substeps": [
+        "Expect 10-20% response rate",
+        "Reply quickly to anyone who responds",
+        "No response after a week? One more message, then move on",
+        "Add responders back to your active pipeline"
+      ]
+    }
+  ],
+  "successMessage": "You just reached out to dormant contacts! Expect 10-20% to convert into jobs.",
+  "proTips": [
+    "Do a reactivation campaign every quarter — it's the easiest marketing you can do",
+    "Offering a small discount can increase response rates significantly",
+    "Add 'Is this still your number?' if texting old contacts — shows you care and verifies contact info"
+  ]
+}
