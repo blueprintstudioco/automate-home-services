@@ -107,7 +107,7 @@ function getAllItems(tradeId: string) {
       <div class="bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-2xl p-8 text-center">
         <h2 class="text-2xl font-bold mb-4">Ready to Close the Gaps?</h2>
         <p class="text-slate-400 mb-6 max-w-2xl mx-auto">
-          Click "Fix with AI" on any gap above to get step-by-step instructions.
+          Click "Help me Automate This" on any gap above to get step-by-step instructions.
           Most take less than 15 minutes to set up.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -238,8 +238,8 @@ function getAllItems(tradeId: string) {
             </div>
             <p class="text-slate-400 text-sm mb-4">${item.why}</p>
             ${hasGuide ? `
-              <a href="/guide/${item.aiSolution}" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium text-sm">
-                Fix with AI →
+              <a href="/guide/${item.aiSolution}" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+                Help me Automate This →
               </a>
             ` : `
               <span class="text-slate-600 text-sm">Guide coming soon</span>
