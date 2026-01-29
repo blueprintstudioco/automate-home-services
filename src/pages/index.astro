@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import trades from '../data/trades.json';
+---
+
+<Layout title="AI Automation for Home Service Businesses | Free Tool">
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    
+    <!-- Hero -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
+        What Can <span class="text-orange-500">AI Automate</span> in Your Business?
+      </h1>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+        Select your trade below and discover which parts of your business can run on autopilot.
+        Free tool. No signup required.
+      </p>
+    </div>
+
+    <!-- Trade Grid -->
+    <div class="mb-8">
+      <h2 class="text-lg font-semibold text-slate-400 mb-6 text-center uppercase tracking-wide">
+        What kind of business do you run?
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      {trades.trades.map((trade) => (
+        <a 
+          href={`/trade/${trade.id}`}
+          class="group bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-orange-500/50 rounded-xl p-6 text-center transition-all duration-200 hover:scale-105"
+        >
+          <div class="text-4xl mb-3">{trade.icon}</div>
+          <div class="font-semibold text-white group-hover:text-orange-500 transition-colors">
+            {trade.name}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="mt-16 text-center">
+      <p class="text-slate-500">
+        Don't see your trade? <a href="mailto:alex@blueprintstudioco.com" class="text-orange-500 hover:underline">Let us know</a> and we'll add it.
+      </p>
+    </div>
+
+    <!-- Why Section -->
+    <div class="mt-20 border-t border-slate-800 pt-16">
+      <h2 class="text-2xl font-bold text-center mb-8">Why This Exists</h2>
+      <div class="max-w-3xl mx-auto text-slate-400 space-y-4 text-lg">
+        <p>
+          Every business owner hears "you need to use AI" but nobody explains <em>what</em> that actually means for their specific business.
+        </p>
+        <p>
+          This tool breaks it down by trade — showing you exactly what can be automated in marketing, sales, admin, and operations.
+        </p>
+        <p>
+          No fluff. No sales pitch. Just a clear starting point.
+        </p>
+      </div>
+    </div>
+
+  </main>
+</Layout>

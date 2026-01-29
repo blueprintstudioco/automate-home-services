@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import trades from '../../data/trades.json';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  return trades.trades.map((trade) => ({
+    params: { id: trade.id },
+    props: { trade }
+  }));
+}
+
+const { id } = Astro.params;
+const { trade } = Astro.props;
+
+// Load automation data - try trade-specific first, fall back to template
+let automations;
+const tradePath = path.join(process.cwd(), `src/data/automations/${id}.json`);
+const templatePath = path.join(process.cwd(), 'src/data/automations/_template.json');
+
+try {
+  if (fs.existsSync(tradePath)) {
+    automations = JSON.parse(fs.readFileSync(tradePath, 'utf-8'));
+  } else {
+    automations = JSON.parse(fs.readFileSync(templatePath, 'utf-8'));
+  }
+} catch (e) {
+  automations = JSON.parse(fs.readFileSync(templatePath, 'utf-8'));
+}
+
+const categories = [
+  { key: 'marketing', name: 'Marketing', icon: '📣', color: 'orange' },
+  { key: 'sales', name: 'Sales', icon: '💰', color: 'green' },
+  { key: 'admin', name: 'Admin', icon: '📋', color: 'blue' },
+  { key: 'operations', name: 'Operations', icon: '🔧', color: 'purple' },
+  { key: 'customerService', name: 'Customer Service', icon: '👥', color: 'pink' }
+];
+
+const difficultyColors = {
+  'Easy': 'bg-green-500/20 text-green-400',
+  'Medium': 'bg-yellow-500/20 text-yellow-400',
+  'Advanced': 'bg-red-500/20 text-red-400'
+};
+---
+
+<Layout title={`AI Automation for ${trade.name} Businesses`} description={`Discover what parts of your ${trade.name.toLowerCase()} business can be automated with AI. Free guide covering marketing, sales, admin, and operations.`}>
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    
+    <!-- Back Link -->
+    <a href="/" class="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+      <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+      All Trades
+    </a>
+
+    <!-- Header -->
+    <div class="mb-12">
+      <div class="text-6xl mb-4">{trade.icon}</div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+        AI Automation for <span class="text-orange-500">{trade.name}</span>
+      </h1>
+      <p class="text-xl text-slate-400">
+        Here's what you can automate in your {trade.name.toLowerCase()} business — organized by business function.
+      </p>
+    </div>
+
+    <!-- Categories -->
+    {categories.map((category) => (
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <span class="text-3xl">{category.icon}</span>
+          {category.name}
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-4">
+          {automations[category.key]?.map((item) => (
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-colors">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="font-semibold text-lg text-white">{item.title}</h3>
+                <span class={`text-xs px-2 py-1 rounded-full ${difficultyColors[item.difficulty]}`}>
+                  {item.difficulty}
+                </span>
+              </div>
+              <p class="text-slate-400 mb-4">{item.description}</p>
+              {item.tools && item.tools.length > 0 && (
+                <div class="flex flex-wrap gap-2">
+                  {item.tools.map((tool) => (
+                    <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <!-- CTA -->
+    <div class="mt-16 bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-2xl p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Start Automating?</h2>
+      <p class="text-slate-400 mb-6 max-w-2xl mx-auto">
+        Pick one thing from this list and implement it this week. Start small, see results, then expand.
+        Most of these tools have free trials — you can test before you commit.
+      </p>
+      <a href="/" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+        Explore Other Trades
+      </a>
+    </div>
+
+    <!-- Share -->
+    <div class="mt-12 text-center">
+      <p class="text-slate-500">
+        Know someone who runs a {trade.name.toLowerCase()} business? 
+        <button 
+          onclick={`navigator.share ? navigator.share({title: 'AI Automation for ${trade.name}', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))`}
+          class="text-orange-500 hover:underline"
+        >
+          Share this page
+        </button>
+      </p>
+    </div>
+
+  </main>
+</Layout>

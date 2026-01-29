@@ -1,0 +1,144 @@
+{
+  "marketing": [
+    {
+      "title": "Before/After Content Generation",
+      "description": "AI can help you turn job site photos into compelling before/after posts. Describe the transformation, add dramatic flair, and schedule across platforms.",
+      "difficulty": "Easy",
+      "tools": ["ChatGPT", "Canva AI", "Buffer"]
+    },
+    {
+      "title": "Review Response Automation",
+      "description": "Automatically draft personalized responses to Google and Facebook reviews. Keeps your response rate high and shows you care about feedback.",
+      "difficulty": "Easy",
+      "tools": ["ChatGPT", "Podium", "NiceJob"]
+    },
+    {
+      "title": "Local SEO Content",
+      "description": "Generate location-specific service pages and blog posts. Rank for 'forestry mulching [city]' and 'land clearing near me' searches.",
+      "difficulty": "Medium",
+      "tools": ["ChatGPT", "Jasper", "SurferSEO"]
+    },
+    {
+      "title": "Video Script Writing",
+      "description": "Turn your job footage into engaging YouTube content. AI writes scripts, suggests hooks, and creates descriptions optimized for search.",
+      "difficulty": "Medium",
+      "tools": ["ChatGPT", "VidIQ", "TubeBuddy"]
+    },
+    {
+      "title": "Seasonal Campaign Automation",
+      "description": "Automatically launch campaigns for peak seasons — spring cleanup, storm damage response, fire prevention season.",
+      "difficulty": "Medium",
+      "tools": ["Mailchimp", "GoHighLevel", "ActiveCampaign"]
+    }
+  ],
+  "sales": [
+    {
+      "title": "Instant Quote Calculator",
+      "description": "Let property owners get rough estimates based on acreage, terrain, and vegetation density. Filters serious buyers from tire-kickers.",
+      "difficulty": "Medium",
+      "tools": ["Jobber", "Custom calculator", "Typeform"]
+    },
+    {
+      "title": "Lead Qualification Chatbot",
+      "description": "A chatbot asks about property size, access, timeline, and budget — then routes qualified leads directly to your phone.",
+      "difficulty": "Medium",
+      "tools": ["Tidio", "ManyChat", "Landbot"]
+    },
+    {
+      "title": "Automated Follow-Up Sequences",
+      "description": "When someone requests a quote but doesn't book, automated texts and emails follow up until they convert or say no.",
+      "difficulty": "Easy",
+      "tools": ["GoHighLevel", "Housecall Pro", "Jobber"]
+    },
+    {
+      "title": "Property Research Automation",
+      "description": "Before a site visit, AI pulls county records, aerial imagery, and parcel data so you arrive prepared.",
+      "difficulty": "Advanced",
+      "tools": ["OnX Maps", "County GIS", "ChatGPT"]
+    }
+  ],
+  "admin": [
+    {
+      "title": "Job Scheduling & Dispatch",
+      "description": "Automatically assign jobs based on equipment location, job size, and crew availability. Optimize for minimal travel between sites.",
+      "difficulty": "Medium",
+      "tools": ["Jobber", "ServiceTitan", "Housecall Pro"]
+    },
+    {
+      "title": "Invoice Generation",
+      "description": "Generate invoices automatically when jobs complete. Include before/after photos, acreage cleared, and payment links.",
+      "difficulty": "Easy",
+      "tools": ["QuickBooks", "Jobber", "Invoice Ninja"]
+    },
+    {
+      "title": "Contract & Proposal Generation",
+      "description": "AI drafts proposals based on site visit notes. Include scope, timeline, pricing, and terms — ready for signature.",
+      "difficulty": "Medium",
+      "tools": ["PandaDoc", "Proposify", "ChatGPT"]
+    },
+    {
+      "title": "Permit Research",
+      "description": "AI helps research local clearing permits, wetland regulations, and burn restrictions before you quote a job.",
+      "difficulty": "Medium",
+      "tools": ["ChatGPT", "County websites", "Perplexity"]
+    }
+  ],
+  "operations": [
+    {
+      "title": "Equipment Hour Tracking",
+      "description": "Track mulcher and skid steer hours automatically. Get maintenance alerts based on actual usage, not calendar time.",
+      "difficulty": "Easy",
+      "tools": ["FieldFix", "Fleetio", "UpKeep"]
+    },
+    {
+      "title": "Fuel & Expense Tracking",
+      "description": "Log fuel purchases automatically. Track cost-per-acre and identify which jobs are most profitable.",
+      "difficulty": "Easy",
+      "tools": ["FieldFix", "Expensify", "QuickBooks"]
+    },
+    {
+      "title": "Weather-Based Scheduling",
+      "description": "AI monitors weather and automatically suggests rescheduling when conditions aren't suitable for mulching.",
+      "difficulty": "Medium",
+      "tools": ["Tomorrow.io", "Zapier", "Custom integration"]
+    },
+    {
+      "title": "Job Photo Documentation",
+      "description": "Automatically organize job photos by date, location, and client. Generate progress reports with before/during/after shots.",
+      "difficulty": "Easy",
+      "tools": ["CompanyCam", "Jobber", "Google Photos"]
+    },
+    {
+      "title": "Parts & Supply Reordering",
+      "description": "Track mulcher teeth, hydraulic fluid, and consumables. Get automatic reorder alerts before you run out mid-job.",
+      "difficulty": "Medium",
+      "tools": ["Sortly", "FieldFix", "Custom spreadsheet"]
+    }
+  ],
+  "customerService": [
+    {
+      "title": "Automated Booking Confirmation",
+      "description": "When a job is scheduled, automatically send confirmation with date, time window, and what to expect.",
+      "difficulty": "Easy",
+      "tools": ["Jobber", "Housecall Pro", "Calendly"]
+    },
+    {
+      "title": "Job Status Updates",
+      "description": "Automatic texts when crew is en route, when work starts, and when the job is complete with photos.",
+      "difficulty": "Easy",
+      "tools": ["Jobber", "ServiceTitan", "GoHighLevel"]
+    },
+    {
+      "title": "Review Request Automation",
+      "description": "Text customers right after job completion asking for a Google review. Include a direct link to make it one-tap easy.",
+      "difficulty": "Easy",
+      "tools": ["NiceJob", "Birdeye", "Podium"]
+    },
+    {
+      "title": "Maintenance Reminder Sequences",
+      "description": "For ongoing clients, automatically reach out when it's time for another clearing — seasonal or annual.",
+      "difficulty": "Medium",
+      "tools": ["Mailchimp", "GoHighLevel", "Jobber"]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "marketing": [
+    {
+      "title": "Social Media Content Creation",
+      "description": "AI can generate post ideas, write captions, and even create images for your social media. Post consistently without spending hours on content.",
+      "difficulty": "Easy",
+      "tools": ["ChatGPT", "Canva AI", "Buffer"]
+    },
+    {
+      "title": "Review Response Automation",
+      "description": "Automatically draft personalized responses to Google and Yelp reviews. Keeps your response rate high without the daily grind.",
+      "difficulty": "Easy",
+      "tools": ["ChatGPT", "Podium", "NiceJob"]
+    },
+    {
+      "title": "SEO Content Generation",
+      "description": "Generate blog posts, service pages, and FAQs optimized for local search. Rank higher for '[your service] near me' searches.",
+      "difficulty": "Medium",
+      "tools": ["ChatGPT", "Jasper", "SurferSEO"]
+    },
+    {
+      "title": "Email Marketing Campaigns",
+      "description": "Create seasonal promotions, maintenance reminders, and follow-up sequences that nurture leads automatically.",
+      "difficulty": "Medium",
+      "tools": ["Mailchimp", "ConvertKit", "ActiveCampaign"]
+    }
+  ],
+  "sales": [
+    {
+      "title": "Lead Qualification Chatbot",
+      "description": "A chatbot on your website that asks qualifying questions 24/7, captures contact info, and routes hot leads to you immediately.",
+      "difficulty": "Medium",
+      "tools": ["Tidio", "Intercom", "Drift"]
+    },
+    {
+      "title": "Instant Quote Generation",
+      "description": "Let customers get rough estimates instantly based on job details. Qualified leads book calls; tire-kickers filter themselves out.",
+      "difficulty": "Medium",
+      "tools": ["Jobber", "ServiceTitan", "Custom forms"]
+    },
+    {
+      "title": "Automated Follow-Up Sequences",
+      "description": "When a lead doesn't book immediately, automated texts and emails follow up at the right intervals until they convert or opt out.",
+      "difficulty": "Easy",
+      "tools": ["GoHighLevel", "Housecall Pro", "Jobber"]
+    },
+    {
+      "title": "CRM Auto-Updates",
+      "description": "AI can log calls, update deal stages, and add notes to your CRM automatically based on conversations.",
+      "difficulty": "Advanced",
+      "tools": ["HubSpot", "Salesforce Einstein", "Pipedrive"]
+    }
+  ],
+  "admin": [
+    {
+      "title": "Scheduling & Dispatch",
+      "description": "Automatically assign jobs to techs based on location, skills, and availability. Optimize routes to reduce drive time.",
+      "difficulty": "Medium",
+      "tools": ["Jobber", "ServiceTitan", "Housecall Pro"]
+    },
+    {
+      "title": "Invoice Generation",
+      "description": "Generate and send invoices automatically when jobs are marked complete. Include photos, line items, and payment links.",
+      "difficulty": "Easy",
+      "tools": ["QuickBooks", "Jobber", "Invoice Ninja"]
+    },
+    {
+      "title": "Email & Message Triage",
+      "description": "AI sorts incoming emails and messages by priority, drafts responses, and flags urgent items for your attention.",
+      "difficulty": "Medium",
+      "tools": ["SaneBox", "ChatGPT", "Front"]
+    },
+    {
+      "title": "Document Processing",
+      "description": "Extract data from permits, contracts, and invoices automatically. No more manual data entry.",
+      "difficulty": "Advanced",
+      "tools": ["DocuSign", "Adobe Acrobat AI", "Nanonets"]
+    }
+  ],
+  "operations": [
+    {
+      "title": "Job Progress Tracking",
+      "description": "Techs update job status from the field; customers get automatic notifications. Everyone stays informed without phone calls.",
+      "difficulty": "Easy",
+      "tools": ["Jobber", "ServiceTitan", "Housecall Pro"]
+    },
+    {
+      "title": "Inventory Management",
+      "description": "Track parts and materials in real-time. Get automatic reorder alerts before you run out of critical supplies.",
+      "difficulty": "Medium",
+      "tools": ["Sortly", "inFlow", "ServiceTitan"]
+    },
+    {
+      "title": "Equipment Maintenance Alerts",
+      "description": "Track equipment hours and get notified when maintenance is due. Prevent breakdowns before they happen.",
+      "difficulty": "Easy",
+      "tools": ["FieldFix", "Fleetio", "UpKeep"]
+    },
+    {
+      "title": "Route Optimization",
+      "description": "AI plans the most efficient route for the day's jobs, reducing fuel costs and fitting in more appointments.",
+      "difficulty": "Easy",
+      "tools": ["OptimoRoute", "Route4Me", "Google Maps API"]
+    }
+  ],
+  "customerService": [
+    {
+      "title": "FAQ Chatbot",
+      "description": "Answer common questions automatically — pricing ranges, service areas, hours, booking process — even at 3am.",
+      "difficulty": "Easy",
+      "tools": ["Tidio", "Intercom", "ChatBot.com"]
+    },
+    {
+      "title": "Appointment Booking",
+      "description": "Customers book directly on your calendar without back-and-forth. Sends confirmations and reminders automatically.",
+      "difficulty": "Easy",
+      "tools": ["Calendly", "Jobber", "Housecall Pro"]
+    },
+    {
+      "title": "Job Status Updates",
+      "description": "Automatic texts when tech is en route, when job starts, and when complete. Customers love the transparency.",
+      "difficulty": "Easy",
+      "tools": ["Jobber", "ServiceTitan", "Housecall Pro"]
+    },
+    {
+      "title": "Review Request Automation",
+      "description": "Automatically text happy customers asking for a Google review. Timing is key — send right after job completion.",
+      "difficulty": "Easy",
+      "tools": ["NiceJob", "Birdeye", "Podium"]
+    }
+  ]
+}
