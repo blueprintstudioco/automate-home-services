@@ -1,11 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #f97316;
-  --color-dark: #0f172a;
-  --color-darker: #020617;
+  /* Blueprint palette */
+  --navy-950: #0a1628;
+  --navy-900: #0f2340;
+  --navy-800: #1a3556;
+  --navy-700: #254a6e;
+  --cyan-500: #22d3ee;
+  --cyan-400: #67e8f9;
+  --paper-100: #faf8f3;
+  --paper-200: #f5f0e6;
+  --cta-500: #f97316;
+  --cta-600: #ea580c;
 }
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Blueprint grid background */
+.blueprint-bg {
+  background-color: var(--navy-950);
+  background-image: 
+    linear-gradient(rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Paper card style - like cards on a drafting table */
+.paper-card {
+  background-color: var(--paper-100);
+  color: var(--navy-900);
+  border-radius: 0.5rem;
+  box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Dark card style - for secondary elements */
+.dark-card {
+  background-color: var(--navy-900);
+  border: 1px solid var(--navy-700);
+  border-radius: 0.75rem;
+}
+
+/* Cyan highlight/accent */
+.cyan-accent {
+  color: var(--cyan-500);
+}
+
+.cyan-border {
+  border-color: var(--cyan-500);
+}
+
+/* CTA button style */
+.btn-cta {
+  background-color: var(--cta-500);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease;
+}
+
+.btn-cta:hover {
+  background-color: var(--cta-600);
+}
+
+/* Progress bar cyan variant */
+.progress-cyan {
+  background-color: var(--cyan-500);
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(34, 211, 238, 0.3);
+  color: white;
 }

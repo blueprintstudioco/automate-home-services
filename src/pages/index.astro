@@ -8,24 +8,29 @@ import trades from '../data/trades.json';
     
     <!-- Hero -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
-        How Does Your Business <span class="text-orange-500">Stack Up?</span>
+      <div class="inline-flex items-center gap-2 bg-navy-900 border border-cyan-500/20 rounded-full px-4 py-2 mb-6">
+        <span class="text-cyan-400 text-sm">📋</span>
+        <span class="text-paper-200/80 text-sm">Free 2-minute assessment</span>
+      </div>
+      
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-paper-100">
+        How Does Your Business <span class="text-cyan-400">Stack Up?</span>
       </h1>
-      <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
-        Take the 2-minute assessment. See what successful businesses do that you're not doing — and how AI can close the gaps.
+      <p class="text-xl text-paper-200/70 max-w-2xl mx-auto mb-8">
+        Take the assessment. See what successful businesses do that you're not doing — and how AI can close the gaps.
       </p>
     </div>
 
-    <!-- Trade Selector -->
-    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 max-w-xl mx-auto">
-      <h2 class="text-xl font-semibold mb-6 text-center">What kind of business do you run?</h2>
+    <!-- Trade Selector Card -->
+    <div class="paper-card p-8 max-w-xl mx-auto">
+      <h2 class="text-xl font-semibold mb-6 text-center text-navy-900">What kind of business do you run?</h2>
       
       <form action="/assess" method="get" class="space-y-6">
         <div>
           <select 
             name="trade" 
             required
-            class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-4 text-lg focus:border-orange-500 focus:ring-orange-500 focus:outline-none appearance-none cursor-pointer"
+            class="w-full bg-white border-2 border-navy-200 rounded-lg px-4 py-4 text-lg text-navy-900 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 focus:outline-none appearance-none cursor-pointer"
           >
             <option value="">Select your trade...</option>
             {trades.trades.map((trade) => (
@@ -36,45 +41,51 @@ import trades from '../data/trades.json';
         
         <button 
           type="submit"
-          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-6 rounded-xl text-lg transition-colors"
+          class="w-full btn-cta text-lg py-4 rounded-lg"
         >
           Start My Assessment →
         </button>
       </form>
       
-      <p class="text-center text-slate-500 text-sm mt-4">
+      <p class="text-center text-navy-600 text-sm mt-4">
         Free. No email required. Takes 2 minutes.
       </p>
     </div>
 
     <!-- What You'll Learn -->
-    <div class="mt-16 grid md:grid-cols-3 gap-8">
-      <div class="text-center">
-        <div class="text-4xl mb-4">📊</div>
-        <h3 class="font-semibold text-lg mb-2">Get Your Score</h3>
-        <p class="text-slate-400">See how you compare to top performers in your trade.</p>
+    <div class="mt-16 grid md:grid-cols-3 gap-6">
+      <div class="dark-card p-6 text-center">
+        <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <span class="text-2xl">📊</span>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 text-paper-100">Get Your Score</h3>
+        <p class="text-paper-200/60">See how you compare to top performers in your trade.</p>
       </div>
-      <div class="text-center">
-        <div class="text-4xl mb-4">🎯</div>
-        <h3 class="font-semibold text-lg mb-2">Find Your Gaps</h3>
-        <p class="text-slate-400">Discover what successful businesses do that you're not doing.</p>
+      <div class="dark-card p-6 text-center">
+        <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <span class="text-2xl">🎯</span>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 text-paper-100">Find Your Gaps</h3>
+        <p class="text-paper-200/60">Discover what successful businesses do that you're not doing.</p>
       </div>
-      <div class="text-center">
-        <div class="text-4xl mb-4">⚡</div>
-        <h3 class="font-semibold text-lg mb-2">Fix with AI</h3>
-        <p class="text-slate-400">Get step-by-step guides to automate each gap.</p>
+      <div class="dark-card p-6 text-center">
+        <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+          <span class="text-2xl">⚡</span>
+        </div>
+        <h3 class="font-semibold text-lg mb-2 text-paper-100">Automate It</h3>
+        <p class="text-paper-200/60">Get step-by-step guides to automate each gap.</p>
       </div>
     </div>
 
     <!-- Social Proof / Why -->
-    <div class="mt-20 border-t border-slate-800 pt-16">
-      <h2 class="text-2xl font-bold text-center mb-8">Why This Exists</h2>
-      <div class="max-w-3xl mx-auto text-slate-400 space-y-4 text-lg">
+    <div class="mt-20 border-t border-navy-800/50 pt-16">
+      <h2 class="text-2xl font-bold text-center mb-8 text-paper-100">Why This Exists</h2>
+      <div class="max-w-3xl mx-auto text-paper-200/70 space-y-4 text-lg">
         <p>
           Most business owners know they should be "using AI" but don't know where to start.
         </p>
         <p>
-          Worse — they don't even know what they <em>should</em> be doing in their business. 
+          Worse — they don't even know what they <em class="text-cyan-400">should</em> be doing in their business. 
           Things like responding to every review, following up with old leads, or asking for referrals.
         </p>
         <p>
@@ -86,8 +97,8 @@ import trades from '../data/trades.json';
 
     <!-- Browse by Trade (secondary option) -->
     <div class="mt-16 text-center">
-      <p class="text-slate-500 mb-4">Or browse automation ideas by trade:</p>
-      <a href="/trades" class="text-orange-500 hover:text-orange-400 font-medium">
+      <p class="text-paper-200/50 mb-4">Or browse automation ideas by trade:</p>
+      <a href="/trades" class="text-cyan-400 hover:text-cyan-300 font-medium">
         View all 36 trades →
       </a>
     </div>

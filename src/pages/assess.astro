@@ -15,7 +15,7 @@ const baseCategories = baseChecklist.categories;
     
     <!-- Header -->
     <div class="mb-8">
-      <a href="/" class="inline-flex items-center text-slate-400 hover:text-white mb-4 transition-colors">
+      <a href="/" class="inline-flex items-center text-paper-200/60 hover:text-cyan-400 mb-4 transition-colors">
         <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
         </svg>
@@ -25,20 +25,20 @@ const baseCategories = baseChecklist.categories;
       <div class="flex items-center gap-4 mb-4">
         <span id="trade-icon" class="text-5xl">⏳</span>
         <div>
-          <h1 id="trade-title" class="text-3xl font-extrabold">Loading Assessment...</h1>
-          <p class="text-slate-400">Answer Yes or No for each item</p>
+          <h1 id="trade-title" class="text-3xl font-extrabold text-paper-100">Loading Assessment...</h1>
+          <p class="text-paper-200/60">Answer Yes or No for each item</p>
         </div>
       </div>
     </div>
 
     <!-- Progress Bar -->
-    <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mb-8 sticky top-0 z-10">
+    <div class="dark-card p-4 mb-8 sticky top-16 z-10">
       <div class="flex items-center justify-between mb-2">
-        <span class="text-sm text-slate-400">Questions Answered</span>
-        <span class="text-sm font-semibold"><span id="answered-count">0</span> / <span id="total-items">0</span></span>
+        <span class="text-sm text-paper-200/60">Questions Answered</span>
+        <span class="text-sm font-semibold text-paper-100"><span id="answered-count">0</span> / <span id="total-items">0</span></span>
       </div>
-      <div class="w-full bg-slate-800 rounded-full h-3">
-        <div id="progress-bar" class="bg-orange-500 h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
+      <div class="w-full bg-navy-800 rounded-full h-3">
+        <div id="progress-bar" class="progress-cyan h-3 rounded-full transition-all duration-300" style="width: 0%"></div>
       </div>
     </div>
 
@@ -47,7 +47,7 @@ const baseCategories = baseChecklist.categories;
       <input type="hidden" id="trade-input" name="trade" value="" />
       <div id="checklist-container">
         <!-- Categories will be rendered here by JavaScript -->
-        <div class="text-center py-12 text-slate-400">Loading checklist...</div>
+        <div class="text-center py-12 text-paper-200/60">Loading checklist...</div>
       </div>
 
       <!-- Submit Button -->
@@ -56,11 +56,11 @@ const baseCategories = baseChecklist.categories;
           type="submit"
           id="submit-btn"
           disabled
-          class="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-slate-700 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-xl text-lg transition-colors shadow-lg shadow-orange-500/20 disabled:shadow-none"
+          class="w-full btn-cta text-lg py-4 rounded-xl disabled:bg-navy-700 disabled:cursor-not-allowed shadow-lg disabled:shadow-none"
         >
           See My Results →
         </button>
-        <p id="submit-hint" class="text-center text-slate-500 text-sm mt-2">Answer all questions to continue</p>
+        <p id="submit-hint" class="text-center text-paper-200/50 text-sm mt-2">Answer all questions to continue</p>
       </div>
     </form>
 
@@ -110,31 +110,31 @@ const baseCategories = baseChecklist.categories;
       const container = document.getElementById('checklist-container');
       
       const html = checklist.map(category => `
-        <section class="bg-slate-900 border border-slate-800 rounded-xl p-6">
-          <h2 class="text-xl font-bold mb-6 flex items-center gap-3">
+        <section class="paper-card p-6">
+          <h2 class="text-xl font-bold mb-6 flex items-center gap-3 text-navy-900">
             <span class="text-2xl">${category.icon}</span>
             ${category.name}
-            <span class="text-sm font-normal text-slate-500">(${category.items.length} items)</span>
+            <span class="text-sm font-normal text-navy-500">(${category.items.length} items)</span>
           </h2>
           
           <div class="space-y-4">
             ${category.items.map(item => `
-              <div class="p-4 rounded-lg border border-slate-800 transition-colors" data-item="${item.id}">
+              <div class="p-4 rounded-lg border-2 border-navy-200 bg-white transition-colors" data-item="${item.id}">
                 <div class="flex items-start justify-between gap-4 mb-3">
                   <div class="flex-1">
                     <div class="flex items-start gap-3">
-                      <span class="font-medium text-white">
+                      <span class="font-medium text-navy-900">
                         ${item.text}
                       </span>
                       <span class="flex-shrink-0 text-xs px-2 py-1 rounded ${
-                        item.weight === 3 ? 'bg-red-500/20 text-red-400' :
-                        item.weight === 2 ? 'bg-yellow-500/20 text-yellow-400' :
-                        'bg-green-500/20 text-green-400'
+                        item.weight === 3 ? 'bg-red-100 text-red-700' :
+                        item.weight === 2 ? 'bg-amber-100 text-amber-700' :
+                        'bg-green-100 text-green-700'
                       }">
                         ${item.weight === 3 ? 'Critical' : item.weight === 2 ? 'Important' : 'Nice to have'}
                       </span>
                     </div>
-                    <p class="text-slate-400 text-sm mt-1">${item.why}</p>
+                    <p class="text-navy-600 text-sm mt-1">${item.why}</p>
                   </div>
                 </div>
                 <div class="flex gap-2">
@@ -143,7 +143,7 @@ const baseCategories = baseChecklist.categories;
                     data-item="${item.id}"
                     data-answer="yes"
                     data-weight="${item.weight}"
-                    class="yes-btn flex-1 py-2 px-4 rounded-lg border-2 border-slate-700 text-slate-400 font-medium transition-all hover:border-green-500 hover:text-green-400"
+                    class="yes-btn flex-1 py-2 px-4 rounded-lg border-2 border-navy-200 text-navy-500 font-medium transition-all hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50"
                   >
                     ✓ Yes
                   </button>
@@ -152,7 +152,7 @@ const baseCategories = baseChecklist.categories;
                     data-item="${item.id}"
                     data-answer="no"
                     data-weight="${item.weight}"
-                    class="no-btn flex-1 py-2 px-4 rounded-lg border-2 border-slate-700 text-slate-400 font-medium transition-all hover:border-red-500 hover:text-red-400"
+                    class="no-btn flex-1 py-2 px-4 rounded-lg border-2 border-navy-200 text-navy-500 font-medium transition-all hover:border-red-400 hover:text-red-500 hover:bg-red-50"
                   >
                     ✗ No
                   </button>
@@ -189,13 +189,13 @@ const baseCategories = baseChecklist.categories;
       noBtn.className = 'no-btn flex-1 py-2 px-4 rounded-lg border-2 font-medium transition-all';
       
       if (answer === 'yes') {
-        yesBtn.className += ' border-green-500 bg-green-500/20 text-green-400';
-        noBtn.className += ' border-slate-700 text-slate-500 hover:border-red-500 hover:text-red-400';
-        itemContainer.className = 'p-4 rounded-lg border border-green-500/30 bg-green-500/5 transition-colors';
+        yesBtn.className += ' border-emerald-500 bg-emerald-100 text-emerald-700';
+        noBtn.className += ' border-navy-200 text-navy-400 hover:border-red-400 hover:text-red-500 hover:bg-red-50';
+        itemContainer.className = 'p-4 rounded-lg border-2 border-emerald-300 bg-emerald-50 transition-colors';
       } else {
-        noBtn.className += ' border-red-500 bg-red-500/20 text-red-400';
-        yesBtn.className += ' border-slate-700 text-slate-500 hover:border-green-500 hover:text-green-400';
-        itemContainer.className = 'p-4 rounded-lg border border-slate-700 bg-slate-800/30 transition-colors';
+        noBtn.className += ' border-red-400 bg-red-100 text-red-700';
+        yesBtn.className += ' border-navy-200 text-navy-400 hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50';
+        itemContainer.className = 'p-4 rounded-lg border-2 border-navy-200 bg-navy-50 transition-colors';
       }
       
       updateProgress();
@@ -216,12 +216,12 @@ const baseCategories = baseChecklist.categories;
       if (answered === totalItems) {
         submitBtn.disabled = false;
         submitHint.textContent = 'Ready to see your results!';
-        submitHint.className = 'text-center text-green-400 text-sm mt-2';
+        submitHint.className = 'text-center text-cyan-400 text-sm mt-2';
       } else {
         submitBtn.disabled = true;
         const remaining = totalItems - answered;
         submitHint.textContent = `${remaining} question${remaining === 1 ? '' : 's'} remaining`;
-        submitHint.className = 'text-center text-slate-500 text-sm mt-2';
+        submitHint.className = 'text-center text-paper-200/50 text-sm mt-2';
       }
     }
 

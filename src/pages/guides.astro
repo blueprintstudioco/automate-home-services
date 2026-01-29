@@ -14,15 +14,15 @@ const guides = guideFiles.map(file => {
 });
 
 const difficultyColors = {
-  'Easy': 'bg-green-500/20 text-green-400 border-green-500/30',
-  'Medium': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-  'Advanced': 'bg-red-500/20 text-red-400 border-red-500/30'
+  'Easy': 'bg-emerald-100 text-emerald-700 border-emerald-200',
+  'Medium': 'bg-amber-100 text-amber-700 border-amber-200',
+  'Advanced': 'bg-red-100 text-red-700 border-red-200'
 };
 
 const costColors = {
-  'Free': 'bg-green-500/20 text-green-400',
-  'Freemium': 'bg-blue-500/20 text-blue-400',
-  'Paid': 'bg-orange-500/20 text-orange-400'
+  'Free': 'bg-emerald-100 text-emerald-700',
+  'Freemium': 'bg-sky-100 text-sky-700',
+  'Paid': 'bg-orange-100 text-orange-700'
 };
 ---
 
@@ -30,7 +30,7 @@ const costColors = {
   <main class="max-w-6xl mx-auto px-6 py-12">
     
     <!-- Back Link -->
-    <a href="/" class="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+    <a href="/" class="inline-flex items-center text-paper-200/60 hover:text-cyan-400 mb-8 transition-colors">
       <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
@@ -39,10 +39,10 @@ const costColors = {
 
     <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-        Setup <span class="text-orange-500">Guides</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-paper-100">
+        Setup <span class="text-cyan-400">Guides</span>
       </h1>
-      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+      <p class="text-xl text-paper-200/70 max-w-2xl mx-auto">
         Step-by-step instructions so simple a 10-year-old could follow them.
         No jargon, no fluff — just exactly what to click.
       </p>
@@ -53,7 +53,7 @@ const costColors = {
       {guides.map((guide) => (
         <a 
           href={`/guide/${guide.slug}`}
-          class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-orange-500/50 transition-all hover:scale-[1.02]"
+          class="paper-card p-6 hover:scale-[1.02] transition-all"
         >
           <div class="flex flex-wrap gap-2 mb-4">
             <span class={`text-xs px-2 py-1 rounded-full border ${difficultyColors[guide.difficulty]}`}>
@@ -62,15 +62,15 @@ const costColors = {
             <span class={`text-xs px-2 py-1 rounded-full ${costColors[guide.costType]}`}>
               {guide.cost}
             </span>
-            <span class="text-xs px-2 py-1 rounded-full bg-slate-800 text-slate-400">
+            <span class="text-xs px-2 py-1 rounded-full bg-navy-100 text-navy-600">
               ⏱️ {guide.time}
             </span>
           </div>
           
-          <h2 class="text-xl font-bold text-white mb-2">{guide.title}</h2>
-          <p class="text-slate-400 mb-4">{guide.description}</p>
+          <h2 class="text-xl font-bold text-navy-900 mb-2">{guide.title}</h2>
+          <p class="text-navy-600 mb-4">{guide.description}</p>
           
-          <span class="text-orange-500 font-medium">
+          <span class="text-cta-500 font-medium">
             Read guide →
           </span>
         </a>
@@ -79,9 +79,9 @@ const costColors = {
 
     <!-- More Coming -->
     <div class="mt-12 text-center">
-      <p class="text-slate-500">
+      <p class="text-paper-200/50">
         More guides added regularly. 
-        <a href="mailto:alex@blueprintstudioco.com" class="text-orange-500 hover:underline">
+        <a href="mailto:alex@blueprintstudioco.com" class="text-cyan-400 hover:underline">
           Request a guide
         </a>
       </p>

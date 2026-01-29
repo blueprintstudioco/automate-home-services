@@ -35,8 +35,8 @@ function getAllItems(tradeId: string) {
     
     <!-- Loading State -->
     <div id="loading" class="text-center py-20">
-      <div class="text-4xl mb-4">⏳</div>
-      <p class="text-slate-400">Loading your results...</p>
+      <div class="text-4xl mb-4">📐</div>
+      <p class="text-paper-200/60">Loading your results...</p>
     </div>
 
     <!-- Results Content (hidden until loaded) -->
@@ -44,25 +44,25 @@ function getAllItems(tradeId: string) {
       
       <!-- Score Header -->
       <div class="text-center mb-12">
-        <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-2 mb-6">
+        <div class="inline-flex items-center gap-2 dark-card px-4 py-2 mb-6">
           <span id="trade-icon" class="text-2xl"></span>
-          <span id="trade-name" class="font-medium"></span>
+          <span id="trade-name" class="font-medium text-paper-100"></span>
         </div>
         
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-          Your Score: <span id="score-percent" class="text-orange-500">0%</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-paper-100">
+          Your Score: <span id="score-percent" class="text-cyan-400">0%</span>
         </h1>
         
-        <p class="text-xl text-slate-400 mb-6">
-          You're doing <span id="checked-count" class="text-white font-semibold">0</span> out of <span id="total-items" class="text-white font-semibold">0</span> things successful <span id="trade-name-2"></span> businesses do.
+        <p class="text-xl text-paper-200/70 mb-6">
+          You're doing <span id="checked-count" class="text-paper-100 font-semibold">0</span> out of <span id="total-items" class="text-paper-100 font-semibold">0</span> things successful <span id="trade-name-2"></span> businesses do.
         </p>
 
         <!-- Score Bar -->
         <div class="max-w-md mx-auto">
-          <div class="w-full bg-slate-800 rounded-full h-4 mb-2">
-            <div id="score-bar" class="bg-orange-500 h-4 rounded-full transition-all duration-1000" style="width: 0%"></div>
+          <div class="w-full bg-navy-800 rounded-full h-4 mb-2">
+            <div id="score-bar" class="progress-cyan h-4 rounded-full transition-all duration-1000" style="width: 0%"></div>
           </div>
-          <div class="flex justify-between text-sm text-slate-500">
+          <div class="flex justify-between text-sm text-paper-200/50">
             <span>Needs Work</span>
             <span>Good</span>
             <span>Excellent</span>
@@ -71,50 +71,50 @@ function getAllItems(tradeId: string) {
       </div>
 
       <!-- Grade Card -->
-      <div id="grade-card" class="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center mb-12">
-        <div id="grade" class="text-6xl font-extrabold mb-2">C</div>
-        <p id="grade-message" class="text-slate-400"></p>
+      <div id="grade-card" class="paper-card p-8 text-center mb-12">
+        <div id="grade" class="text-6xl font-extrabold mb-2 text-navy-900">C</div>
+        <p id="grade-message" class="text-navy-600"></p>
       </div>
 
       <!-- Critical Gaps -->
       <section id="critical-gaps-section" class="mb-12">
-        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
-          <span class="text-red-500">🔴</span> Critical Gaps
+        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3 text-paper-100">
+          <span class="text-red-400">🔴</span> Critical Gaps
         </h2>
-        <p class="text-slate-400 mb-6">High-impact items you're not doing. Fix these first.</p>
+        <p class="text-paper-200/60 mb-6">High-impact items you're not doing. Fix these first.</p>
         <div id="critical-gaps" class="space-y-4"></div>
       </section>
 
       <!-- Quick Wins -->
       <section id="quick-wins-section" class="mb-12">
-        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
-          <span class="text-yellow-500">🟡</span> Quick Wins
+        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3 text-paper-100">
+          <span class="text-amber-400">🟡</span> Quick Wins
         </h2>
-        <p class="text-slate-400 mb-6">Easy to fix. Start here for momentum.</p>
+        <p class="text-paper-200/60 mb-6">Easy to fix. Start here for momentum.</p>
         <div id="quick-wins" class="space-y-4"></div>
       </section>
 
       <!-- What You're Doing Right -->
       <section id="doing-well-section" class="mb-12">
-        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
-          <span class="text-green-500">🟢</span> What You're Doing Right
+        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3 text-paper-100">
+          <span class="text-emerald-400">🟢</span> What You're Doing Right
         </h2>
-        <p class="text-slate-400 mb-6">Keep it up!</p>
+        <p class="text-paper-200/60 mb-6">Keep it up!</p>
         <div id="doing-well" class="space-y-2"></div>
       </section>
 
       <!-- CTA -->
-      <div class="bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-2xl p-8 text-center">
-        <h2 class="text-2xl font-bold mb-4">Ready to Close the Gaps?</h2>
-        <p class="text-slate-400 mb-6 max-w-2xl mx-auto">
+      <div class="dark-card border-cyan-500/20 p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4 text-paper-100">Ready to Close the Gaps?</h2>
+        <p class="text-paper-200/60 mb-6 max-w-2xl mx-auto">
           Click "Help me Automate This" on any gap above to get step-by-step instructions.
           Most take less than 15 minutes to set up.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+          <a href="/" class="bg-navy-800 hover:bg-navy-700 text-paper-100 font-semibold px-6 py-3 rounded-lg transition-colors border border-navy-600">
             Retake Assessment
           </a>
-          <a href="/guides" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+          <a href="/guides" class="btn-cta px-6 py-3 rounded-lg">
             Browse All Guides
           </a>
         </div>
@@ -122,11 +122,11 @@ function getAllItems(tradeId: string) {
 
       <!-- Share -->
       <div class="mt-12 text-center">
-        <p class="text-slate-500">
+        <p class="text-paper-200/50">
           Know another business owner who could use this?
           <button 
             onclick="navigator.share ? navigator.share({title: 'Business Assessment', url: window.location.origin}) : navigator.clipboard.writeText(window.location.origin).then(() => alert('Link copied!'))"
-            class="text-orange-500 hover:underline"
+            class="text-cyan-400 hover:underline"
           >
             Share this tool
           </button>
@@ -181,19 +181,19 @@ function getAllItems(tradeId: string) {
       // Determine grade
       let grade, gradeColor, gradeMessage;
       if (scorePercent >= 90) {
-        grade = 'A'; gradeColor = 'text-green-400'; 
+        grade = 'A'; gradeColor = 'text-emerald-600'; 
         gradeMessage = "Outstanding! You're running a top-tier operation.";
       } else if (scorePercent >= 80) {
-        grade = 'B'; gradeColor = 'text-green-400';
+        grade = 'B'; gradeColor = 'text-emerald-600';
         gradeMessage = "Great job! A few tweaks and you'll be at the top.";
       } else if (scorePercent >= 70) {
-        grade = 'C'; gradeColor = 'text-yellow-400';
+        grade = 'C'; gradeColor = 'text-amber-600';
         gradeMessage = "Solid foundation. Some key opportunities to improve.";
       } else if (scorePercent >= 50) {
-        grade = 'D'; gradeColor = 'text-orange-400';
+        grade = 'D'; gradeColor = 'text-orange-600';
         gradeMessage = "Room for improvement. The good news? Lots of quick wins available.";
       } else {
-        grade = 'F'; gradeColor = 'text-red-400';
+        grade = 'F'; gradeColor = 'text-red-600';
         gradeMessage = "Major opportunities ahead. Let's fix the critical gaps first.";
       }
       
@@ -231,18 +231,18 @@ function getAllItems(tradeId: string) {
       function renderGapCard(item) {
         const hasGuide = item.aiSolution && !['habit', 'idea'].includes(item.solutionType);
         return `
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <div class="paper-card p-5">
             <div class="flex items-start justify-between gap-4 mb-2">
-              <h3 class="font-semibold text-white">${item.text}</h3>
-              <span class="text-xs text-slate-500 flex-shrink-0">${item.categoryIcon} ${item.category}</span>
+              <h3 class="font-semibold text-navy-900">${item.text}</h3>
+              <span class="text-xs text-navy-500 flex-shrink-0">${item.categoryIcon} ${item.category}</span>
             </div>
-            <p class="text-slate-400 text-sm mb-4">${item.why}</p>
+            <p class="text-navy-600 text-sm mb-4">${item.why}</p>
             ${hasGuide ? `
-              <a href="/guide/${item.aiSolution}" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+              <a href="/guide/${item.aiSolution}" class="inline-flex items-center btn-cta px-4 py-2 text-sm">
                 Help me Automate This →
               </a>
             ` : `
-              <span class="text-slate-600 text-sm">Guide coming soon</span>
+              <span class="text-navy-400 text-sm">Guide coming soon</span>
             `}
           </div>
         `;
@@ -250,22 +250,22 @@ function getAllItems(tradeId: string) {
       
       document.getElementById('critical-gaps').innerHTML = criticalGaps.length 
         ? criticalGaps.map(renderGapCard).join('')
-        : '<p class="text-slate-500">No critical gaps! 🎉</p>';
+        : '<p class="text-paper-200/50">No critical gaps! 🎉</p>';
         
       document.getElementById('quick-wins').innerHTML = quickWins.length
         ? quickWins.map(renderGapCard).join('')
-        : '<p class="text-slate-500">No quick wins remaining!</p>';
+        : '<p class="text-paper-200/50">No quick wins remaining!</p>';
       
       // Render what they're doing well
       const doingWell = results.checked.map(id => allItems[id]).filter(Boolean);
       document.getElementById('doing-well').innerHTML = doingWell.length
         ? doingWell.map(item => `
-            <div class="flex items-center gap-3 text-slate-400">
-              <span class="text-green-500">✓</span>
+            <div class="flex items-center gap-3 text-paper-200/70">
+              <span class="text-emerald-400">✓</span>
               <span>${item.text}</span>
             </div>
           `).join('')
-        : '<p class="text-slate-500">Complete the assessment to see what you\'re doing well.</p>';
+        : '<p class="text-paper-200/50">Complete the assessment to see what you\'re doing well.</p>';
       
       // Hide sections if empty
       if (criticalGaps.length === 0) {

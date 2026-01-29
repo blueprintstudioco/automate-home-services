@@ -24,15 +24,15 @@ export function getStaticPaths() {
 const { guide, slug } = Astro.props;
 
 const difficultyColors = {
-  'Easy': 'bg-green-500/20 text-green-400 border-green-500/30',
-  'Medium': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-  'Advanced': 'bg-red-500/20 text-red-400 border-red-500/30'
+  'Easy': 'bg-emerald-100 text-emerald-700 border-emerald-200',
+  'Medium': 'bg-amber-100 text-amber-700 border-amber-200',
+  'Advanced': 'bg-red-100 text-red-700 border-red-200'
 };
 
 const costColors = {
-  'Free': 'bg-green-500/20 text-green-400',
-  'Freemium': 'bg-blue-500/20 text-blue-400',
-  'Paid': 'bg-orange-500/20 text-orange-400'
+  'Free': 'bg-emerald-100 text-emerald-700',
+  'Freemium': 'bg-sky-100 text-sky-700',
+  'Paid': 'bg-orange-100 text-orange-700'
 };
 ---
 
@@ -40,11 +40,11 @@ const costColors = {
   <main class="max-w-3xl mx-auto px-6 py-12">
     
     <!-- Back Link -->
-    <a href="/" class="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+    <a href="/guides" class="inline-flex items-center text-paper-200/60 hover:text-cyan-400 mb-8 transition-colors">
       <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
-      Back to Automations
+      Back to Guides
     </a>
 
     <!-- Header -->
@@ -56,28 +56,28 @@ const costColors = {
         <span class={`text-sm px-3 py-1 rounded-full ${costColors[guide.costType]}`}>
           {guide.cost}
         </span>
-        <span class="text-sm px-3 py-1 rounded-full bg-slate-800 text-slate-300">
+        <span class="text-sm px-3 py-1 rounded-full bg-navy-800 text-paper-200/70">
           ⏱️ {guide.time}
         </span>
       </div>
       
-      <h1 class="text-3xl md:text-4xl font-extrabold mb-4">
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-4 text-paper-100">
         {guide.title}
       </h1>
-      <p class="text-xl text-slate-400">
+      <p class="text-xl text-paper-200/70">
         {guide.description}
       </p>
     </div>
 
     <!-- What You'll Need -->
-    <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
-      <h2 class="font-semibold text-lg mb-4 flex items-center gap-2">
+    <div class="paper-card p-6 mb-8">
+      <h2 class="font-semibold text-lg mb-4 flex items-center gap-2 text-navy-900">
         <span>📋</span> What You'll Need
       </h2>
       <ul class="space-y-2">
         {guide.requirements.map((req) => (
-          <li class="flex items-center gap-3 text-slate-300">
-            <span class="text-green-500">✓</span>
+          <li class="flex items-center gap-3 text-navy-700">
+            <span class="text-emerald-600">✓</span>
             {req}
           </li>
         ))}
@@ -86,29 +86,29 @@ const costColors = {
 
     <!-- Steps -->
     <div class="mb-12">
-      <h2 class="text-2xl font-bold mb-6">Steps</h2>
+      <h2 class="text-2xl font-bold mb-6 text-paper-100">Steps</h2>
       
       <div class="space-y-6">
         {guide.steps.map((step, index) => (
           <div class="flex gap-4">
-            <div class="flex-shrink-0 w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center font-bold text-lg">
+            <div class="flex-shrink-0 w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center font-bold text-lg text-navy-900">
               {index + 1}
             </div>
             <div class="flex-1 pt-1">
-              <h3 class="font-semibold text-lg mb-2">{step.title}</h3>
-              <p class="text-slate-400 mb-3">{step.description}</p>
+              <h3 class="font-semibold text-lg mb-2 text-paper-100">{step.title}</h3>
+              <p class="text-paper-200/70 mb-3">{step.description}</p>
               {step.substeps && (
                 <ul class="space-y-2 ml-4">
                   {step.substeps.map((sub) => (
-                    <li class="text-slate-400 flex items-start gap-2">
-                      <span class="text-orange-500 mt-1">→</span>
+                    <li class="text-paper-200/60 flex items-start gap-2">
+                      <span class="text-cyan-400 mt-1">→</span>
                       {sub}
                     </li>
                   ))}
                 </ul>
               )}
               {step.tip && (
-                <div class="mt-3 bg-blue-500/10 border border-blue-500/20 rounded-lg p-3 text-sm text-blue-300">
+                <div class="mt-3 bg-cyan-500/10 border border-cyan-500/20 rounded-lg p-3 text-sm text-cyan-300">
                   💡 <strong>Tip:</strong> {step.tip}
                 </div>
               )}
@@ -119,23 +119,23 @@ const costColors = {
     </div>
 
     <!-- Success -->
-    <div class="bg-green-500/10 border border-green-500/20 rounded-xl p-6 mb-8">
-      <h2 class="font-semibold text-lg mb-2 text-green-400 flex items-center gap-2">
+    <div class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-6 mb-8">
+      <h2 class="font-semibold text-lg mb-2 text-emerald-400 flex items-center gap-2">
         <span>✅</span> You're Done!
       </h2>
-      <p class="text-slate-300">{guide.successMessage}</p>
+      <p class="text-paper-200/80">{guide.successMessage}</p>
     </div>
 
     <!-- Pro Tips -->
     {guide.proTips && guide.proTips.length > 0 && (
-      <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 mb-8">
-        <h2 class="font-semibold text-lg mb-4 flex items-center gap-2">
+      <div class="dark-card p-6 mb-8">
+        <h2 class="font-semibold text-lg mb-4 flex items-center gap-2 text-paper-100">
           <span>💡</span> Pro Tips
         </h2>
         <ul class="space-y-3">
           {guide.proTips.map((tip) => (
-            <li class="text-slate-300 flex items-start gap-3">
-              <span class="text-orange-500">•</span>
+            <li class="text-paper-200/70 flex items-start gap-3">
+              <span class="text-cyan-400">•</span>
               {tip}
             </li>
           ))}
@@ -144,12 +144,12 @@ const costColors = {
     )}
 
     <!-- Share -->
-    <div class="text-center pt-8 border-t border-slate-800">
-      <p class="text-slate-500">
+    <div class="text-center pt-8 border-t border-navy-800/50">
+      <p class="text-paper-200/50">
         Found this helpful? 
         <button 
           onclick={`navigator.share ? navigator.share({title: '${guide.title}', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))`}
-          class="text-orange-500 hover:underline"
+          class="text-cyan-400 hover:underline"
         >
           Share this guide
         </button>

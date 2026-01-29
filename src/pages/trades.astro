@@ -8,10 +8,10 @@ import trades from '../data/trades.json';
     
     <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
-        Browse by <span class="text-orange-500">Trade</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-paper-100">
+        Browse by <span class="text-cyan-400">Trade</span>
       </h1>
-      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+      <p class="text-xl text-paper-200/70 max-w-2xl mx-auto">
         Select your trade to see what can be automated with AI.
       </p>
     </div>
@@ -21,10 +21,10 @@ import trades from '../data/trades.json';
       {trades.trades.map((trade) => (
         <a 
           href={`/trade/${trade.id}`}
-          class="group bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-orange-500/50 rounded-xl p-6 text-center transition-all duration-200 hover:scale-105"
+          class="group paper-card hover:scale-105 p-6 text-center transition-all duration-200"
         >
           <div class="text-4xl mb-3">{trade.icon}</div>
-          <div class="font-semibold text-white group-hover:text-orange-500 transition-colors">
+          <div class="font-semibold text-navy-900 group-hover:text-cyan-600 transition-colors">
             {trade.name}
           </div>
         </a>
@@ -33,8 +33,8 @@ import trades from '../data/trades.json';
 
     <!-- CTA -->
     <div class="mt-16 text-center">
-      <p class="text-slate-400 mb-4">Want to see how your business stacks up?</p>
-      <a href="/" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+      <p class="text-paper-200/60 mb-4">Want to see how your business stacks up?</p>
+      <a href="/" class="btn-cta inline-block px-6 py-3 rounded-lg">
         Take the Assessment →
       </a>
     </div>

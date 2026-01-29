@@ -53,9 +53,9 @@ const categories = [
 ];
 
 const difficultyColors = {
-  'Easy': 'bg-green-500/20 text-green-400',
-  'Medium': 'bg-yellow-500/20 text-yellow-400',
-  'Advanced': 'bg-red-500/20 text-red-400'
+  'Easy': 'bg-emerald-100 text-emerald-700',
+  'Medium': 'bg-amber-100 text-amber-700',
+  'Advanced': 'bg-red-100 text-red-700'
 };
 ---
 
@@ -63,7 +63,7 @@ const difficultyColors = {
   <main class="max-w-6xl mx-auto px-6 py-12">
     
     <!-- Back Link -->
-    <a href="/" class="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors">
+    <a href="/trades" class="inline-flex items-center text-paper-200/60 hover:text-cyan-400 mb-8 transition-colors">
       <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
       </svg>
@@ -73,10 +73,10 @@ const difficultyColors = {
     <!-- Header -->
     <div class="mb-12">
       <div class="text-6xl mb-4">{trade.icon}</div>
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-        AI Automation for <span class="text-orange-500">{trade.name}</span>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-paper-100">
+        AI Automation for <span class="text-cyan-400">{trade.name}</span>
       </h1>
-      <p class="text-xl text-slate-400">
+      <p class="text-xl text-paper-200/70">
         Here's what you can automate in your {trade.name.toLowerCase()} business — organized by business function.
       </p>
     </div>
@@ -84,7 +84,7 @@ const difficultyColors = {
     <!-- Categories -->
     {categories.map((category) => (
       <section class="mb-12">
-        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+        <h2 class="text-2xl font-bold mb-6 flex items-center gap-3 text-paper-100">
           <span class="text-3xl">{category.icon}</span>
           {category.name}
         </h2>
@@ -93,19 +93,19 @@ const difficultyColors = {
           {automations[category.key]?.map((item) => {
             const guideSlug = getGuideSlug(item.title);
             return (
-              <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-colors">
+              <div class="paper-card p-6">
                 <div class="flex items-start justify-between mb-3">
-                  <h3 class="font-semibold text-lg text-white">{item.title}</h3>
+                  <h3 class="font-semibold text-lg text-navy-900">{item.title}</h3>
                   <span class={`text-xs px-2 py-1 rounded-full ${difficultyColors[item.difficulty]}`}>
                     {item.difficulty}
                   </span>
                 </div>
-                <p class="text-slate-400 mb-4">{item.description}</p>
+                <p class="text-navy-600 mb-4">{item.description}</p>
                 
                 {item.tools && item.tools.length > 0 && (
                   <div class="flex flex-wrap gap-2 mb-4">
                     {item.tools.map((tool) => (
-                      <span class="text-xs bg-slate-800 text-slate-300 px-2 py-1 rounded">
+                      <span class="text-xs bg-navy-100 text-navy-600 px-2 py-1 rounded">
                         {tool}
                       </span>
                     ))}
@@ -115,12 +115,12 @@ const difficultyColors = {
                 {guideSlug ? (
                   <a 
                     href={`/guide/${guideSlug}`}
-                    class="inline-flex items-center text-orange-500 hover:text-orange-400 text-sm font-medium transition-colors"
+                    class="inline-flex items-center text-cta-500 hover:text-cta-600 text-sm font-medium transition-colors"
                   >
                     Show me how →
                   </a>
                 ) : (
-                  <span class="text-slate-600 text-sm">Guide coming soon</span>
+                  <span class="text-navy-400 text-sm">Guide coming soon</span>
                 )}
               </div>
             );
@@ -130,24 +130,24 @@ const difficultyColors = {
     ))}
 
     <!-- CTA -->
-    <div class="mt-16 bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-2xl p-8 text-center">
-      <h2 class="text-2xl font-bold mb-4">Ready to Start Automating?</h2>
-      <p class="text-slate-400 mb-6 max-w-2xl mx-auto">
+    <div class="mt-16 dark-card border-cyan-500/20 p-8 text-center">
+      <h2 class="text-2xl font-bold mb-4 text-paper-100">Ready to Start Automating?</h2>
+      <p class="text-paper-200/60 mb-6 max-w-2xl mx-auto">
         Pick one thing from this list and implement it this week. Start small, see results, then expand.
         Click "Show me how" on any automation with a guide to get step-by-step instructions.
       </p>
-      <a href="/" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
-        Explore Other Trades
+      <a href="/" class="btn-cta inline-block px-6 py-3 rounded-lg">
+        Take the Assessment
       </a>
     </div>
 
     <!-- Share -->
     <div class="mt-12 text-center">
-      <p class="text-slate-500">
+      <p class="text-paper-200/50">
         Know someone who runs a {trade.name.toLowerCase()} business? 
         <button 
           onclick={`navigator.share ? navigator.share({title: 'AI Automation for ${trade.name}', url: window.location.href}) : navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))`}
-          class="text-orange-500 hover:underline"
+          class="text-cyan-400 hover:underline"
         >
           Share this page
         </button>
