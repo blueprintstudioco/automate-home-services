@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import fs from 'node:fs';
 import path from 'node:path';
+import { ChevronLeft, Clock } from '@lucide/astro'
 
 // Get all guides
 const guidesDir = path.join(process.cwd(), 'src/data/guides');
@@ -31,9 +32,7 @@ const costColors = {
     
     <!-- Back Link -->
     <a href="/" class="inline-flex items-center text-paper-200/60 hover:text-cyan-400 mb-8 transition-colors">
-      <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-      </svg>
+      <ChevronLeft class="w-4 h-4 mr-1" />
       Back to Home
     </a>
 
@@ -62,8 +61,9 @@ const costColors = {
             <span class={`text-xs px-2 py-1 rounded-full ${costColors[guide.costType]}`}>
               {guide.cost}
             </span>
-            <span class="text-xs px-2 py-1 rounded-full bg-navy-100 text-navy-600">
-              ⏱️ {guide.time}
+            <span class="text-xs px-2 py-1 rounded-full bg-navy-100 text-navy-600 inline-flex items-center gap-1">
+              <Clock class="w-3 h-3" />
+              {guide.time}
             </span>
           </div>
           

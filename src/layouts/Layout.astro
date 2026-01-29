@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import { Ruler } from '@lucide/astro'
 
 interface Props {
   title: string;
@@ -36,7 +37,7 @@ const { title, description = "Discover what parts of your home service business 
     <nav class="border-b border-navy-800/50 backdrop-blur-sm bg-navy-950/80 sticky top-0 z-50">
       <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="/" class="font-bold text-xl flex items-center gap-2">
-          <span class="text-cyan-400">📐</span>
+          <Ruler class="w-6 h-6 text-cyan-400" />
           <span class="text-paper-100">AutomateMyTrade</span>
         </a>
         <div class="flex gap-6">

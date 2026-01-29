@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import trades from '../data/trades.json';
+import { ClipboardList, BarChart3, Target, Zap } from '@lucide/astro'
 ---
 
 <Layout title="AI Automation Assessment for Home Service Businesses | Free Tool">
@@ -9,7 +10,7 @@ import trades from '../data/trades.json';
     <!-- Hero -->
     <div class="text-center mb-12">
       <div class="inline-flex items-center gap-2 bg-navy-900 border border-cyan-500/20 rounded-full px-4 py-2 mb-6">
-        <span class="text-cyan-400 text-sm">📋</span>
+        <ClipboardList class="w-4 h-4 text-cyan-400" />
         <span class="text-paper-200/80 text-sm">Free 2-minute assessment</span>
       </div>
       
@@ -56,21 +57,21 @@ import trades from '../data/trades.json';
     <div class="mt-16 grid md:grid-cols-3 gap-6">
       <div class="dark-card p-6 text-center">
         <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl">📊</span>
+          <BarChart3 class="w-6 h-6 text-cyan-400" />
         </div>
         <h3 class="font-semibold text-lg mb-2 text-paper-100">Get Your Score</h3>
         <p class="text-paper-200/60">See how you compare to top performers in your trade.</p>
       </div>
       <div class="dark-card p-6 text-center">
         <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl">🎯</span>
+          <Target class="w-6 h-6 text-cyan-400" />
         </div>
         <h3 class="font-semibold text-lg mb-2 text-paper-100">Find Your Gaps</h3>
         <p class="text-paper-200/60">Discover what successful businesses do that you're not doing.</p>
       </div>
       <div class="dark-card p-6 text-center">
         <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-          <span class="text-2xl">⚡</span>
+          <Zap class="w-6 h-6 text-cyan-400" />
         </div>
         <h3 class="font-semibold text-lg mb-2 text-paper-100">Automate It</h3>
         <p class="text-paper-200/60">Get step-by-step guides to automate each gap.</p>
