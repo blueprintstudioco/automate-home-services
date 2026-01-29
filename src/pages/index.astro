@@ -3,62 +3,93 @@ import Layout from '../layouts/Layout.astro';
 import trades from '../data/trades.json';
 ---
 
-<Layout title="AI Automation for Home Service Businesses | Free Tool">
-  <main class="max-w-6xl mx-auto px-6 py-12">
+<Layout title="AI Automation Assessment for Home Service Businesses | Free Tool">
+  <main class="max-w-4xl mx-auto px-6 py-12">
     
     <!-- Hero -->
-    <div class="text-center mb-16">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-6">
-        What Can <span class="text-orange-500">AI Automate</span> in Your Business?
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+        How Does Your Business <span class="text-orange-500">Stack Up?</span>
       </h1>
-      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
-        Select your trade below and discover which parts of your business can run on autopilot.
-        Free tool. No signup required.
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-8">
+        Take the 2-minute assessment. See what successful businesses do that you're not doing — and how AI can close the gaps.
       </p>
     </div>
 
-    <!-- Trade Grid -->
-    <div class="mb-8">
-      <h2 class="text-lg font-semibold text-slate-400 mb-6 text-center uppercase tracking-wide">
-        What kind of business do you run?
-      </h2>
-    </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-      {trades.trades.map((trade) => (
-        <a 
-          href={`/trade/${trade.id}`}
-          class="group bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-orange-500/50 rounded-xl p-6 text-center transition-all duration-200 hover:scale-105"
+    <!-- Trade Selector -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 max-w-xl mx-auto">
+      <h2 class="text-xl font-semibold mb-6 text-center">What kind of business do you run?</h2>
+      
+      <form action="/assess" method="get" class="space-y-6">
+        <div>
+          <select 
+            name="trade" 
+            required
+            class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-4 text-lg focus:border-orange-500 focus:ring-orange-500 focus:outline-none appearance-none cursor-pointer"
+          >
+            <option value="">Select your trade...</option>
+            {trades.trades.map((trade) => (
+              <option value={trade.id}>{trade.icon} {trade.name}</option>
+            ))}
+          </select>
+        </div>
+        
+        <button 
+          type="submit"
+          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-6 rounded-xl text-lg transition-colors"
         >
-          <div class="text-4xl mb-3">{trade.icon}</div>
-          <div class="font-semibold text-white group-hover:text-orange-500 transition-colors">
-            {trade.name}
-          </div>
-        </a>
-      ))}
-    </div>
-
-    <!-- Bottom CTA -->
-    <div class="mt-16 text-center">
-      <p class="text-slate-500">
-        Don't see your trade? <a href="mailto:alex@blueprintstudioco.com" class="text-orange-500 hover:underline">Let us know</a> and we'll add it.
+          Start My Assessment →
+        </button>
+      </form>
+      
+      <p class="text-center text-slate-500 text-sm mt-4">
+        Free. No email required. Takes 2 minutes.
       </p>
     </div>
 
-    <!-- Why Section -->
+    <!-- What You'll Learn -->
+    <div class="mt-16 grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+        <div class="text-4xl mb-4">📊</div>
+        <h3 class="font-semibold text-lg mb-2">Get Your Score</h3>
+        <p class="text-slate-400">See how you compare to top performers in your trade.</p>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl mb-4">🎯</div>
+        <h3 class="font-semibold text-lg mb-2">Find Your Gaps</h3>
+        <p class="text-slate-400">Discover what successful businesses do that you're not doing.</p>
+      </div>
+      <div class="text-center">
+        <div class="text-4xl mb-4">⚡</div>
+        <h3 class="font-semibold text-lg mb-2">Fix with AI</h3>
+        <p class="text-slate-400">Get step-by-step guides to automate each gap.</p>
+      </div>
+    </div>
+
+    <!-- Social Proof / Why -->
     <div class="mt-20 border-t border-slate-800 pt-16">
       <h2 class="text-2xl font-bold text-center mb-8">Why This Exists</h2>
       <div class="max-w-3xl mx-auto text-slate-400 space-y-4 text-lg">
         <p>
-          Every business owner hears "you need to use AI" but nobody explains <em>what</em> that actually means for their specific business.
+          Most business owners know they should be "using AI" but don't know where to start.
         </p>
         <p>
-          This tool breaks it down by trade — showing you exactly what can be automated in marketing, sales, admin, and operations.
+          Worse — they don't even know what they <em>should</em> be doing in their business. 
+          Things like responding to every review, following up with old leads, or asking for referrals.
         </p>
         <p>
-          No fluff. No sales pitch. Just a clear starting point.
+          This tool shows you what top performers do, identifies your gaps, and gives you 
+          the exact AI tools and guides to close them — in minutes, not hours.
         </p>
       </div>
+    </div>
+
+    <!-- Browse by Trade (secondary option) -->
+    <div class="mt-16 text-center">
+      <p class="text-slate-500 mb-4">Or browse automation ideas by trade:</p>
+      <a href="/trades" class="text-orange-500 hover:text-orange-400 font-medium">
+        View all 36 trades →
+      </a>
     </div>
 
   </main>

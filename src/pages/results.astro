@@ -1,0 +1,283 @@
+---
+import Layout from '../layouts/Layout.astro';
+import trades from '../data/trades.json';
+import baseChecklist from '../data/checklists/_base.json';
+import tradeSpecific from '../data/checklists/trade-specific.json';
+
+// This page reads from sessionStorage via client JS
+// We'll render the structure and hydrate with data
+
+function getAllItems(tradeId: string) {
+  const items = {};
+  
+  baseChecklist.categories.forEach(cat => {
+    cat.items.forEach(item => {
+      items[item.id] = { ...item, category: cat.name, categoryIcon: cat.icon };
+    });
+  });
+  
+  const specific = tradeSpecific[tradeId];
+  if (specific) {
+    specific.forEach(addition => {
+      const cat = baseChecklist.categories.find(c => c.id === addition.category);
+      addition.items.forEach(item => {
+        items[item.id] = { ...item, category: cat?.name || addition.category, categoryIcon: cat?.icon || '📌' };
+      });
+    });
+  }
+  
+  return items;
+}
+---
+
+<Layout title="Your Assessment Results | AI Automation">
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Loading State -->
+    <div id="loading" class="text-center py-20">
+      <div class="text-4xl mb-4">⏳</div>
+      <p class="text-slate-400">Loading your results...</p>
+    </div>
+
+    <!-- Results Content (hidden until loaded) -->
+    <div id="results-content" class="hidden">
+      
+      <!-- Score Header -->
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 rounded-full px-4 py-2 mb-6">
+          <span id="trade-icon" class="text-2xl"></span>
+          <span id="trade-name" class="font-medium"></span>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+          Your Score: <span id="score-percent" class="text-orange-500">0%</span>
+        </h1>
+        
+        <p class="text-xl text-slate-400 mb-6">
+          You're doing <span id="checked-count" class="text-white font-semibold">0</span> out of <span id="total-items" class="text-white font-semibold">0</span> things successful <span id="trade-name-2"></span> businesses do.
+        </p>
+
+        <!-- Score Bar -->
+        <div class="max-w-md mx-auto">
+          <div class="w-full bg-slate-800 rounded-full h-4 mb-2">
+            <div id="score-bar" class="bg-orange-500 h-4 rounded-full transition-all duration-1000" style="width: 0%"></div>
+          </div>
+          <div class="flex justify-between text-sm text-slate-500">
+            <span>Needs Work</span>
+            <span>Good</span>
+            <span>Excellent</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grade Card -->
+      <div id="grade-card" class="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center mb-12">
+        <div id="grade" class="text-6xl font-extrabold mb-2">C</div>
+        <p id="grade-message" class="text-slate-400"></p>
+      </div>
+
+      <!-- Critical Gaps -->
+      <section id="critical-gaps-section" class="mb-12">
+        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
+          <span class="text-red-500">🔴</span> Critical Gaps
+        </h2>
+        <p class="text-slate-400 mb-6">High-impact items you're not doing. Fix these first.</p>
+        <div id="critical-gaps" class="space-y-4"></div>
+      </section>
+
+      <!-- Quick Wins -->
+      <section id="quick-wins-section" class="mb-12">
+        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
+          <span class="text-yellow-500">🟡</span> Quick Wins
+        </h2>
+        <p class="text-slate-400 mb-6">Easy to fix. Start here for momentum.</p>
+        <div id="quick-wins" class="space-y-4"></div>
+      </section>
+
+      <!-- What You're Doing Right -->
+      <section id="doing-well-section" class="mb-12">
+        <h2 class="text-2xl font-bold mb-2 flex items-center gap-3">
+          <span class="text-green-500">🟢</span> What You're Doing Right
+        </h2>
+        <p class="text-slate-400 mb-6">Keep it up!</p>
+        <div id="doing-well" class="space-y-2"></div>
+      </section>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-r from-orange-500/10 to-orange-600/10 border border-orange-500/20 rounded-2xl p-8 text-center">
+        <h2 class="text-2xl font-bold mb-4">Ready to Close the Gaps?</h2>
+        <p class="text-slate-400 mb-6 max-w-2xl mx-auto">
+          Click "Fix with AI" on any gap above to get step-by-step instructions.
+          Most take less than 15 minutes to set up.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/" class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            Retake Assessment
+          </a>
+          <a href="/guides" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+            Browse All Guides
+          </a>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="mt-12 text-center">
+        <p class="text-slate-500">
+          Know another business owner who could use this?
+          <button 
+            onclick="navigator.share ? navigator.share({title: 'Business Assessment', url: window.location.origin}) : navigator.clipboard.writeText(window.location.origin).then(() => alert('Link copied!'))"
+            class="text-orange-500 hover:underline"
+          >
+            Share this tool
+          </button>
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    import trades from '../data/trades.json';
+    import baseChecklist from '../data/checklists/_base.json';
+    import tradeSpecific from '../data/checklists/trade-specific.json';
+
+    // Get all items for a trade
+    function getAllItems(tradeId) {
+      const items = {};
+      
+      baseChecklist.categories.forEach(cat => {
+        cat.items.forEach(item => {
+          items[item.id] = { ...item, category: cat.name, categoryIcon: cat.icon };
+        });
+      });
+      
+      const specific = tradeSpecific[tradeId];
+      if (specific) {
+        specific.forEach(addition => {
+          const cat = baseChecklist.categories.find(c => c.id === addition.category);
+          addition.items.forEach(item => {
+            items[item.id] = { ...item, category: cat?.name || addition.category, categoryIcon: cat?.icon || '📌' };
+          });
+        });
+      }
+      
+      return items;
+    }
+
+    // Load results from sessionStorage
+    const stored = sessionStorage.getItem('assessment-results');
+    
+    if (!stored) {
+      window.location.href = '/';
+    } else {
+      const results = JSON.parse(stored);
+      const trade = trades.trades.find(t => t.id === results.trade);
+      const allItems = getAllItems(results.trade);
+      
+      // Calculate score
+      const scorePercent = Math.round((results.earnedWeight / results.totalWeight) * 100);
+      
+      // Determine grade
+      let grade, gradeColor, gradeMessage;
+      if (scorePercent >= 90) {
+        grade = 'A'; gradeColor = 'text-green-400'; 
+        gradeMessage = "Outstanding! You're running a top-tier operation.";
+      } else if (scorePercent >= 80) {
+        grade = 'B'; gradeColor = 'text-green-400';
+        gradeMessage = "Great job! A few tweaks and you'll be at the top.";
+      } else if (scorePercent >= 70) {
+        grade = 'C'; gradeColor = 'text-yellow-400';
+        gradeMessage = "Solid foundation. Some key opportunities to improve.";
+      } else if (scorePercent >= 50) {
+        grade = 'D'; gradeColor = 'text-orange-400';
+        gradeMessage = "Room for improvement. The good news? Lots of quick wins available.";
+      } else {
+        grade = 'F'; gradeColor = 'text-red-400';
+        gradeMessage = "Major opportunities ahead. Let's fix the critical gaps first.";
+      }
+      
+      // Populate the page
+      document.getElementById('trade-icon').textContent = trade?.icon || '🏠';
+      document.getElementById('trade-name').textContent = trade?.name || 'Home Service';
+      document.getElementById('trade-name-2').textContent = trade?.name.toLowerCase() || 'home service';
+      document.getElementById('score-percent').textContent = `${scorePercent}%`;
+      document.getElementById('checked-count').textContent = results.checkedCount;
+      document.getElementById('total-items').textContent = results.totalItems;
+      document.getElementById('grade').textContent = grade;
+      document.getElementById('grade').className = `text-6xl font-extrabold mb-2 ${gradeColor}`;
+      document.getElementById('grade-message').textContent = gradeMessage;
+      
+      // Animate score bar
+      setTimeout(() => {
+        document.getElementById('score-bar').style.width = `${scorePercent}%`;
+      }, 100);
+      
+      // Render gaps
+      const criticalGaps = [];
+      const quickWins = [];
+      
+      results.unchecked.forEach(itemId => {
+        const item = allItems[itemId];
+        if (!item) return;
+        
+        if (item.weight === 3) {
+          criticalGaps.push(item);
+        } else {
+          quickWins.push(item);
+        }
+      });
+      
+      function renderGapCard(item) {
+        const hasGuide = item.aiSolution && !['habit', 'idea'].includes(item.solutionType);
+        return `
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h3 class="font-semibold text-white">${item.text}</h3>
+              <span class="text-xs text-slate-500 flex-shrink-0">${item.categoryIcon} ${item.category}</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-4">${item.why}</p>
+            ${hasGuide ? `
+              <a href="/guide/${item.aiSolution}" class="inline-flex items-center text-orange-500 hover:text-orange-400 font-medium text-sm">
+                Fix with AI →
+              </a>
+            ` : `
+              <span class="text-slate-600 text-sm">Guide coming soon</span>
+            `}
+          </div>
+        `;
+      }
+      
+      document.getElementById('critical-gaps').innerHTML = criticalGaps.length 
+        ? criticalGaps.map(renderGapCard).join('')
+        : '<p class="text-slate-500">No critical gaps! 🎉</p>';
+        
+      document.getElementById('quick-wins').innerHTML = quickWins.length
+        ? quickWins.map(renderGapCard).join('')
+        : '<p class="text-slate-500">No quick wins remaining!</p>';
+      
+      // Render what they're doing well
+      const doingWell = results.checked.map(id => allItems[id]).filter(Boolean);
+      document.getElementById('doing-well').innerHTML = doingWell.length
+        ? doingWell.map(item => `
+            <div class="flex items-center gap-3 text-slate-400">
+              <span class="text-green-500">✓</span>
+              <span>${item.text}</span>
+            </div>
+          `).join('')
+        : '<p class="text-slate-500">Complete the assessment to see what you\'re doing well.</p>';
+      
+      // Hide sections if empty
+      if (criticalGaps.length === 0) {
+        document.getElementById('critical-gaps-section').classList.add('hidden');
+      }
+      if (quickWins.length === 0) {
+        document.getElementById('quick-wins-section').classList.add('hidden');
+      }
+      
+      // Show results, hide loading
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('results-content').classList.remove('hidden');
+    }
+  </script>
+</Layout>

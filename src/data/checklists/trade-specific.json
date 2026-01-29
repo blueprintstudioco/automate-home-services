@@ -1,0 +1,217 @@
+{
+  "forestry-mulching": [
+    {
+      "category": "marketing",
+      "items": [
+        {
+          "id": "drone-footage",
+          "text": "I use drone footage to show large-scale transformations",
+          "why": "Aerial before/afters are jaw-dropping. They go viral on social media.",
+          "weight": 2,
+          "aiSolution": "video-script-writer",
+          "solutionType": "tool"
+        },
+        {
+          "id": "acreage-portfolio",
+          "text": "I track total acres cleared and showcase the number",
+          "why": "'500+ acres cleared' builds instant credibility.",
+          "weight": 1,
+          "aiSolution": null,
+          "solutionType": "habit"
+        }
+      ]
+    },
+    {
+      "category": "operations",
+      "items": [
+        {
+          "id": "mulcher-teeth-tracking",
+          "text": "I track mulcher teeth wear and replace proactively",
+          "why": "Dull teeth = slow work = less profit per hour.",
+          "weight": 2,
+          "aiSolution": "fieldfix",
+          "solutionType": "tool"
+        },
+        {
+          "id": "site-assessment-checklist",
+          "text": "I use a standard checklist for site assessments",
+          "why": "Consistent assessments = accurate quotes = no surprises.",
+          "weight": 2,
+          "aiSolution": "site-assessment-generator",
+          "solutionType": "tool"
+        }
+      ]
+    }
+  ],
+  "painting": [
+    {
+      "category": "sales",
+      "items": [
+        {
+          "id": "color-consultation",
+          "text": "I offer color consultation as part of my service",
+          "why": "Color help is a differentiator. AI can suggest palettes based on photos.",
+          "weight": 2,
+          "aiSolution": "color-consultation-tool",
+          "solutionType": "tool"
+        }
+      ]
+    },
+    {
+      "category": "customer-service",
+      "items": [
+        {
+          "id": "paint-care-instructions",
+          "text": "I send care/maintenance instructions after painting",
+          "why": "Shows professionalism and reduces callbacks for 'issues' that are user error.",
+          "weight": 1,
+          "aiSolution": "care-instructions-generator",
+          "solutionType": "tool"
+        }
+      ]
+    }
+  ],
+  "hvac": [
+    {
+      "category": "customer-service",
+      "items": [
+        {
+          "id": "filter-reminders",
+          "text": "I send automated filter replacement reminders",
+          "why": "Easy recurring revenue. Customers forget, you remind, they pay.",
+          "weight": 2,
+          "aiSolution": "maintenance-reminder-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "seasonal-tuneup",
+          "text": "I reach out for seasonal tune-ups (spring AC, fall heating)",
+          "why": "Seasonal maintenance is predictable revenue. AI can send campaigns automatically.",
+          "weight": 2,
+          "aiSolution": "seasonal-campaign-writer",
+          "solutionType": "tool"
+        }
+      ]
+    }
+  ],
+  "plumbing": [
+    {
+      "category": "operations",
+      "items": [
+        {
+          "id": "parts-inventory",
+          "text": "I keep common parts stocked on my truck",
+          "why": "Same-day fixes = happy customers. Running for parts kills efficiency.",
+          "weight": 2,
+          "aiSolution": "inventory-setup",
+          "solutionType": "guide"
+        }
+      ]
+    },
+    {
+      "category": "customer-service",
+      "items": [
+        {
+          "id": "water-heater-reminders",
+          "text": "I track water heater ages and send replacement reminders",
+          "why": "10-year-old water heater = proactive sales opportunity before it fails.",
+          "weight": 2,
+          "aiSolution": "equipment-age-tracker",
+          "solutionType": "tool"
+        }
+      ]
+    }
+  ],
+  "landscaping": [
+    {
+      "category": "operations",
+      "items": [
+        {
+          "id": "route-grouping",
+          "text": "I group nearby customers on the same day",
+          "why": "Geographic routing cuts drive time 30%+.",
+          "weight": 2,
+          "aiSolution": "route-optimization",
+          "solutionType": "guide"
+        }
+      ]
+    },
+    {
+      "category": "customer-service",
+      "items": [
+        {
+          "id": "seasonal-service-calendar",
+          "text": "I proactively schedule seasonal services (aeration, overseeding, etc.)",
+          "why": "Don't wait for them to call. Proactive scheduling fills your calendar.",
+          "weight": 2,
+          "aiSolution": "seasonal-campaign-writer",
+          "solutionType": "tool"
+        }
+      ]
+    }
+  ],
+  "christmas-lights": [
+    {
+      "category": "sales",
+      "items": [
+        {
+          "id": "early-bird-booking",
+          "text": "I run early-bird campaigns in September/October",
+          "why": "Lock in customers before competitors. Early bookers get the best dates.",
+          "weight": 3,
+          "aiSolution": "seasonal-campaign-writer",
+          "solutionType": "tool"
+        }
+      ]
+    },
+    {
+      "category": "customer-service",
+      "items": [
+        {
+          "id": "takedown-scheduling",
+          "text": "I pre-schedule takedowns and send reminders",
+          "why": "January revenue is easy money. Automate the scheduling.",
+          "weight": 2,
+          "aiSolution": "maintenance-reminder-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "storage-service",
+          "text": "I offer light storage as an add-on service",
+          "why": "Storage = recurring touchpoint + additional revenue.",
+          "weight": 1,
+          "aiSolution": null,
+          "solutionType": "idea"
+        }
+      ]
+    }
+  ],
+  "roofing": [
+    {
+      "category": "sales",
+      "items": [
+        {
+          "id": "storm-response",
+          "text": "I have a storm response system (weather alerts → outreach)",
+          "why": "After a hailstorm, first responders win. AI can trigger automatic outreach.",
+          "weight": 3,
+          "aiSolution": "storm-response-setup",
+          "solutionType": "guide"
+        }
+      ]
+    },
+    {
+      "category": "operations",
+      "items": [
+        {
+          "id": "drone-inspections",
+          "text": "I use drones for roof inspections",
+          "why": "Faster, safer, and more impressive to customers.",
+          "weight": 2,
+          "aiSolution": null,
+          "solutionType": "idea"
+        }
+      ]
+    }
+  ]
+}

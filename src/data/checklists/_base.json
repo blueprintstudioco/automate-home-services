@@ -1,0 +1,334 @@
+{
+  "categories": [
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "icon": "📣",
+      "items": [
+        {
+          "id": "social-media-posting",
+          "text": "I post on social media at least 3 times per week",
+          "why": "Consistent posting keeps you top-of-mind. Most customers check social media before calling.",
+          "weight": 2,
+          "aiSolution": "chatgpt-social-content",
+          "solutionType": "tool"
+        },
+        {
+          "id": "review-responses",
+          "text": "I respond to every Google review within 48 hours",
+          "why": "Responding shows you care. It also improves your local SEO ranking.",
+          "weight": 3,
+          "aiSolution": "chatgpt-review-responses",
+          "solutionType": "guide"
+        },
+        {
+          "id": "review-count",
+          "text": "I have at least 25 Google reviews",
+          "why": "More reviews = more trust = more calls. Businesses with 25+ reviews get 2x more leads.",
+          "weight": 3,
+          "aiSolution": "nicejob-review-requests",
+          "solutionType": "guide"
+        },
+        {
+          "id": "gbp-complete",
+          "text": "My Google Business Profile is 100% filled out with photos",
+          "why": "Complete profiles get 7x more clicks. Add services, hours, photos, and posts.",
+          "weight": 3,
+          "aiSolution": "gbp-optimization",
+          "solutionType": "tool"
+        },
+        {
+          "id": "before-after-photos",
+          "text": "I take before/after photos of every job",
+          "why": "Visual proof is your best marketing. One great before/after can generate thousands in leads.",
+          "weight": 2,
+          "aiSolution": null,
+          "solutionType": "habit"
+        },
+        {
+          "id": "email-list",
+          "text": "I collect customer emails and send updates at least monthly",
+          "why": "Email has 40x the ROI of social media. Past customers are your easiest sales.",
+          "weight": 2,
+          "aiSolution": "email-campaign-writer",
+          "solutionType": "tool"
+        },
+        {
+          "id": "seasonal-promos",
+          "text": "I run seasonal promotions (spring, fall, holidays)",
+          "why": "Seasonal offers create urgency and fill slow periods.",
+          "weight": 1,
+          "aiSolution": "promo-generator",
+          "solutionType": "tool"
+        },
+        {
+          "id": "video-content",
+          "text": "I post video content (job walkthroughs, tips, behind-the-scenes)",
+          "why": "Video gets 3x more engagement than photos. YouTube is the #2 search engine.",
+          "weight": 2,
+          "aiSolution": "video-script-writer",
+          "solutionType": "tool"
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales",
+      "icon": "💰",
+      "items": [
+        {
+          "id": "lead-response-time",
+          "text": "I respond to new leads within 1 hour",
+          "why": "Leads are 7x more likely to book if you respond within an hour. After 24 hours, you've lost them.",
+          "weight": 3,
+          "aiSolution": "lead-responder",
+          "solutionType": "tool"
+        },
+        {
+          "id": "quote-followup",
+          "text": "I follow up on every quote that doesn't book within 48 hours",
+          "why": "80% of sales happen after 5+ follow-ups. Most contractors give up after 1.",
+          "weight": 3,
+          "aiSolution": "followup-message-writer",
+          "solutionType": "tool"
+        },
+        {
+          "id": "crm-system",
+          "text": "I use a CRM or system to track leads and customers",
+          "why": "If leads live in your head or scattered notes, you're losing money.",
+          "weight": 2,
+          "aiSolution": "crm-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "professional-quotes",
+          "text": "I send professional-looking quotes (not just texts or verbal)",
+          "why": "Professional quotes get taken seriously and justify higher prices.",
+          "weight": 2,
+          "aiSolution": "quote-template",
+          "solutionType": "tool"
+        },
+        {
+          "id": "referral-program",
+          "text": "I actively ask for referrals after every job",
+          "why": "Referred customers close 4x faster and spend more. But you have to ask.",
+          "weight": 2,
+          "aiSolution": "referral-request-writer",
+          "solutionType": "tool"
+        },
+        {
+          "id": "lost-lead-reactivation",
+          "text": "I reach out to old leads who never booked (every few months)",
+          "why": "Timing wasn't right before. A simple 'still need help?' message wins back 10-20% of cold leads.",
+          "weight": 2,
+          "aiSolution": "reactivation-campaign",
+          "solutionType": "tool"
+        }
+      ]
+    },
+    {
+      "id": "admin",
+      "name": "Admin & Finance",
+      "icon": "📋",
+      "items": [
+        {
+          "id": "online-booking",
+          "text": "Customers can book appointments online (without calling)",
+          "why": "40% of bookings happen after hours. If they can't book at 10pm, they'll call someone else.",
+          "weight": 3,
+          "aiSolution": "calendly-booking",
+          "solutionType": "guide"
+        },
+        {
+          "id": "digital-invoices",
+          "text": "I send digital invoices with online payment options",
+          "why": "Digital invoices get paid 2x faster. Payment links reduce 'check is in the mail' excuses.",
+          "weight": 2,
+          "aiSolution": "wave-invoicing",
+          "solutionType": "guide"
+        },
+        {
+          "id": "automated-reminders",
+          "text": "I send automated appointment reminders (text or email)",
+          "why": "Reminders reduce no-shows by 50%. One text saves you a wasted trip.",
+          "weight": 2,
+          "aiSolution": "reminder-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "job-costing",
+          "text": "I track actual costs vs estimates on each job",
+          "why": "If you don't know your true costs, you're guessing on pricing. Data = profit.",
+          "weight": 2,
+          "aiSolution": "job-costing-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "contracts",
+          "text": "I use written contracts or agreements for jobs over $500",
+          "why": "Contracts protect you from scope creep and non-payment. Peace of mind.",
+          "weight": 2,
+          "aiSolution": "contract-generator",
+          "solutionType": "tool"
+        },
+        {
+          "id": "expense-tracking",
+          "text": "I track all business expenses for tax purposes",
+          "why": "Most contractors miss $5-10k in deductions. Every receipt matters.",
+          "weight": 1,
+          "aiSolution": "expense-tracking-setup",
+          "solutionType": "guide"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "name": "Operations",
+      "icon": "🔧",
+      "items": [
+        {
+          "id": "job-documentation",
+          "text": "I document every job with photos and notes",
+          "why": "Documentation protects you legally and helps with warranty claims.",
+          "weight": 2,
+          "aiSolution": "voice-to-notes",
+          "solutionType": "tool"
+        },
+        {
+          "id": "equipment-tracking",
+          "text": "I track equipment maintenance and service schedules",
+          "why": "Preventive maintenance costs 5x less than emergency repairs. Track hours, not just miles.",
+          "weight": 2,
+          "aiSolution": "fieldfix",
+          "solutionType": "tool"
+        },
+        {
+          "id": "route-optimization",
+          "text": "I plan efficient routes when doing multiple jobs per day",
+          "why": "Bad routing burns fuel and time. Even basic optimization saves 20%+ on drive time.",
+          "weight": 1,
+          "aiSolution": "route-optimization",
+          "solutionType": "guide"
+        },
+        {
+          "id": "inventory-tracking",
+          "text": "I track supplies/materials and reorder before running out",
+          "why": "Running out mid-job kills productivity. Simple tracking prevents emergency supply runs.",
+          "weight": 1,
+          "aiSolution": "inventory-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "sops-documented",
+          "text": "I have documented processes for common tasks",
+          "why": "SOPs let you hire help without starting from scratch. Your business runs without you.",
+          "weight": 2,
+          "aiSolution": "sop-generator",
+          "solutionType": "tool"
+        }
+      ]
+    },
+    {
+      "id": "customer-service",
+      "name": "Customer Experience",
+      "icon": "👥",
+      "items": [
+        {
+          "id": "booking-confirmation",
+          "text": "I send booking confirmations immediately after scheduling",
+          "why": "Confirmation = commitment. It reduces cancellations and no-shows.",
+          "weight": 2,
+          "aiSolution": "confirmation-templates",
+          "solutionType": "tool"
+        },
+        {
+          "id": "otw-notifications",
+          "text": "I text customers when I'm on my way",
+          "why": "'On my way' texts show professionalism and let customers prepare.",
+          "weight": 1,
+          "aiSolution": "otw-template",
+          "solutionType": "tool"
+        },
+        {
+          "id": "job-completion-summary",
+          "text": "I send a summary after completing each job",
+          "why": "A completion summary with photos justifies your price and sets up the review ask.",
+          "weight": 2,
+          "aiSolution": "completion-summary-writer",
+          "solutionType": "tool"
+        },
+        {
+          "id": "review-requests",
+          "text": "I ask for Google reviews within 24 hours of job completion",
+          "why": "Ask when they're happiest. Automated requests 10x your review collection rate.",
+          "weight": 3,
+          "aiSolution": "nicejob-review-requests",
+          "solutionType": "guide"
+        },
+        {
+          "id": "complaint-handling",
+          "text": "I have a process for handling complaints professionally",
+          "why": "One handled complaint creates more loyalty than no complaint at all.",
+          "weight": 2,
+          "aiSolution": "complaint-response-writer",
+          "solutionType": "tool"
+        },
+        {
+          "id": "repeat-customer-outreach",
+          "text": "I reach out to past customers for repeat/maintenance work",
+          "why": "Repeat customers cost 5x less to acquire. A simple 'time for your annual service?' works.",
+          "weight": 2,
+          "aiSolution": "reactivation-campaign",
+          "solutionType": "tool"
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "name": "Advanced (Cutting Edge)",
+      "icon": "🚀",
+      "items": [
+        {
+          "id": "ai-phone-answering",
+          "text": "I have AI or a service answering calls I miss",
+          "why": "Missed calls = missed money. AI can answer 24/7, qualify leads, and book appointments.",
+          "weight": 2,
+          "aiSolution": "ai-phone-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "chatbot",
+          "text": "My website has a chatbot that can answer questions and book jobs",
+          "why": "50% of website visitors leave without contacting you. Chatbots capture those leads.",
+          "weight": 2,
+          "aiSolution": "chatbot-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "photo-quoting",
+          "text": "Customers can send photos for quick estimates",
+          "why": "Photo quotes qualify leads faster. AI can help estimate from images.",
+          "weight": 1,
+          "aiSolution": "photo-quote-setup",
+          "solutionType": "guide"
+        },
+        {
+          "id": "competitor-monitoring",
+          "text": "I monitor competitor reviews and pricing",
+          "why": "Know what customers say about competitors. Spot opportunities they're missing.",
+          "weight": 1,
+          "aiSolution": "competitor-monitoring",
+          "solutionType": "guide"
+        },
+        {
+          "id": "ai-content-calendar",
+          "text": "I use AI to plan and create content weeks in advance",
+          "why": "Batching content saves hours. AI generates a month of posts in 30 minutes.",
+          "weight": 1,
+          "aiSolution": "content-calendar-generator",
+          "solutionType": "tool"
+        }
+      ]
+    }
+  ]
+}

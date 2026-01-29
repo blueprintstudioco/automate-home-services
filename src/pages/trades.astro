@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import trades from '../data/trades.json';
+---
+
+<Layout title="Browse by Trade | AI Automation for Home Services">
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">
+        Browse by <span class="text-orange-500">Trade</span>
+      </h1>
+      <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+        Select your trade to see what can be automated with AI.
+      </p>
+    </div>
+
+    <!-- Trade Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      {trades.trades.map((trade) => (
+        <a 
+          href={`/trade/${trade.id}`}
+          class="group bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-orange-500/50 rounded-xl p-6 text-center transition-all duration-200 hover:scale-105"
+        >
+          <div class="text-4xl mb-3">{trade.icon}</div>
+          <div class="font-semibold text-white group-hover:text-orange-500 transition-colors">
+            {trade.name}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-16 text-center">
+      <p class="text-slate-400 mb-4">Want to see how your business stacks up?</p>
+      <a href="/" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
+        Take the Assessment →
+      </a>
+    </div>
+
+  </main>
+</Layout>
