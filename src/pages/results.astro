@@ -26,6 +26,11 @@ const categoryIconMap = {
   'Customer Experience': icons.users,
   'Advanced (Cutting Edge)': icons.rocket
 };
+
+// Pass all data to client via define:vars
+const allTrades = trades.trades;
+const allBaseCategories = baseChecklist.categories;
+const allTradeSpecific = tradeSpecific;
 ---
 
 <Layout title="Your Assessment Results | AI Automation">
@@ -138,25 +143,21 @@ const categoryIconMap = {
 
   </main>
 
-  <script define:vars={{ categoryIconMap }}>
-    import trades from '../data/trades.json';
-    import baseChecklist from '../data/checklists/_base.json';
-    import tradeSpecific from '../data/checklists/trade-specific.json';
-
+  <script define:vars={{ categoryIconMap, allTrades, allBaseCategories, allTradeSpecific }}>
     // Get all items for a trade
     function getAllItems(tradeId) {
       const items = {};
       
-      baseChecklist.categories.forEach(cat => {
+      allBaseCategories.forEach(cat => {
         cat.items.forEach(item => {
           items[item.id] = { ...item, category: cat.name, categoryIcon: categoryIconMap[cat.name] || '' };
         });
       });
       
-      const specific = tradeSpecific[tradeId];
+      const specific = allTradeSpecific[tradeId];
       if (specific) {
         specific.forEach(addition => {
-          const cat = baseChecklist.categories.find(c => c.id === addition.category);
+          const cat = allBaseCategories.find(c => c.id === addition.category);
           const catName = cat?.name || addition.category;
           addition.items.forEach(item => {
             items[item.id] = { ...item, category: catName, categoryIcon: categoryIconMap[catName] || '' };
@@ -174,7 +175,7 @@ const categoryIconMap = {
       window.location.href = '/';
     } else {
       const results = JSON.parse(stored);
-      const trade = trades.trades.find(t => t.id === results.trade);
+      const trade = allTrades.find(t => t.id === results.trade);
       const allItems = getAllItems(results.trade);
       
       // Calculate score
